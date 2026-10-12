@@ -1371,10 +1371,14 @@ const NCERT_DATA = {
   ],
 
   /**
-   * Filter questions by criteria
+   * Filter questions strictly by criteria with zero cross-subject leakage
    */
   getFilteredQuestions: function (criteria) {
-    const { classId, subjectId, subSectionId, difficulty, chapter, limit } = criteria;
+    if (window.NCERT_QUESTION_BANK && typeof window.NCERT_QUESTION_BANK.getQuestions === "function") {
+      return window.NCERT_QUESTION_BANK.getQuestions(criteria);
+    }
+
+    const { classId, subjectId, subSectionId, difficulty, chapter, limit = 5 } = criteria;
     let pool = this.questions.filter((q) => {
       if (classId && q.classId !== classId) return false;
       if (subjectId && q.subjectId !== subjectId) return false;
@@ -1384,22 +1388,8 @@ const NCERT_DATA = {
       return true;
     });
 
-    if (pool.length < (limit || 5)) {
-      const fallback = this.questions.filter(
-        (q) => q.classId === classId && q.subjectId === subjectId && !pool.includes(q)
-      );
-      pool = pool.concat(fallback);
-    }
-
-    if (pool.length < (limit || 5)) {
-      const generalFallback = this.questions.filter(
-        (q) => q.classId === classId && !pool.includes(q)
-      );
-      pool = pool.concat(generalFallback);
-    }
-
     const shuffled = [...pool].sort(() => 0.5 - Math.random());
-    return limit ? shuffled.slice(0, limit) : shuffled;
+    return shuffled.slice(0, limit);
   }
 };
 

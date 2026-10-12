@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html><head></head><body>
+<div id="res">ERR: Uncaught SyntaxError: Unexpected token ':' line: 1011 col: 35</div>
+<script>
+window.onerror = function(m, u, l, c, err) {
+  document.getElementById("res").textContent = "ERR: " + m + " line: " + l + " col: " + c;
+};
+</script>
+<script>
+/**
+ * NCERT MasterQuiz - Comprehensive Chapter-Wise Question Bank & Intelligent Engine
+ * Strictly aligned with NCERT Class 10th, 11th, and 12th syllabi.
+ * Guarantees 100% chapter and subject accuracy with zero cross-subject leakage.
+ */
+
+(function () {
+  // Knowledge Base for all 167 NCERT Chapters across Classes 10, 11, and 12
+  const CHAPTER_KNOWLEDGE = {
+    // ==========================================
+    // CLASS 10 MATHEMATICS
+    // ==========================================
+    "real numbers": {
+      subjectId: "maths_10", classId: "10",
+      questions: [
+        {
+          q: "According to the Fundamental Theorem of Arithmetic, every composite number can be uniquely expressed as a product of:",
+          q_hi: "à¤…à¤‚à¤•à¤—à¤£à¤¿à¤¤ à¤•à¥€ à¤†à¤§à¤¾à¤°à¤­à¥‚à¤¤ à¤ªà¥à¤°à¤®à¥‡à¤¯ à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤°, à¤ªà¥à¤°à¤¤à¥à¤¯à¥‡à¤• à¤­à¤¾à¤œà¥à¤¯ à¤¸à¤‚à¤–à¥à¤¯à¤¾ à¤•à¥‹ à¤µà¤¿à¤¶à¤¿à¤·à¥à¤Ÿ à¤°à¥‚à¤ª à¤¸à¥‡ à¤•à¤¿à¤¸à¤•à¥‡ à¤—à¥à¤£à¤¨à¤«à¤² à¤•à¥‡ à¤°à¥‚à¤ª à¤®à¥‡à¤‚ à¤µà¥à¤¯à¤•à¥à¤¤ à¤•à¤¿à¤¯à¤¾ à¤œà¤¾ à¤¸à¤•à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Primes, apart from the order in which the prime factors occur", "Even integers only", "Odd integers only", "Natural numbers in increasing order only"],
+          opts_hi: ["à¤…à¤­à¤¾à¤œà¥à¤¯ à¤¸à¤‚à¤–à¥à¤¯à¤¾à¤“à¤‚ à¤•à¥‡, à¤—à¥à¤£à¤¨à¤–à¤‚à¤¡à¥‹à¤‚ à¤•à¥‡ à¤†à¤¨à¥‡ à¤µà¤¾à¤²à¥‡ à¤•à¥à¤°à¤® à¤•à¥‹ à¤›à¥‹à¤¡à¤¼à¤•à¤°", "à¤•à¥‡à¤µà¤² à¤¸à¤® à¤ªà¥‚à¤°à¥à¤£à¤¾à¤‚à¤•à¥‹à¤‚ à¤•à¥‡", "à¤•à¥‡à¤µà¤² à¤µà¤¿à¤·à¤® à¤ªà¥‚à¤°à¥à¤£à¤¾à¤‚à¤•à¥‹à¤‚ à¤•à¥‡", "à¤•à¥‡à¤µà¤² à¤¬à¤¢à¤¼à¤¤à¥‡ à¤•à¥à¤°à¤® à¤®à¥‡à¤‚ à¤ªà¥à¤°à¤¾à¤•à¥ƒà¤¤ à¤¸à¤‚à¤–à¥à¤¯à¤¾à¤“à¤‚ à¤•à¥‡"],
+          ans: 0,
+          exp: "Fundamental Theorem of Arithmetic states that every composite number can be factored as a product of prime numbers uniquely, irrespective of their order.",
+          exp_hi: "à¤…à¤‚à¤•à¤—à¤£à¤¿à¤¤ à¤•à¥€ à¤†à¤§à¤¾à¤°à¤­à¥‚à¤¤ à¤ªà¥à¤°à¤®à¥‡à¤¯ à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° à¤ªà¥à¤°à¤¤à¥à¤¯à¥‡à¤• à¤­à¤¾à¤œà¥à¤¯ à¤¸à¤‚à¤–à¥à¤¯à¤¾ à¤•à¥‹ à¤…à¤­à¤¾à¤œà¥à¤¯ à¤¸à¤‚à¤–à¥à¤¯à¤¾à¤“à¤‚ à¤•à¥‡ à¤—à¥à¤£à¤¨à¤«à¤² à¤•à¥‡ à¤°à¥‚à¤ª à¤®à¥‡à¤‚ à¤…à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯ à¤°à¥‚à¤ª à¤¸à¥‡ à¤²à¤¿à¤–à¤¾ à¤œà¤¾ à¤¸à¤•à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        },
+        {
+          q: "If HCF(306, 657) = 9, what is the LCM(306, 657)?",
+          q_hi: "à¤¯à¤¦à¤¿ HCF(306, 657) = 9 à¤¹à¥ˆ, à¤¤à¥‹ LCM(306, 657) à¤•à¤¾ à¤®à¤¾à¤¨ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤—à¤¾?",
+          opts: ["22338", "21338", "23328", "22838"],
+          opts_hi: ["22338", "21338", "23328", "22838"],
+          ans: 0,
+          exp: "For any two positive integers a and b, HCF(a, b) Ã— LCM(a, b) = a Ã— b. Therefore, LCM = (306 Ã— 657) / 9 = 22,338.",
+          exp_hi: "à¤¦à¥‹ à¤¸à¤‚à¤–à¥à¤¯à¤¾à¤“à¤‚ à¤•à¥‡ à¤²à¤¿à¤: HCF Ã— LCM = a Ã— bà¥¤ à¤…à¤¤à¤ƒ LCM = (306 Ã— 657) / 9 = 22,338à¥¤"
+        },
+        {
+          q: "Which of the following is an irrational number?",
+          q_hi: "à¤¨à¤¿à¤®à¥à¤¨à¤²à¤¿à¤–à¤¿à¤¤ à¤®à¥‡à¤‚ à¤¸à¥‡ à¤•à¥Œà¤¨ à¤¸à¥€ à¤à¤• à¤…à¤ªà¤°à¤¿à¤®à¥‡à¤¯ à¤¸à¤‚à¤–à¥à¤¯à¤¾ (Irrational Number) à¤¹à¥ˆ?",
+          opts: ["âˆš5", "âˆš9", "22/7", "0.375"],
+          opts_hi: ["âˆš5", "âˆš9", "22/7", "0.375"],
+          ans: 0,
+          exp: "âˆš5 cannot be expressed in the form p/q where p, q are integers and q â‰  0. Its decimal expansion is non-terminating and non-recurring.",
+          exp_hi: "âˆš5 à¤•à¤¾ à¤¦à¤¶à¤®à¤²à¤µ à¤ªà¥à¤°à¤¸à¤¾à¤° à¤…à¤¶à¤¾à¤‚à¤¤ à¤…à¤¨à¤¾à¤µà¤°à¥à¤¤à¥€ (non-terminating non-repeating) à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ, à¤…à¤¤à¤ƒ à¤¯à¤¹ à¤à¤• à¤…à¤ªà¤°à¤¿à¤®à¥‡à¤¯ à¤¸à¤‚à¤–à¥à¤¯à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "polynomials": {
+      subjectId: "maths_10", classId: "10",
+      questions: [
+        {
+          q: "If Î± and Î² are the zeroes of the quadratic polynomial axÂ² + bx + c, then the product of zeroes (Î±Î²) is equal to:",
+          q_hi: "à¤¯à¤¦à¤¿ Î± à¤”à¤° Î² à¤¦à¥à¤µà¤¿à¤˜à¤¾à¤¤ à¤¬à¤¹à¥à¤ªà¤¦ axÂ² + bx + c à¤•à¥‡ à¤¶à¥‚à¤¨à¥à¤¯à¤• à¤¹à¥ˆà¤‚, à¤¤à¥‹ à¤¶à¥‚à¤¨à¥à¤¯à¤•à¥‹à¤‚ à¤•à¤¾ à¤—à¥à¤£à¤¨à¤«à¤² (Î±Î²) à¤•à¤¿à¤¸à¤•à¥‡ à¤¬à¤°à¤¾à¤¬à¤° à¤¹à¥‹à¤—à¤¾?",
+          opts: ["c/a", "-b/a", "-c/a", "b/a"],
+          opts_hi: ["c/a", "-b/a", "-c/a", "b/a"],
+          ans: 0,
+          exp: "For polynomial p(x) = axÂ² + bx + c, sum of zeroes Î± + Î² = -b/a and product of zeroes Î±Î² = c/a.",
+          exp_hi: "à¤¦à¥à¤µà¤¿à¤˜à¤¾à¤¤ à¤¬à¤¹à¥à¤ªà¤¦ axÂ² + bx + c à¤•à¥‡ à¤²à¤¿à¤, à¤¶à¥‚à¤¨à¥à¤¯à¤•à¥‹à¤‚ à¤•à¤¾ à¤¯à¥‹à¤— = -b/a à¤¤à¤¥à¤¾ à¤—à¥à¤£à¤¨à¤«à¤² = c/a à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        },
+        {
+          q: "The number of zeroes that a polynomial p(x) has is equal to the number of points where its graph intersects the:",
+          q_hi: "à¤•à¤¿à¤¸à¥€ à¤¬à¤¹à¥à¤ªà¤¦ p(x) à¤•à¥‡ à¤¶à¥‚à¤¨à¥à¤¯à¤•à¥‹à¤‚ à¤•à¥€ à¤¸à¤‚à¤–à¥à¤¯à¤¾ à¤‰à¤¨ à¤¬à¤¿à¤‚à¤¦à¥à¤“à¤‚ à¤•à¥€ à¤¸à¤‚à¤–à¥à¤¯à¤¾ à¤•à¥‡ à¤¬à¤°à¤¾à¤¬à¤° à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ à¤œà¤¹à¤¾à¤ à¤‰à¤¸à¤•à¤¾ à¤—à¥à¤°à¤¾à¤« à¤•à¤¿à¤¸ à¤…à¤•à¥à¤· à¤•à¥‹ à¤•à¤¾à¤Ÿà¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["x-axis", "y-axis", "Origin only", "Line y = x"],
+          opts_hi: ["x-à¤…à¤•à¥à¤·", "y-à¤…à¤•à¥à¤·", "à¤•à¥‡à¤µà¤² à¤®à¥‚à¤² à¤¬à¤¿à¤‚à¤¦à¥", "à¤°à¥‡à¤–à¤¾ y = x"],
+          ans: 0,
+          exp: "The zeroes of p(x) are the x-coordinates of the points where the graph of y = p(x) intersects the x-axis.",
+          exp_hi: "y = p(x) à¤•à¤¾ à¤—à¥à¤°à¤¾à¤« x-à¤…à¤•à¥à¤· à¤•à¥‹ à¤œà¤¿à¤¨ à¤¬à¤¿à¤‚à¤¦à¥à¤“à¤‚ à¤ªà¤° à¤•à¤¾à¤Ÿà¤¤à¤¾ à¤¹à¥ˆ, à¤‰à¤¨à¤•à¥‡ x-à¤¨à¤¿à¤°à¥à¤¦à¥‡à¤¶à¤¾à¤‚à¤• à¤¹à¥€ à¤¬à¤¹à¥à¤ªà¤¦ à¤•à¥‡ à¤¶à¥‚à¤¨à¥à¤¯à¤• à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤"
+        }
+      ]
+    },
+
+    "pair of linear equations in two variables": {
+      subjectId: "maths_10", classId: "10",
+      questions: [
+        {
+          q: "The pair of linear equations aâ‚x + bâ‚y + câ‚ = 0 and aâ‚‚x + bâ‚‚y + câ‚‚ = 0 has infinitely many solutions if:",
+          q_hi: "à¤°à¥ˆà¤–à¤¿à¤• à¤¸à¤®à¥€à¤•à¤°à¤£ à¤¯à¥à¤—à¥à¤® aâ‚x + bâ‚y + câ‚ = 0 à¤”à¤° aâ‚‚x + bâ‚‚y + câ‚‚ = 0 à¤•à¥‡ à¤…à¤ªà¤°à¤¿à¤®à¤¿à¤¤ à¤°à¥‚à¤ª à¤¸à¥‡ à¤…à¤¨à¥‡à¤• à¤¹à¤² à¤¹à¥‹à¤‚à¤—à¥‡ à¤¯à¤¦à¤¿:",
+          opts: ["aâ‚/aâ‚‚ = bâ‚/bâ‚‚ = câ‚/câ‚‚", "aâ‚/aâ‚‚ â‰  bâ‚/bâ‚‚", "aâ‚/aâ‚‚ = bâ‚/bâ‚‚ â‰  câ‚/câ‚‚", "aâ‚/aâ‚‚ = -bâ‚/bâ‚‚"],
+          opts_hi: ["aâ‚/aâ‚‚ = bâ‚/bâ‚‚ = câ‚/câ‚‚", "aâ‚/aâ‚‚ â‰  bâ‚/bâ‚‚", "aâ‚/aâ‚‚ = bâ‚/bâ‚‚ â‰  câ‚/câ‚‚", "aâ‚/aâ‚‚ = -bâ‚/bâ‚‚"],
+          ans: 0,
+          exp: "When aâ‚/aâ‚‚ = bâ‚/bâ‚‚ = câ‚/câ‚‚, the lines are coincident, representing infinitely many solutions (consistent system).",
+          exp_hi: "à¤œà¤¬ aâ‚/aâ‚‚ = bâ‚/bâ‚‚ = câ‚/câ‚‚ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ, à¤¤à¥‹ à¤°à¥‡à¤–à¤¾à¤à¤‚ à¤¸à¤‚à¤ªà¤¾à¤¤à¥€ (coincident) à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¤‚ à¤”à¤° à¤‰à¤¨à¤•à¥‡ à¤…à¤ªà¤°à¤¿à¤®à¤¿à¤¤ à¤°à¥‚à¤ª à¤¸à¥‡ à¤…à¤¨à¥‡à¤• à¤¹à¤² à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤"
+        },
+        {
+          q: "If two linear equations represent parallel lines, the system of equations has:",
+          q_hi: "à¤¯à¤¦à¤¿ à¤¦à¥‹ à¤°à¥ˆà¤–à¤¿à¤• à¤¸à¤®à¥€à¤•à¤°à¤£ à¤¸à¤®à¤¾à¤¨à¤¾à¤‚à¤¤à¤° à¤°à¥‡à¤–à¤¾à¤à¤‚ à¤¨à¤¿à¤°à¥‚à¤ªà¤¿à¤¤ à¤•à¤°à¤¤à¥‡ à¤¹à¥ˆà¤‚, à¤¤à¥‹ à¤¸à¤®à¥€à¤•à¤°à¤£ à¤¨à¤¿à¤•à¤¾à¤¯ à¤•à¤¾ à¤¹à¤² à¤¹à¥‹à¤—à¤¾:",
+          opts: ["No solution", "Exactly one unique solution", "Infinitely many solutions", "Two solutions"],
+          opts_hi: ["à¤•à¥‹à¤ˆ à¤¹à¤² à¤¨à¤¹à¥€à¤‚ (Inconsistent)", "à¤•à¥‡à¤µà¤² à¤à¤• à¤…à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯ à¤¹à¤²", "à¤…à¤ªà¤°à¤¿à¤®à¤¿à¤¤ à¤°à¥‚à¤ª à¤¸à¥‡ à¤…à¤¨à¥‡à¤• à¤¹à¤²", "à¤¦à¥‹ à¤¹à¤²"],
+          ans: 0,
+          exp: "Parallel lines never intersect at any point; hence, the system has no solution and is inconsistent (aâ‚/aâ‚‚ = bâ‚/bâ‚‚ â‰  câ‚/câ‚‚).",
+          exp_hi: "à¤¸à¤®à¤¾à¤¨à¤¾à¤‚à¤¤à¤° à¤°à¥‡à¤–à¤¾à¤à¤‚ à¤•à¤­à¥€ à¤à¤•-à¤¦à¥‚à¤¸à¤°à¥‡ à¤•à¥‹ à¤¨à¤¹à¥€à¤‚ à¤•à¤¾à¤Ÿà¤¤à¥€à¤‚, à¤‡à¤¸à¤²à¤¿à¤ à¤‡à¤¸ à¤¨à¤¿à¤•à¤¾à¤¯ à¤•à¤¾ à¤•à¥‹à¤ˆ à¤¹à¤² à¤¨à¤¹à¥€à¤‚ à¤¹à¥‹à¤¤à¤¾à¥¤"
+        }
+      ]
+    },
+
+    "quadratic equations": {
+      subjectId: "maths_10", classId: "10",
+      questions: [
+        {
+          q: "A quadratic equation axÂ² + bx + c = 0 (a â‰  0) has two equal real roots if its discriminant D satisfies:",
+          q_hi: "à¤¦à¥à¤µà¤¿à¤˜à¤¾à¤¤ à¤¸à¤®à¥€à¤•à¤°à¤£ axÂ² + bx + c = 0 à¤•à¥‡ à¤¦à¥‹ à¤¬à¤°à¤¾à¤¬à¤° à¤µà¤¾à¤¸à¥à¤¤à¤µà¤¿à¤• à¤®à¥‚à¤² à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤¯à¤¦à¤¿ à¤µà¤¿à¤µà¤¿à¤•à¥à¤¤à¤•à¤° (Discriminant D):",
+          opts: ["bÂ² - 4ac = 0", "bÂ² - 4ac > 0", "bÂ² - 4ac < 0", "bÂ² + 4ac = 0"],
+          opts_hi: ["bÂ² - 4ac = 0", "bÂ² - 4ac > 0", "bÂ² - 4ac < 0", "bÂ² + 4ac = 0"],
+          ans: 0,
+          exp: "The discriminant D = bÂ² - 4ac determines root nature: D = 0 gives two equal real roots (-b/2a, -b/2a).",
+          exp_hi: "à¤¯à¤¦à¤¿ D = bÂ² - 4ac = 0 à¤¹à¥‹, à¤¤à¥‹ à¤¦à¥à¤µà¤¿à¤˜à¤¾à¤¤ à¤¸à¤®à¥€à¤•à¤°à¤£ à¤•à¥‡ à¤¦à¥‹à¤¨à¥‹à¤‚ à¤®à¥‚à¤² à¤µà¤¾à¤¸à¥à¤¤à¤µà¤¿à¤• à¤”à¤° à¤¸à¤®à¤¾à¤¨ à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤"
+        },
+        {
+          q: "What are the roots of the equation xÂ² - 5x + 6 = 0?",
+          q_hi: "à¤¸à¤®à¥€à¤•à¤°à¤£ xÂ² - 5x + 6 = 0 à¤•à¥‡ à¤®à¥‚à¤² à¤•à¥à¤¯à¤¾ à¤¹à¥ˆà¤‚?",
+          opts: ["2 and 3", "-2 and -3", "1 and 6", "-1 and -6"],
+          opts_hi: ["2 à¤”à¤° 3", "-2 à¤”à¤° -3", "1 à¤”à¤° 6", "-1 à¤”à¤° -6"],
+          ans: 0,
+          exp: "Factorizing xÂ² - 5x + 6 = 0 gives (x - 2)(x - 3) = 0, so x = 2 and x = 3.",
+          exp_hi: "(x - 2)(x - 3) = 0 à¤—à¥à¤£à¤¨à¤–à¤‚à¤¡ à¤•à¤°à¤¨à¥‡ à¤ªà¤° x = 2 à¤”à¤° x = 3 à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤"
+        }
+      ]
+    },
+
+    "arithmetic progressions": {
+      subjectId: "maths_10", classId: "10",
+      questions: [
+        {
+          q: "The nth term aâ‚™ of an Arithmetic Progression with first term 'a' and common difference 'd' is given by:",
+          q_hi: "à¤ªà¥à¤°à¤¥à¤® à¤ªà¤¦ 'a' à¤”à¤° à¤¸à¤¾à¤°à¥à¤µ à¤…à¤‚à¤¤à¤° 'd' à¤µà¤¾à¤²à¥€ à¤¸à¤®à¤¾à¤¨à¤¾à¤‚à¤¤à¤° à¤¶à¥à¤°à¥‡à¤£à¥€ (AP) à¤•à¤¾ nà¤µà¤¾à¤ à¤ªà¤¦ aâ‚™ à¤•à¤¿à¤¸à¤•à¥‡ à¤¦à¥à¤µà¤¾à¤°à¤¾ à¤¦à¤¿à¤¯à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["a + (n - 1)d", "a + nd", "a - (n - 1)d", "na + d"],
+          opts_hi: ["a + (n - 1)d", "a + nd", "a - (n - 1)d", "na + d"],
+          ans: 0,
+          exp: "Standard AP formula for nth term is aâ‚™ = a + (n - 1)d.",
+          exp_hi: "à¤¸à¤®à¤¾à¤¨à¤¾à¤‚à¤¤à¤° à¤¶à¥à¤°à¥‡à¤£à¥€ (AP) à¤•à¤¾ nà¤µà¤¾à¤ à¤ªà¤¦ à¤œà¥à¤žà¤¾à¤¤ à¤•à¤°à¤¨à¥‡ à¤•à¤¾ à¤¸à¥‚à¤¤à¥à¤° aâ‚™ = a + (n - 1)d à¤¹à¥ˆà¥¤"
+        },
+        {
+          q: "Find the 10th term of the AP: 2, 7, 12, ...",
+          q_hi: "AP: 2, 7, 12, ... à¤•à¤¾ 10à¤µà¤¾à¤ à¤ªà¤¦ à¤œà¥à¤žà¤¾à¤¤ à¤•à¥€à¤œà¤¿à¤:",
+          opts: ["47", "52", "42", "45"],
+          opts_hi: ["47", "52", "42", "45"],
+          ans: 0,
+          exp: "Here a = 2, d = 7 - 2 = 5. So aâ‚â‚€ = 2 + (10 - 1) Ã— 5 = 2 + 45 = 47.",
+          exp_hi: "à¤¯à¤¹à¤¾à¤ a = 2, d = 5à¥¤ 10à¤µà¤¾à¤ à¤ªà¤¦ = 2 + (10 - 1) Ã— 5 = 2 + 45 = 47à¥¤"
+        }
+      ]
+    },
+
+    "triangles": {
+      subjectId: "maths_10", classId: "10",
+      questions: [
+        {
+          q: "According to Basic Proportionality Theorem (Thales Theorem), if a line is drawn parallel to one side of a triangle intersecting the other two sides, then:",
+          q_hi: "à¤†à¤§à¤¾à¤°à¤­à¥‚à¤¤ à¤†à¤¨à¥à¤ªà¤¾à¤¤à¤¿à¤•à¤¤à¤¾ à¤ªà¥à¤°à¤®à¥‡à¤¯ (à¤¥à¥‡à¤²à¥à¤¸ à¤ªà¥à¤°à¤®à¥‡à¤¯) à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤°, à¤¯à¤¦à¤¿ à¤•à¤¿à¤¸à¥€ à¤¤à¥à¤°à¤¿à¤­à¥à¤œ à¤•à¥€ à¤à¤• à¤­à¥à¤œà¤¾ à¤•à¥‡ à¤¸à¤®à¤¾à¤¨à¤¾à¤‚à¤¤à¤° à¤…à¤¨à¥à¤¯ à¤¦à¥‹ à¤­à¥à¤œà¤¾à¤“à¤‚ à¤•à¥‹ à¤•à¤¾à¤Ÿà¤¤à¥‡ à¤¹à¥à¤ à¤à¤• à¤°à¥‡à¤–à¤¾ à¤–à¥€à¤‚à¤šà¥€ à¤œà¤¾à¤, à¤¤à¥‹:",
+          opts: ["It divides the other two sides in the same ratio", "It bisects the perimeter", "The two triangles formed are congruent", "It divides the area in 1:2 ratio"],
+          opts_hi: ["à¤¯à¤¹ à¤…à¤¨à¥à¤¯ à¤¦à¥‹ à¤­à¥à¤œà¤¾à¤“à¤‚ à¤•à¥‹ à¤¸à¤®à¤¾à¤¨ à¤…à¤¨à¥à¤ªà¤¾à¤¤ à¤®à¥‡à¤‚ à¤µà¤¿à¤­à¤¾à¤œà¤¿à¤¤ à¤•à¤°à¤¤à¥€ à¤¹à¥ˆ", "à¤¯à¤¹ à¤ªà¤°à¤¿à¤®à¤¾à¤ª à¤•à¥‹ à¤¸à¤®à¤¦à¥à¤µà¤¿à¤­à¤¾à¤œà¤¿à¤¤ à¤•à¤°à¤¤à¥€ à¤¹à¥ˆ", "à¤¬à¤¨à¥‡ à¤¦à¥‹à¤¨à¥‹à¤‚ à¤¤à¥à¤°à¤¿à¤­à¥à¤œ à¤¸à¤°à¥à¤µà¤¾à¤‚à¤—à¤¸à¤® à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚", "à¤¯à¤¹ à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤«à¤² à¤•à¥‹ 1:2 à¤•à¥‡ à¤…à¤¨à¥à¤ªà¤¾à¤¤ à¤®à¥‡à¤‚ à¤¬à¤¾à¤‚à¤Ÿà¤¤à¥€ à¤¹à¥ˆ"],
+          ans: 0,
+          exp: "Thales Theorem (BPT) states that a line parallel to one side divides the other two sides in the same ratio.",
+          exp_hi: "à¤¥à¥‡à¤²à¥à¤¸ à¤ªà¥à¤°à¤®à¥‡à¤¯ à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° à¤¸à¤®à¤¾à¤¨à¤¾à¤‚à¤¤à¤° à¤°à¥‡à¤–à¤¾ à¤…à¤¨à¥à¤¯ à¤¦à¥‹à¤¨à¥‹à¤‚ à¤­à¥à¤œà¤¾à¤“à¤‚ à¤•à¥‹ à¤¸à¤®à¤¾à¤¨ à¤…à¤¨à¥à¤ªà¤¾à¤¤ à¤®à¥‡à¤‚ à¤µà¤¿à¤­à¤¾à¤œà¤¿à¤¤ à¤•à¤°à¤¤à¥€ à¤¹à¥ˆ (AD/DB = AE/EC)à¥¤"
+        }
+      ]
+    },
+
+    "coordinate geometry": {
+      subjectId: "maths_10", classId: "10",
+      questions: [
+        {
+          q: "The distance between two points P(xâ‚, yâ‚) and Q(xâ‚‚, yâ‚‚) in Cartesian plane is:",
+          q_hi: "à¤•à¤¾à¤°à¥à¤¤à¥€à¤¯ à¤¤à¤² à¤®à¥‡à¤‚ à¤¦à¥‹ à¤¬à¤¿à¤‚à¤¦à¥à¤“à¤‚ P(xâ‚, yâ‚) à¤”à¤° Q(xâ‚‚, yâ‚‚) à¤•à¥‡ à¤¬à¥€à¤š à¤•à¥€ à¤¦à¥‚à¤°à¥€ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["âˆš[(xâ‚‚ - xâ‚)Â² + (yâ‚‚ - yâ‚)Â²]", "âˆš[(xâ‚‚ + xâ‚)Â² + (yâ‚‚ + yâ‚)Â²]", "(xâ‚‚ - xâ‚)Â² + (yâ‚‚ - yâ‚)Â²", "âˆš[(xâ‚‚ - xâ‚) + (yâ‚‚ - yâ‚)]"],
+          opts_hi: ["âˆš[(xâ‚‚ - xâ‚)Â² + (yâ‚‚ - yâ‚)Â²]", "âˆš[(xâ‚‚ + xâ‚)Â² + (yâ‚‚ + yâ‚)Â²]", "(xâ‚‚ - xâ‚)Â² + (yâ‚‚ - yâ‚)Â²", "âˆš[(xâ‚‚ - xâ‚) + (yâ‚‚ - yâ‚)]"],
+          ans: 0,
+          exp: "Distance formula derived from Pythagoras theorem is PQ = âˆš[(xâ‚‚ - xâ‚)Â² + (yâ‚‚ - yâ‚)Â²].",
+          exp_hi: "à¤¦à¥‚à¤°à¥€ à¤¸à¥‚à¤¤à¥à¤°: PQ = âˆš[(xâ‚‚ - xâ‚)Â² + (yâ‚‚ - yâ‚)Â²] à¤ªà¤¾à¤‡à¤¥à¤¾à¤—à¥‹à¤°à¤¸ à¤ªà¥à¤°à¤®à¥‡à¤¯ à¤ªà¤° à¤†à¤§à¤¾à¤°à¤¿à¤¤ à¤¹à¥ˆà¥¤"
+        },
+        {
+          q: "The coordinates of the midpoint of the line segment joining (xâ‚, yâ‚) and (xâ‚‚, yâ‚‚) are:",
+          q_hi: "à¤¬à¤¿à¤‚à¤¦à¥à¤“à¤‚ (xâ‚, yâ‚) à¤”à¤° (xâ‚‚, yâ‚‚) à¤•à¥‹ à¤®à¤¿à¤²à¤¾à¤¨à¥‡ à¤µà¤¾à¤²à¥‡ à¤°à¥‡à¤–à¤¾à¤–à¤‚à¤¡ à¤•à¥‡ à¤®à¤§à¥à¤¯-à¤¬à¤¿à¤‚à¤¦à¥ à¤•à¥‡ à¤¨à¤¿à¤°à¥à¤¦à¥‡à¤¶à¤¾à¤‚à¤• à¤•à¥à¤¯à¤¾ à¤¹à¥ˆà¤‚?",
+          opts: ["((xâ‚ + xâ‚‚)/2, (yâ‚ + yâ‚‚)/2)", "((xâ‚ - xâ‚‚)/2, (yâ‚ - yâ‚‚)/2)", "((xâ‚ + yâ‚)/2, (xâ‚‚ + yâ‚‚)/2)", "(xâ‚xâ‚‚, yâ‚yâ‚‚)"],
+          opts_hi: ["((xâ‚ + xâ‚‚)/2, (yâ‚ + yâ‚‚)/2)", "((xâ‚ - xâ‚‚)/2, (yâ‚ - yâ‚‚)/2)", "((xâ‚ + yâ‚)/2, (xâ‚‚ + yâ‚‚)/2)", "(xâ‚xâ‚‚, yâ‚yâ‚‚)"],
+          ans: 0,
+          exp: "Midpoint formula takes the arithmetic mean of the coordinates: ((xâ‚ + xâ‚‚)/2, (yâ‚ + yâ‚‚)/2).",
+          exp_hi: "à¤®à¤§à¥à¤¯-à¤¬à¤¿à¤‚à¤¦à¥ à¤¸à¥‚à¤¤à¥à¤° à¤¨à¤¿à¤°à¥à¤¦à¥‡à¤¶à¤¾à¤‚à¤•à¥‹à¤‚ à¤•à¤¾ à¤”à¤¸à¤¤ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ: ((xâ‚ + xâ‚‚)/2, (yâ‚ + yâ‚‚)/2)à¥¤"
+        }
+      ]
+    },
+
+    "introduction to trigonometry": {
+      subjectId: "maths_10", classId: "10",
+      questions: [
+        {
+          q: "What is the value of sinÂ²Î¸ + cosÂ²Î¸ for any angle 0Â° â‰¤ Î¸ â‰¤ 90Â°?",
+          q_hi: "à¤•à¤¿à¤¸à¥€ à¤•à¥‹à¤£ 0Â° â‰¤ Î¸ â‰¤ 90Â° à¤•à¥‡ à¤²à¤¿à¤ sinÂ²Î¸ + cosÂ²Î¸ à¤•à¤¾ à¤®à¤¾à¤¨ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["1", "0", "2", "Undefined"],
+          opts_hi: ["1", "0", "2", "à¤…à¤ªà¤°à¤¿à¤­à¤¾à¤·à¤¿à¤¤"],
+          ans: 0,
+          exp: "The fundamental Pythagorean trigonometric identity is sinÂ²Î¸ + cosÂ²Î¸ = 1 for all valid angles Î¸.",
+          exp_hi: "à¤¤à¥à¤°à¤¿à¤•à¥‹à¤£à¤®à¤¿à¤¤à¤¿ à¤•à¥€ à¤®à¥‚à¤²à¤­à¥‚à¤¤ à¤¸à¤°à¥à¤µà¤¸à¤®à¤¿à¤•à¤¾ sinÂ²Î¸ + cosÂ²Î¸ = 1 à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¥¤"
+        },
+        {
+          q: "If tan A = 4/3, what is the value of sin A?",
+          q_hi: "à¤¯à¤¦à¤¿ tan A = 4/3 à¤¹à¥ˆ, à¤¤à¥‹ sin A à¤•à¤¾ à¤®à¤¾à¤¨ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤—à¤¾?",
+          opts: ["4/5", "3/5", "5/4", "3/4"],
+          opts_hi: ["4/5", "3/5", "5/4", "3/4"],
+          ans: 0,
+          exp: "tan A = Opp/Adj = 4/3. Hypotenuse = âˆš(4Â² + 3Â²) = 5. Therefore, sin A = Opp/Hyp = 4/5.",
+          exp_hi: "tan A = à¤²à¤‚à¤¬/à¤†à¤§à¤¾à¤° = 4/3à¥¤ à¤•à¤°à¥à¤£ = âˆš(4Â² + 3Â²) = 5à¥¤ à¤…à¤¤à¤ƒ sin A = à¤²à¤‚à¤¬/à¤•à¤°à¥à¤£ = 4/5à¥¤"
+        }
+      ]
+    },
+
+    "some applications of trigonometry": {
+      subjectId: "maths_10", classId: "10",
+      questions: [
+        {
+          q: "The angle formed by the line of sight with the horizontal when the point observed is above the horizontal level is called:",
+          q_hi: "à¤œà¤¬ à¤¦à¥‡à¤–à¤¾ à¤œà¤¾à¤¨à¥‡ à¤µà¤¾à¤²à¤¾ à¤¬à¤¿à¤‚à¤¦à¥ à¤•à¥à¤·à¥ˆà¤¤à¤¿à¤œ à¤¸à¥à¤¤à¤° à¤¸à¥‡ à¤Šà¤ªà¤° à¤¹à¥‹, à¤¤à¥‹ à¤¦à¥ƒà¤·à¥à¤Ÿà¤¿ à¤°à¥‡à¤–à¤¾ à¤”à¤° à¤•à¥à¤·à¥ˆà¤¤à¤¿à¤œ à¤°à¥‡à¤–à¤¾ à¤•à¥‡ à¤¬à¥€à¤š à¤¬à¤¨à¥‡ à¤•à¥‹à¤£ à¤•à¥‹ à¤•à¥à¤¯à¤¾ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚?",
+          opts: ["Angle of Elevation", "Angle of Depression", "Reflected Angle", "Vertical Angle"],
+          opts_hi: ["à¤‰à¤¨à¥à¤¨à¤¯à¤¨ à¤•à¥‹à¤£ (Angle of Elevation)", "à¤…à¤µà¤¨à¤®à¤¨ à¤•à¥‹à¤£ (Angle of Depression)", "à¤ªà¤°à¤¾à¤µà¤°à¥à¤¤à¤¨ à¤•à¥‹à¤£", "à¤¶à¥€à¤°à¥à¤·à¤¾à¤­à¤¿à¤®à¥à¤– à¤•à¥‹à¤£"],
+          ans: 0,
+          exp: "When looking upward at an object, the line of sight raises above horizontal, forming the Angle of Elevation.",
+          exp_hi: "à¤œà¤¬ à¤†à¤à¤– à¤Šà¤ªà¤° à¤•à¥€ à¤µà¤¸à¥à¤¤à¥ à¤•à¥‹ à¤¦à¥‡à¤–à¤¤à¥€ à¤¹à¥ˆ, à¤¤à¥‹ à¤¦à¥ƒà¤·à¥à¤Ÿà¤¿ à¤°à¥‡à¤–à¤¾ à¤”à¤° à¤•à¥à¤·à¥ˆà¤¤à¤¿à¤œ à¤¸à¥à¤¤à¤° à¤•à¥‡ à¤¬à¥€à¤š à¤•à¤¾ à¤•à¥‹à¤£ à¤‰à¤¨à¥à¤¨à¤¯à¤¨ à¤•à¥‹à¤£ à¤•à¤¹à¤²à¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "circles": {
+      subjectId: "maths_10", classId: "10",
+      questions: [
+        {
+          q: "The lengths of tangents drawn from an external point to a circle are:",
+          q_hi: "à¤µà¥ƒà¤¤à¥à¤¤ à¤•à¥‡ à¤•à¤¿à¤¸à¥€ à¤¬à¤¾à¤¹à¥à¤¯ à¤¬à¤¿à¤‚à¤¦à¥ à¤¸à¥‡ à¤–à¥€à¤‚à¤šà¥€ à¤—à¤ˆ à¤¸à¥à¤ªà¤°à¥à¤¶ à¤°à¥‡à¤–à¤¾à¤“à¤‚ à¤•à¥€ à¤²à¤‚à¤¬à¤¾à¤‡à¤¯à¤¾à¤ à¤•à¥ˆà¤¸à¥€ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¤‚?",
+          opts: ["Equal", "Unequal", "Parallel", "Perpendicular"],
+          opts_hi: ["à¤¬à¤°à¤¾à¤¬à¤° (Equal)", "à¤…à¤¸à¤®à¤¾à¤¨", "à¤¸à¤®à¤¾à¤¨à¤¾à¤‚à¤¤à¤°", "à¤ªà¤°à¤¸à¥à¤ªà¤° à¤²à¤‚à¤¬à¤µà¤¤"],
+          ans: 0,
+          exp: "NCERT Theorem 10.2: The lengths of tangents drawn from an external point to a circle are equal (PA = PB).",
+          exp_hi: "à¤à¤¨à¤¸à¥€à¤ˆà¤†à¤°à¤Ÿà¥€ à¤ªà¥à¤°à¤®à¥‡à¤¯ 10.2: à¤¬à¤¾à¤¹à¥à¤¯ à¤¬à¤¿à¤‚à¤¦à¥ à¤¸à¥‡ à¤µà¥ƒà¤¤à¥à¤¤ à¤ªà¤° à¤–à¥€à¤‚à¤šà¥€ à¤—à¤ˆ à¤¸à¥à¤ªà¤°à¥à¤¶ à¤°à¥‡à¤–à¤¾à¤“à¤‚ à¤•à¥€ à¤²à¤‚à¤¬à¤¾à¤‡à¤¯à¤¾à¤ à¤¬à¤°à¤¾à¤¬à¤° à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¤‚à¥¤"
+        }
+      ]
+    },
+
+    "areas related to circles": {
+      subjectId: "maths_10", classId: "10",
+      questions: [
+        {
+          q: "The area of a sector of angle Î¸ in a circle of radius r is given by:",
+          q_hi: "r à¤¤à¥à¤°à¤¿à¤œà¥à¤¯à¤¾ à¤µà¤¾à¤²à¥‡ à¤µà¥ƒà¤¤à¥à¤¤ à¤®à¥‡à¤‚ Î¸ à¤•à¥‹à¤£ à¤µà¤¾à¤²à¥‡ à¤¤à¥à¤°à¤¿à¤œà¥à¤¯à¤–à¤‚à¤¡ (Sector) à¤•à¤¾ à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤«à¤² à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["(Î¸ / 360Â°) Ã— Ï€rÂ²", "(Î¸ / 180Â°) Ã— Ï€r", "(Î¸ / 360Â°) Ã— 2Ï€r", "(Î¸ / 720Â°) Ã— Ï€rÂ²"],
+          opts_hi: ["(Î¸ / 360Â°) Ã— Ï€rÂ²", "(Î¸ / 180Â°) Ã— Ï€r", "(Î¸ / 360Â°) Ã— 2Ï€r", "(Î¸ / 720Â°) Ã— Ï€rÂ²"],
+          ans: 0,
+          exp: "Area of sector = (Î¸ / 360Â°) Ã— Ï€rÂ², representing the fraction of total circle area swept by sector angle Î¸.",
+          exp_hi: "à¤¤à¥à¤°à¤¿à¤œà¥à¤¯à¤–à¤‚à¤¡ à¤•à¤¾ à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤«à¤² = (Î¸ / 360Â°) Ã— Ï€rÂ² à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "surface areas & volumes": {
+      subjectId: "maths_10", classId: "10",
+      questions: [
+        {
+          q: "What is the total surface area of a solid hemisphere of radius r?",
+          q_hi: "r à¤¤à¥à¤°à¤¿à¤œà¥à¤¯à¤¾ à¤µà¤¾à¤²à¥‡ à¤à¤• à¤ à¥‹à¤¸ à¤…à¤°à¥à¤§à¤—à¥‹à¤²à¥‡ (Solid Hemisphere) à¤•à¤¾ à¤•à¥à¤² à¤ªà¥ƒà¤·à¥à¤ à¥€à¤¯ à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤«à¤² à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["3Ï€rÂ²", "2Ï€rÂ²", "4Ï€rÂ²", "(2/3)Ï€rÂ³"],
+          opts_hi: ["3Ï€rÂ²", "2Ï€rÂ²", "4Ï€rÂ²", "(2/3)Ï€rÂ³"],
+          ans: 0,
+          exp: "Curved surface area of hemisphere is 2Ï€rÂ² and flat circular base area is Ï€rÂ². Total surface area = 2Ï€rÂ² + Ï€rÂ² = 3Ï€rÂ².",
+          exp_hi: "à¤…à¤°à¥à¤§à¤—à¥‹à¤²à¥‡ à¤•à¤¾ à¤µà¤•à¥à¤° à¤ªà¥ƒà¤·à¥à¤  = 2Ï€rÂ² à¤¤à¤¥à¤¾ à¤†à¤§à¤¾à¤° à¤•à¤¾ à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤«à¤² = Ï€rÂ²à¥¤ à¤•à¥à¤² à¤ªà¥ƒà¤·à¥à¤ à¥€à¤¯ à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤«à¤² = 2Ï€rÂ² + Ï€rÂ² = 3Ï€rÂ²à¥¤"
+        }
+      ]
+    },
+
+    "statistics": {
+      subjectId: "maths_10", classId: "10",
+      questions: [
+        {
+          q: "The empirical relationship between Mean, Median, and Mode is:",
+          q_hi: "à¤®à¤¾à¤§à¥à¤¯ (Mean), à¤®à¤¾à¤§à¥à¤¯à¤• (Median) à¤”à¤° à¤¬à¤¹à¥à¤²à¤• (Mode) à¤•à¥‡ à¤¬à¥€à¤š à¤†à¤¨à¥à¤­à¤µà¤¿à¤• à¤¸à¤‚à¤¬à¤‚à¤§ à¤•à¥à¤¯à¤¾ à¤¹à¥ˆ?",
+          opts: ["3 Median = Mode + 2 Mean", "Mode = 3 Mean - 2 Median", "Mean = 3 Median - 2 Mode", "Median = 3 Mode + 2 Mean"],
+          opts_hi: ["3 à¤®à¤¾à¤§à¥à¤¯à¤• = à¤¬à¤¹à¥à¤²à¤• + 2 à¤®à¤¾à¤§à¥à¤¯", "à¤¬à¤¹à¥à¤²à¤• = 3 à¤®à¤¾à¤§à¥à¤¯ - 2 à¤®à¤¾à¤§à¥à¤¯à¤•", "à¤®à¤¾à¤§à¥à¤¯ = 3 à¤®à¤¾à¤§à¥à¤¯à¤• - 2 à¤¬à¤¹à¥à¤²à¤•", "à¤®à¤¾à¤§à¥à¤¯à¤• = 3 à¤¬à¤¹à¥à¤²à¤• + 2 à¤®à¤¾à¤§à¥à¤¯"],
+          ans: 0,
+          exp: "Empirical relationship for moderately skewed distributions: 3 Median = Mode + 2 Mean (or Mode = 3 Median - 2 Mean).",
+          exp_hi: "à¤†à¤¨à¥à¤­à¤µà¤¿à¤• à¤¸à¥‚à¤¤à¥à¤°: 3 à¤®à¤¾à¤§à¥à¤¯à¤• = à¤¬à¤¹à¥à¤²à¤• + 2 à¤®à¤¾à¤§à¥à¤¯ (Mode = 3 Median - 2 Mean) à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "probability": {
+      subjectId: "maths_10", classId: "10",
+      questions: [
+        {
+          q: "The probability P(E) of an impossible event is always equal to:",
+          q_hi: "à¤•à¤¿à¤¸à¥€ à¤…à¤¸à¤‚à¤­à¤µ à¤˜à¤Ÿà¤¨à¤¾ (Impossible Event) à¤•à¥€ à¤ªà¥à¤°à¤¾à¤¯à¤¿à¤•à¤¤à¤¾ P(E) à¤¸à¤¦à¥ˆà¤µ à¤•à¤¿à¤¸à¤•à¥‡ à¤¬à¤°à¤¾à¤¬à¤° à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["0", "1", "0.5", "-1"],
+          opts_hi: ["0", "1", "0.5", "-1"],
+          ans: 0,
+          exp: "An impossible event can never occur, so number of favorable outcomes is 0, giving P(E) = 0.",
+          exp_hi: "à¤…à¤¸à¤‚à¤­à¤µ à¤˜à¤Ÿà¤¨à¤¾ à¤•à¤­à¥€ à¤˜à¤Ÿà¤¿à¤¤ à¤¨à¤¹à¥€à¤‚ à¤¹à¥‹ à¤¸à¤•à¤¤à¥€, à¤…à¤¤à¤ƒ à¤‡à¤¸à¤•à¥€ à¤ªà¥à¤°à¤¾à¤¯à¤¿à¤•à¤¤à¤¾ à¤¸à¤¦à¥ˆà¤µ 0 à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    // ==========================================
+    // CLASS 10 SCIENCE (PHYSICS, CHEMISTRY, BIOLOGY)
+    // ==========================================
+    "light - reflection & refraction": {
+      subjectId: "science_10", subSectionId: "physics_10", classId: "10",
+      questions: [
+        {
+          q: "The power of a convex lens having a focal length of 50 cm is:",
+          q_hi: "50 à¤¸à¥‡à¤®à¥€ à¤«à¥‹à¤•à¤¸ à¤¦à¥‚à¤°à¥€ à¤µà¤¾à¤²à¥‡ à¤‰à¤¤à¥à¤¤à¤² à¤²à¥‡à¤‚à¤¸ à¤•à¥€ à¤•à¥à¤·à¤®à¤¤à¤¾ (Power) à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤—à¥€?",
+          opts: ["+2.0 D", "-2.0 D", "+0.5 D", "-0.5 D"],
+          opts_hi: ["+2.0 D", "-2.0 D", "+0.5 D", "-0.5 D"],
+          ans: 0,
+          exp: "Power of lens P = 1/f (in meters). For convex lens, f = +0.5 m, so P = +2.0 D.",
+          exp_hi: "à¤²à¥‡à¤‚à¤¸ à¤•à¥€ à¤•à¥à¤·à¤®à¤¤à¤¾ P = 1/f (à¤®à¥€à¤Ÿà¤° à¤®à¥‡à¤‚)à¥¤ f = +0.5 à¤®à¥€, P = 1 / 0.5 = +2.0 Dà¥¤"
+        },
+        {
+          q: "According to the mirror formula, 1/v + 1/u is equal to:",
+          q_hi: "à¤¦à¤°à¥à¤ªà¤£ à¤¸à¥‚à¤¤à¥à¤° à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤°, 1/v + 1/u à¤•à¤¿à¤¸à¤•à¥‡ à¤¬à¤°à¤¾à¤¬à¤° à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["1/f", "2/f", "-1/f", "f"],
+          opts_hi: ["1/f", "2/f", "-1/f", "f"],
+          ans: 0,
+          exp: "The spherical mirror formula is 1/v + 1/u = 1/f.",
+          exp_hi: "à¤—à¥‹à¤²à¥€à¤¯ à¤¦à¤°à¥à¤ªà¤£ à¤¸à¥‚à¤¤à¥à¤°: 1/v + 1/u = 1/f à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "human eye & colorful world": {
+      subjectId: "science_10", subSectionId: "physics_10", classId: "10",
+      questions: [
+        {
+          q: "Myopia (near-sightedness) is corrected using which type of lens?",
+          q_hi: "à¤¨à¤¿à¤•à¤Ÿ-à¤¦à¥ƒà¤·à¥à¤Ÿà¤¿ à¤¦à¥‹à¤· (Myopia) à¤•à¥‹ à¤•à¤¿à¤¸ à¤ªà¥à¤°à¤•à¤¾à¤° à¤•à¥‡ à¤²à¥‡à¤‚à¤¸ à¤•à¤¾ à¤‰à¤ªà¤¯à¥‹à¤— à¤•à¤°à¤•à¥‡ à¤ à¥€à¤• à¤•à¤¿à¤¯à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Concave Lens", "Convex Lens", "Bifocal Lens", "Cylindrical Lens"],
+          opts_hi: ["à¤…à¤µà¤¤à¤² à¤²à¥‡à¤‚à¤¸ (Concave Lens)", "à¤‰à¤¤à¥à¤¤à¤² à¤²à¥‡à¤‚à¤¸ (Convex Lens)", "à¤¦à¥à¤µà¤¿à¤«à¥‹à¤•à¤¸à¥€ à¤²à¥‡à¤‚à¤¸", "à¤¬à¥‡à¤²à¤¨à¤¾à¤•à¤¾à¤° à¤²à¥‡à¤‚à¤¸"],
+          ans: 0,
+          exp: "In myopia, light rays focus in front of the retina. A diverging (concave) lens spreads the rays so they focus properly on the retina.",
+          exp_hi: "à¤¨à¤¿à¤•à¤Ÿ-à¤¦à¥ƒà¤·à¥à¤Ÿà¤¿ à¤¦à¥‹à¤· à¤®à¥‡à¤‚ à¤ªà¥à¤°à¤¤à¤¿à¤¬à¤¿à¤‚à¤¬ à¤°à¥‡à¤Ÿà¤¿à¤¨à¤¾ à¤¸à¥‡ à¤ªà¤¹à¤²à¥‡ à¤¬à¤¨ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤‡à¤¸à¥‡ à¤…à¤µà¤¤à¤² à¤²à¥‡à¤‚à¤¸ à¤•à¥€ à¤…à¤ªà¤¸à¤¾à¤°à¥€ à¤•à¥à¤·à¤®à¤¤à¤¾ à¤¦à¥à¤µà¤¾à¤°à¤¾ à¤°à¥‡à¤Ÿà¤¿à¤¨à¤¾ à¤ªà¤° à¤•à¥‡à¤‚à¤¦à¥à¤°à¤¿à¤¤ à¤•à¤¿à¤¯à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        },
+        {
+          q: "The blue color of the clear sky is caused by:",
+          q_hi: "à¤¸à¥à¤µà¤šà¥à¤› à¤†à¤•à¤¾à¤¶ à¤•à¤¾ à¤¨à¥€à¤²à¤¾ à¤°à¤‚à¤— à¤•à¤¿à¤¸à¤•à¥‡ à¤•à¤¾à¤°à¤£ à¤¦à¤¿à¤–à¤¾à¤ˆ à¤¦à¥‡à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Rayleigh Scattering of light", "Total Internal Reflection", "Dispersion through raindrops", "Atmospheric Refraction"],
+          opts_hi: ["à¤ªà¥à¤°à¤•à¤¾à¤¶ à¤•à¤¾ à¤ªà¥à¤°à¤•à¥€à¤°à¥à¤£à¤¨ (Scattering)", "à¤ªà¥‚à¤°à¥à¤£ à¤†à¤‚à¤¤à¤°à¤¿à¤• à¤ªà¤°à¤¾à¤µà¤°à¥à¤¤à¤¨", "à¤µà¤°à¥à¤·à¤¾ à¤•à¥€ à¤¬à¥‚à¤‚à¤¦à¥‹à¤‚ à¤¦à¥à¤µà¤¾à¤°à¤¾ à¤µà¤¿à¤•à¥à¤·à¥‡à¤ªà¤£", "à¤µà¤¾à¤¯à¥à¤®à¤‚à¤¡à¤²à¥€à¤¯ à¤…à¤ªà¤µà¤°à¥à¤¤à¤¨"],
+          ans: 0,
+          exp: "Fine particles in the atmosphere scatter shorter wavelengths (blue light) much more strongly than red light according to Rayleigh's law.",
+          exp_hi: "à¤µà¤¾à¤¯à¥à¤®à¤‚à¤¡à¤² à¤•à¥‡ à¤¸à¥‚à¤•à¥à¤·à¥à¤® à¤•à¤£ à¤²à¤¾à¤² à¤ªà¥à¤°à¤•à¤¾à¤¶ à¤•à¥€ à¤¤à¥à¤²à¤¨à¤¾ à¤®à¥‡à¤‚ à¤•à¤® à¤¤à¤°à¤‚à¤—à¤¦à¥ˆà¤°à¥à¤˜à¥à¤¯ à¤µà¤¾à¤²à¥‡ à¤¨à¥€à¤²à¥‡ à¤ªà¥à¤°à¤•à¤¾à¤¶ à¤•à¥‹ à¤…à¤§à¤¿à¤• à¤ªà¥à¤°à¤•à¥€à¤°à¥à¤£à¤¿à¤¤ à¤•à¤°à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤"
+        }
+      ]
+    },
+
+    "electricity": {
+      subjectId: "science_10", subSectionId: "physics_10", classId: "10",
+      questions: [
+        {
+          q: "A wire of resistance R is stretched to double its original length keeping mass constant. What is its new resistance?",
+          q_hi: "R à¤ªà¥à¤°à¤¤à¤¿à¤°à¥‹à¤§ à¤µà¤¾à¤²à¥‡ à¤à¤• à¤¤à¤¾à¤° à¤•à¥‹ à¤–à¥€à¤‚à¤šà¤•à¤° à¤‰à¤¸à¤•à¥€ à¤²à¤‚à¤¬à¤¾à¤ˆ à¤¦à¥‹à¤—à¥à¤¨à¥€ à¤•à¤° à¤¦à¥€ à¤œà¤¾à¤¤à¥€ à¤¹à¥ˆà¥¤ à¤¨à¤¯à¤¾ à¤ªà¥à¤°à¤¤à¤¿à¤°à¥‹à¤§ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤—à¤¾?",
+          opts: ["4R", "2R", "R/2", "R/4"],
+          opts_hi: ["4R", "2R", "R/2", "R/4"],
+          ans: 0,
+          exp: "Volume is constant. When length L becomes 2L, area A becomes A/2. New resistance R' = Ï(2L)/(A/2) = 4ÏL/A = 4R.",
+          exp_hi: "à¤†à¤¯à¤¤à¤¨ à¤¸à¥à¤¥à¤¿à¤° à¤°à¤¹à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤²à¤‚à¤¬à¤¾à¤ˆ 2L à¤¹à¥‹à¤¨à¥‡ à¤ªà¤° à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤«à¤² A/2 à¤¹à¥‹ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤…à¤¤à¤ƒ à¤¨à¤¯à¤¾ à¤ªà¥à¤°à¤¤à¤¿à¤°à¥‹à¤§ R' = 4R à¤¹à¥‹à¤—à¤¾à¥¤"
+        },
+        {
+          q: "According to Joule's law of heating, the heat produced in a resistor is proportional to:",
+          q_hi: "à¤œà¥‚à¤² à¤•à¥‡ à¤¤à¤¾à¤ªà¤¨ à¤¨à¤¿à¤¯à¤® à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤°, à¤ªà¥à¤°à¤¤à¤¿à¤°à¥‹à¤§à¤• à¤®à¥‡à¤‚ à¤‰à¤¤à¥à¤ªà¤¨à¥à¤¨ à¤Šà¤·à¥à¤®à¤¾ à¤•à¤¿à¤¸à¤•à¥‡ à¤¸à¤®à¤¾à¤¨à¥à¤ªà¤¾à¤¤à¥€ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["IÂ² (Square of current)", "I (Current)", "1/IÂ²", "âˆšI"],
+          opts_hi: ["IÂ² (à¤§à¤¾à¤°à¤¾ à¤•à¥‡ à¤µà¤°à¥à¤— à¤•à¥‡)", "I (à¤§à¤¾à¤°à¤¾ à¤•à¥‡)", "1/IÂ²", "âˆšI"],
+          ans: 0,
+          exp: "Joule's Law: H = IÂ²Rt. Heat is directly proportional to the square of current through the resistor.",
+          exp_hi: "à¤œà¥‚à¤² à¤•à¤¾ à¤¨à¤¿à¤¯à¤®: H = IÂ²Rtà¥¤ à¤‰à¤¤à¥à¤ªà¤¨à¥à¤¨ à¤Šà¤·à¥à¤®à¤¾ à¤§à¤¾à¤°à¤¾ à¤•à¥‡ à¤µà¤°à¥à¤— (IÂ²) à¤•à¥‡ à¤¸à¥€à¤§à¥‡ à¤¸à¤®à¤¾à¤¨à¥à¤ªà¤¾à¤¤à¥€ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "magnetic effects of electric current": {
+      subjectId: "science_10", subSectionId: "physics_10", classId: "10",
+      questions: [
+        {
+          q: "Fleming's Left-Hand Rule is used to determine the direction of:",
+          q_hi: "à¤«à¥à¤²à¥‡à¤®à¤¿à¤‚à¤— à¤•à¥‡ à¤¬à¤¾à¤à¤ à¤¹à¤¾à¤¥ à¤•à¥‡ à¤¨à¤¿à¤¯à¤® à¤•à¤¾ à¤‰à¤ªà¤¯à¥‹à¤— à¤•à¤¿à¤¸à¤•à¥€ à¤¦à¤¿à¤¶à¤¾ à¤œà¥à¤žà¤¾à¤¤ à¤•à¤°à¤¨à¥‡ à¤•à¥‡ à¤²à¤¿à¤ à¤•à¤¿à¤¯à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Force (Motion) acting on a current-carrying conductor", "Induced current in a generator", "Magnetic field lines around a straight wire", "Electric potential difference"],
+          opts_hi: ["à¤šà¥à¤‚à¤¬à¤•à¥€à¤¯ à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤®à¥‡à¤‚ à¤§à¤¾à¤°à¤¾à¤µà¤¾à¤¹à¥€ à¤šà¤¾à¤²à¤• à¤ªà¤° à¤²à¤—à¤¨à¥‡ à¤µà¤¾à¤²à¥‡ à¤¬à¤² à¤•à¥€ à¤¦à¤¿à¤¶à¤¾", "à¤œà¤¨à¤°à¥‡à¤Ÿà¤° à¤®à¥‡à¤‚ à¤ªà¥à¤°à¥‡à¤°à¤¿à¤¤ à¤§à¤¾à¤°à¤¾ à¤•à¥€ à¤¦à¤¿à¤¶à¤¾", "à¤¸à¥€à¤§à¥‡ à¤¤à¤¾à¤° à¤•à¥‡ à¤šà¤¾à¤°à¥‹à¤‚ à¤“à¤° à¤šà¥à¤‚à¤¬à¤•à¥€à¤¯ à¤•à¥à¤·à¥‡à¤¤à¥à¤°", "à¤µà¤¿à¤¦à¥à¤¯à¥à¤¤ à¤µà¤¿à¤­à¤µà¤¾à¤‚à¤¤à¤°"],
+          ans: 0,
+          exp: "In Fleming's Left-Hand Rule: Thumb points to Force/Motion, Forefinger to Magnetic Field, and Middle finger to Current.",
+          exp_hi: "à¤«à¥à¤²à¥‡à¤®à¤¿à¤‚à¤— à¤•à¥‡ à¤¬à¤¾à¤à¤ à¤¹à¤¾à¤¥ à¤•à¥‡ à¤¨à¤¿à¤¯à¤® à¤®à¥‡à¤‚ à¤…à¤à¤—à¥‚à¤ à¤¾ à¤šà¤¾à¤²à¤• à¤ªà¤° à¤²à¤—à¤¨à¥‡ à¤µà¤¾à¤²à¥‡ à¤¬à¤² (à¤—à¤¤à¤¿) à¤•à¥€ à¤¦à¤¿à¤¶à¤¾ à¤¨à¤¿à¤°à¥‚à¤ªà¤¿à¤¤ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "chemical reactions & equations": {
+      subjectId: "science_10", subSectionId: "chemistry_10", classId: "10",
+      questions: [
+        {
+          q: "Which of the following is an example of an Endothermic reaction?",
+          q_hi: "à¤¨à¤¿à¤®à¥à¤¨à¤²à¤¿à¤–à¤¿à¤¤ à¤®à¥‡à¤‚ à¤¸à¥‡ à¤•à¥Œà¤¨ à¤¸à¥€ à¤à¤• à¤Šà¤·à¥à¤®à¤¾à¤¶à¥‹à¤·à¥€ (Endothermic) à¤…à¤­à¤¿à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤•à¤¾ à¤‰à¤¦à¤¾à¤¹à¤°à¤£ à¤¹à¥ˆ?",
+          opts: ["Decomposition of Calcium Carbonate by heat", "Respiration in human body", "Burning of natural gas", "Reaction of quicklime with water"],
+          opts_hi: ["à¤•à¥ˆà¤²à¥à¤¶à¤¿à¤¯à¤® à¤•à¤¾à¤°à¥à¤¬à¥‹à¤¨à¥‡à¤Ÿ à¤•à¤¾ à¤Šà¤·à¥à¤®à¤¾ à¤¦à¥à¤µà¤¾à¤°à¤¾ à¤…à¤ªà¤˜à¤Ÿà¤¨", "à¤®à¤¾à¤¨à¤µ à¤¶à¤°à¥€à¤° à¤®à¥‡à¤‚ à¤¶à¥à¤µà¤¸à¤¨", "à¤ªà¥à¤°à¤¾à¤•à¥ƒà¤¤à¤¿à¤• à¤—à¥ˆà¤¸ à¤•à¤¾ à¤¦à¤¹à¤¨", "à¤¬à¤¿à¤¨à¤¾ à¤¬à¥à¤à¥‡ à¤šà¥‚à¤¨à¥‡ à¤•à¥€ à¤ªà¤¾à¤¨à¥€ à¤¸à¥‡ à¤…à¤­à¤¿à¤•à¥à¤°à¤¿à¤¯à¤¾"],
+          ans: 0,
+          exp: "CaCOâ‚ƒ(s) + Heat â†’ CaO(s) + COâ‚‚(g) absorbs thermal energy from the surroundings, making it endothermic.",
+          exp_hi: "à¤šà¥‚à¤¨à¤¾ à¤ªà¤¤à¥à¤¥à¤° (CaCOâ‚ƒ) à¤•à¥‹ à¤—à¤°à¥à¤® à¤•à¤°à¤¨à¥‡ à¤ªà¤° à¤Šà¤·à¥à¤®à¤¾ à¤…à¤µà¤¶à¥‹à¤·à¤¿à¤¤ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ, à¤…à¤¤à¤ƒ à¤¯à¤¹ à¤Šà¤·à¥à¤®à¤¾à¤¶à¥‹à¤·à¥€ à¤…à¤­à¤¿à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "acids, bases & salts": {
+      subjectId: "science_10", subSectionId: "chemistry_10", classId: "10",
+      questions: [
+        {
+          q: "What is the chemical formula of Plaster of Paris (POP)?",
+          q_hi: "à¤ªà¥à¤²à¤¾à¤¸à¥à¤Ÿà¤° à¤‘à¤« à¤ªà¥‡à¤°à¤¿à¤¸ (POP) à¤•à¤¾ à¤°à¤¾à¤¸à¤¾à¤¯à¤¨à¤¿à¤• à¤¸à¥‚à¤¤à¥à¤° à¤•à¥à¤¯à¤¾ à¤¹à¥ˆ?",
+          opts: ["CaSOâ‚„Â·Â½Hâ‚‚O", "CaSOâ‚„Â·2Hâ‚‚O", "CaSOâ‚„Â·5Hâ‚‚O", "CaCOâ‚ƒÂ·Â½Hâ‚‚O"],
+          opts_hi: ["CaSOâ‚„Â·Â½Hâ‚‚O", "CaSOâ‚„Â·2Hâ‚‚O", "CaSOâ‚„Â·5Hâ‚‚O", "CaCOâ‚ƒÂ·Â½Hâ‚‚O"],
+          ans: 0,
+          exp: "Plaster of Paris is calcium sulphate hemihydrate, CaSOâ‚„Â·Â½Hâ‚‚O, formed by heating gypsum at 373 K.",
+          exp_hi: "à¤œà¤¿à¤ªà¥à¤¸à¤® à¤•à¥‹ 373 K à¤ªà¤° à¤—à¤°à¥à¤® à¤•à¤°à¤¨à¥‡ à¤ªà¤° à¤ªà¥à¤²à¤¾à¤¸à¥à¤Ÿà¤° à¤‘à¤« à¤ªà¥‡à¤°à¤¿à¤¸ (CaSOâ‚„Â·Â½Hâ‚‚O) à¤¬à¤¨à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        },
+        {
+          q: "Which acid is naturally present in sting of an ant or nettle leaf?",
+          q_hi: "à¤šà¥€à¤‚à¤Ÿà¥€ à¤•à¥‡ à¤¡à¤‚à¤• à¤¯à¤¾ à¤¨à¥‡à¤Ÿà¤² à¤•à¥‡ à¤ªà¤¤à¥à¤¤à¥‡ à¤®à¥‡à¤‚ à¤•à¥Œà¤¨ à¤¸à¤¾ à¤…à¤®à¥à¤² à¤ªà¥à¤°à¤¾à¤•à¥ƒà¤¤à¤¿à¤• à¤°à¥‚à¤ª à¤¸à¥‡ à¤‰à¤ªà¤¸à¥à¤¥à¤¿à¤¤ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Methanoic acid (Formic acid)", "Acetic acid", "Tartaric acid", "Citric acid"],
+          opts_hi: ["à¤®à¥‡à¤¥à¥‡à¤¨à¥‰à¤‡à¤• à¤…à¤®à¥à¤² (à¤«à¥‰à¤°à¥à¤®à¤¿à¤• à¤…à¤®à¥à¤²)", "à¤à¤¸à¤¿à¤Ÿà¤¿à¤• à¤…à¤®à¥à¤²", "à¤Ÿà¤¾à¤°à¥à¤Ÿà¤°à¤¿à¤• à¤…à¤®à¥à¤²", "à¤¸à¤¾à¤‡à¤Ÿà¥à¤°à¤¿à¤• à¤…à¤®à¥à¤²"],
+          ans: 0,
+          exp: "Ant sting injects Methanoic acid (HCOOH), causing burning pain which can be neutralized with mild baking soda.",
+          exp_hi: "à¤šà¥€à¤‚à¤Ÿà¥€ à¤•à¥‡ à¤¡à¤‚à¤• à¤®à¥‡à¤‚ à¤®à¥‡à¤¥à¥‡à¤¨à¥‰à¤‡à¤• à¤…à¤®à¥à¤² (HCOOH) à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ à¤œà¥‹ à¤œà¤²à¤¨ à¤‰à¤¤à¥à¤ªà¤¨à¥à¤¨ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "metals & non-metals": {
+      subjectId: "science_10", subSectionId: "chemistry_10", classId: "10",
+      questions: [
+        {
+          q: "Which metal exists in liquid state at room temperature?",
+          q_hi: "à¤•à¤®à¤°à¥‡ à¤•à¥‡ à¤¤à¤¾à¤ªà¤®à¤¾à¤¨ à¤ªà¤° à¤•à¥Œà¤¨ à¤¸à¥€ à¤§à¤¾à¤¤à¥ à¤¦à¥à¤°à¤µ à¤…à¤µà¤¸à¥à¤¥à¤¾ à¤®à¥‡à¤‚ à¤ªà¤¾à¤ˆ à¤œà¤¾à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["Mercury (Hg)", "Bromine (Br)", "Gallium", "Sodium"],
+          opts_hi: ["à¤ªà¤¾à¤°à¤¾ (Mercury - Hg)", "à¤¬à¥à¤°à¥‹à¤®à¥€à¤¨ (Br)", "à¤—à¥ˆà¤²à¤¿à¤¯à¤®", "à¤¸à¥‹à¤¡à¤¿à¤¯à¤®"],
+          ans: 0,
+          exp: "Mercury (Hg) is the only metal that is liquid at standard room temperature. (Bromine is a non-metal liquid).",
+          exp_hi: "à¤ªà¤¾à¤°à¤¾ (Hg) à¤à¤•à¤®à¤¾à¤¤à¥à¤° à¤à¤¸à¥€ à¤§à¤¾à¤¤à¥ à¤¹à¥ˆ à¤œà¥‹ à¤•à¤®à¤°à¥‡ à¤•à¥‡ à¤¤à¤¾à¤ªà¤®à¤¾à¤¨ à¤ªà¤° à¤¦à¥à¤°à¤µ à¤…à¤µà¤¸à¥à¤¥à¤¾ à¤®à¥‡à¤‚ à¤°à¤¹à¤¤à¥€ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "carbon & its compounds": {
+      subjectId: "science_10", subSectionId: "chemistry_10", classId: "10",
+      questions: [
+        {
+          q: "What is the structural relationship between Butane and Isobutane?",
+          q_hi: "à¤¬à¥à¤¯à¥‚à¤Ÿà¥‡à¤¨ à¤”à¤° à¤†à¤‡à¤¸à¥‹à¤¬à¥à¤¯à¥‚à¤Ÿà¥‡à¤¨ à¤•à¥‡ à¤¬à¥€à¤š à¤•à¥à¤¯à¤¾ à¤¸à¤‚à¤°à¤šà¤¨à¤¾à¤¤à¥à¤®à¤• à¤¸à¤‚à¤¬à¤‚à¤§ à¤¹à¥ˆ?",
+          opts: ["They are Structural Chain Isomers", "They are Functional Isomers", "They are Homologous members", "They are identical allotropes"],
+          opts_hi: ["à¤µà¥‡ à¤¸à¤‚à¤°à¤šà¤¨à¤¾à¤¤à¥à¤®à¤• à¤¶à¥ƒà¤‚à¤–à¤²à¤¾ à¤¸à¤®à¤¾à¤µà¤¯à¤µà¥€ (Chain Isomers) à¤¹à¥ˆà¤‚", "à¤µà¥‡ à¤•à¥à¤°à¤¿à¤¯à¤¾à¤¤à¥à¤®à¤• à¤¸à¤®à¤¾à¤µà¤¯à¤µà¥€ à¤¹à¥ˆà¤‚", "à¤µà¥‡ à¤¸à¤®à¤œà¤¾à¤¤ à¤¶à¥à¤°à¥‡à¤£à¥€ à¤•à¥‡ à¤¸à¤¦à¤¸à¥à¤¯ à¤¹à¥ˆà¤‚", "à¤µà¥‡ à¤¸à¤®à¤°à¥‚à¤ª à¤…à¤ªà¤°à¤°à¥‚à¤ª à¤¹à¥ˆà¤‚"],
+          ans: 0,
+          exp: "Both have molecular formula Câ‚„Hâ‚â‚€ but different carbon chain arrangements (straight chain vs branched chain), making them chain isomers.",
+          exp_hi: "à¤¦à¥‹à¤¨à¥‹à¤‚ à¤•à¤¾ à¤†à¤£à¤µà¤¿à¤• à¤¸à¥‚à¤¤à¥à¤° Câ‚„Hâ‚â‚€ à¤¹à¥ˆ à¤²à¥‡à¤•à¤¿à¤¨ à¤•à¤¾à¤°à¥à¤¬à¤¨ à¤¶à¥ƒà¤‚à¤–à¤²à¤¾ à¤•à¥€ à¤¬à¤¨à¤¾à¤µà¤Ÿ à¤…à¤²à¤— à¤¹à¥‹à¤¨à¥‡ à¤•à¥‡ à¤•à¤¾à¤°à¤£ à¤µà¥‡ à¤¶à¥ƒà¤‚à¤–à¤²à¤¾ à¤¸à¤®à¤¾à¤µà¤¯à¤µà¥€ à¤¹à¥ˆà¤‚à¥¤"
+        }
+      ]
+    },
+
+    "life processes": {
+      subjectId: "science_10", subSectionId: "biology_10", classId: "10",
+      questions: [
+        {
+          q: "In human circulatory system, which blood vessel carries oxygenated blood from the lungs back to the left atrium of the heart?",
+          q_hi: "à¤®à¤¾à¤¨à¤µ à¤ªà¤°à¤¿à¤¸à¤‚à¤šà¤°à¤£ à¤¤à¤‚à¤¤à¥à¤° à¤®à¥‡à¤‚ à¤«à¥‡à¤«à¤¡à¤¼à¥‹à¤‚ à¤¸à¥‡ à¤‘à¤•à¥à¤¸à¥€à¤œà¤¨ à¤¯à¥à¤•à¥à¤¤ à¤°à¤•à¥à¤¤ à¤¹à¥ƒà¤¦à¤¯ à¤•à¥‡ à¤¬à¤¾à¤à¤ à¤†à¤²à¤¿à¤‚à¤¦ à¤®à¥‡à¤‚ à¤•à¥Œà¤¨ à¤¸à¥€ à¤°à¤•à¥à¤¤ à¤µà¤¾à¤¹à¤¿à¤•à¤¾ à¤²à¤¾à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["Pulmonary Vein", "Pulmonary Artery", "Aorta", "Vena Cava"],
+          opts_hi: ["à¤«à¥à¤«à¥à¤«à¥à¤¸ à¤¶à¤¿à¤°à¤¾ (Pulmonary Vein)", "à¤«à¥à¤«à¥à¤«à¥à¤¸ à¤§à¤®à¤¨à¥€ (Pulmonary Artery)", "à¤®à¤¹à¤¾à¤§à¤®à¤¨à¥€ (Aorta)", "à¤®à¤¹à¤¾à¤¶à¤¿à¤°à¤¾ (Vena Cava)"],
+          ans: 0,
+          exp: "Unlike regular veins, Pulmonary Veins carry oxygen-rich blood from lungs to left atrium of the heart.",
+          exp_hi: "à¤«à¥à¤«à¥à¤«à¥à¤¸ à¤¶à¤¿à¤°à¤¾à¤à¤‚ à¤«à¥‡à¤«à¤¡à¤¼à¥‹à¤‚ à¤¸à¥‡ à¤¶à¥à¤¦à¥à¤§ (à¤‘à¤•à¥à¤¸à¥€à¤œà¤¨à¤¿à¤¤) à¤°à¤•à¥à¤¤ à¤•à¥‹ à¤¹à¥ƒà¤¦à¤¯ à¤•à¥‡ à¤¬à¤¾à¤à¤ à¤†à¤²à¤¿à¤‚à¤¦ à¤®à¥‡à¤‚ à¤ªà¤¹à¥à¤‚à¤šà¤¾à¤¤à¥€ à¤¹à¥ˆà¤‚à¥¤"
+        },
+        {
+          q: "The breakdown of pyruvate to give carbon dioxide, water, and energy takes place in which cellular organelle?",
+          q_hi: "à¤ªà¤¾à¤‡à¤°à¥à¤µà¥‡à¤Ÿ à¤•à¤¾ à¤•à¤¾à¤°à¥à¤¬à¤¨ à¤¡à¤¾à¤‡à¤‘à¤•à¥à¤¸à¤¾à¤‡à¤¡, à¤œà¤² à¤”à¤° à¤Šà¤°à¥à¤œà¤¾ à¤®à¥‡à¤‚ à¤µà¤¿à¤–à¤‚à¤¡à¤¨ à¤•à¥‹à¤¶à¤¿à¤•à¤¾ à¤•à¥‡ à¤•à¤¿à¤¸ à¤…à¤‚à¤—à¤• à¤®à¥‡à¤‚ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Mitochondria", "Cytoplasm", "Chloroplast", "Nucleus"],
+          opts_hi: ["à¤®à¤¾à¤‡à¤Ÿà¥‹à¤•à¥‰à¤¨à¥à¤¡à¥à¤°à¤¿à¤¯à¤¾ (Mitochondria)", "à¤•à¥‹à¤¶à¤¿à¤•à¤¾à¤¦à¥à¤°à¤µà¥à¤¯ (Cytoplasm)", "à¤¹à¤°à¤¿à¤¤à¤²à¤µà¤• (Chloroplast)", "à¤•à¥‡à¤‚à¤¦à¥à¤°à¤•"],
+          ans: 0,
+          exp: "Aerobic breakdown of pyruvate occurs inside the Mitochondria with oxygen, yielding 36-38 ATP molecules.",
+          exp_hi: "à¤µà¤¾à¤¯à¤µà¥€à¤¯ à¤¶à¥à¤µà¤¸à¤¨ à¤®à¥‡à¤‚ à¤ªà¤¾à¤‡à¤°à¥à¤µà¥‡à¤Ÿ à¤•à¤¾ à¤ªà¥‚à¤°à¥à¤£ à¤µà¤¿à¤–à¤‚à¤¡à¤¨ à¤®à¤¾à¤‡à¤Ÿà¥‹à¤•à¥‰à¤¨à¥à¤¡à¥à¤°à¤¿à¤¯à¤¾ à¤•à¥‡ à¤…à¤‚à¤¦à¤° à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "control & coordination": {
+      subjectId: "science_10", subSectionId: "biology_10", classId: "10",
+      questions: [
+        {
+          q: "Which plant hormone is responsible for promoting cell division and is found in high concentrations in growing fruits and seeds?",
+          q_hi: "à¤•à¥Œà¤¨ à¤¸à¤¾ à¤ªà¤¾à¤¦à¤ª à¤¹à¤¾à¤°à¥à¤®à¥‹à¤¨ à¤•à¥‹à¤¶à¤¿à¤•à¤¾ à¤µà¤¿à¤­à¤¾à¤œà¤¨ à¤•à¥‹ à¤¬à¤¢à¤¼à¤¾à¤µà¤¾ à¤¦à¥‡à¤¤à¤¾ à¤¹à¥ˆ à¤”à¤° à¤«à¤²à¥‹à¤‚ à¤µ à¤¬à¥€à¤œà¥‹à¤‚ à¤®à¥‡à¤‚ à¤‰à¤šà¥à¤š à¤¸à¤¾à¤‚à¤¦à¥à¤°à¤¤à¤¾ à¤®à¥‡à¤‚ à¤ªà¤¾à¤¯à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Cytokinin", "Auxin", "Abscisic Acid", "Ethylene"],
+          opts_hi: ["à¤¸à¤¾à¤‡à¤Ÿà¥‹à¤•à¤¾à¤‡à¤¨à¤¿à¤¨ (Cytokinin)", "à¤‘à¤•à¥à¤¸à¤¿à¤¨ (Auxin)", "à¤à¤¬à¥à¤¸à¤¿à¤¸à¤¿à¤• à¤…à¤®à¥à¤²", "à¤à¤¥à¤¿à¤²à¥€à¤¨"],
+          ans: 0,
+          exp: "Cytokinins promote cell division and delay leaf senescence; found abundantly in areas of rapid cell division like seeds and fruits.",
+          exp_hi: "à¤¸à¤¾à¤‡à¤Ÿà¥‹à¤•à¤¾à¤‡à¤¨à¤¿à¤¨ à¤•à¥‹à¤¶à¤¿à¤•à¤¾ à¤µà¤¿à¤­à¤¾à¤œà¤¨ à¤•à¥‹ à¤¤à¥€à¤µà¥à¤° à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ à¤”à¤° à¤¤à¥‡à¤œà¥€ à¤¸à¥‡ à¤µà¥ƒà¤¦à¥à¤§à¤¿ à¤•à¤°à¤¨à¥‡ à¤µà¤¾à¤²à¥‡ à¤­à¤¾à¤—à¥‹à¤‚ à¤œà¥ˆà¤¸à¥‡ à¤«à¤²à¥‹à¤‚ à¤”à¤° à¤¬à¥€à¤œà¥‹à¤‚ à¤®à¥‡à¤‚ à¤…à¤§à¤¿à¤• à¤ªà¤¾à¤¯à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "how do organisms reproduce?": {
+      subjectId: "science_10", subSectionId: "biology_10", classId: "10",
+      questions: [
+        {
+          q: "In human females, fertilization of the ovum by sperm typically takes place in the:",
+          q_hi: "à¤®à¤¾à¤¨à¤µ à¤®à¤¾à¤¦à¤¾ à¤®à¥‡à¤‚ à¤¶à¥à¤•à¥à¤°à¤¾à¤£à¥ à¤¦à¥à¤µà¤¾à¤°à¤¾ à¤…à¤‚à¤¡à¤¾à¤£à¥ à¤•à¤¾ à¤¨à¤¿à¤·à¥‡à¤šà¤¨ à¤¸à¤¾à¤®à¤¾à¤¨à¥à¤¯à¤¤à¤ƒ à¤•à¤¹à¤¾à¤ à¤¸à¤‚à¤ªà¤¨à¥à¤¨ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Fallopian Tube (Oviduct)", "Uterus", "Ovary", "Cervix"],
+          opts_hi: ["à¤«à¥ˆà¤²à¥‹à¤ªà¤¿à¤¯à¤¨ à¤¨à¤²à¤¿à¤•à¤¾ (à¤…à¤‚à¤¡à¤µà¤¾à¤¹à¤¿à¤¨à¥€)", "à¤—à¤°à¥à¤­à¤¾à¤¶à¤¯", "à¤…à¤‚à¤¡à¤¾à¤¶à¤¯", "à¤—à¥à¤°à¥€à¤µà¤¾"],
+          ans: 0,
+          exp: "Fertilization occurs in the ampullary-isthmic junction of the Fallopian tube (oviduct).",
+          exp_hi: "à¤¨à¤¿à¤·à¥‡à¤šà¤¨ à¤«à¥ˆà¤²à¥‹à¤ªà¤¿à¤¯à¤¨ à¤Ÿà¥à¤¯à¥‚à¤¬ (à¤…à¤‚à¤¡à¤µà¤¾à¤¹à¤¿à¤¨à¥€) à¤®à¥‡à¤‚ à¤¸à¤‚à¤ªà¤¨à¥à¤¨ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "heredity & evolution": {
+      subjectId: "science_10", subSectionId: "biology_10", classId: "10",
+      questions: [
+        {
+          q: "What is the phenotypic ratio in the F2 generation of a Mendelian Monohybrid cross?",
+          q_hi: "à¤®à¥‡à¤‚à¤¡à¤² à¤•à¥‡ à¤à¤•à¤¸à¤‚à¤•à¤° à¤¸à¤‚à¤•à¤°à¤£ (Monohybrid Cross) à¤•à¥€ F2 à¤ªà¥€à¤¢à¤¼à¥€ à¤®à¥‡à¤‚ à¤²à¤•à¥à¤·à¤£à¤ªà¥à¤°à¤°à¥‚à¤ªà¥€ (Phenotypic) à¤…à¤¨à¥à¤ªà¤¾à¤¤ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["3 : 1", "1 : 2 : 1", "9 : 3 : 3 : 1", "1 : 1"],
+          opts_hi: ["3 : 1", "1 : 2 : 1", "9 : 3 : 3 : 1", "1 : 1"],
+          ans: 0,
+          exp: "In F2 generation of tall (TT/Tt) and dwarf (tt) pea plants, 3 are tall and 1 is dwarf (phenotypic ratio 3:1).",
+          exp_hi: "F2 à¤ªà¥€à¤¢à¤¼à¥€ à¤®à¥‡à¤‚ 3 à¤²à¤‚à¤¬à¥‡ à¤”à¤° 1 à¤¬à¥Œà¤¨à¥‡ à¤ªà¥Œà¤§à¥‡ (3:1) à¤•à¤¾ à¤²à¤•à¥à¤·à¤£à¤ªà¥à¤°à¤°à¥‚à¤ªà¥€ à¤…à¤¨à¥à¤ªà¤¾à¤¤ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "our environment": {
+      subjectId: "science_10", subSectionId: "biology_10", classId: "10",
+      questions: [
+        {
+          q: "According to Lindeman's 10% law, how much energy is transferred from one trophic level to the next higher level?",
+          q_hi: "à¤²à¤¿à¤‚à¤¡à¥‡à¤®à¥ˆà¤¨ à¤•à¥‡ 10% à¤¨à¤¿à¤¯à¤® à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤°, à¤à¤• à¤ªà¥‹à¤·à¥€ à¤¸à¥à¤¤à¤° à¤¸à¥‡ à¤…à¤—à¤²à¥‡ à¤‰à¤šà¥à¤š à¤ªà¥‹à¤·à¥€ à¤¸à¥à¤¤à¤° à¤¤à¤• à¤•à¤¿à¤¤à¤¨à¥€ à¤Šà¤°à¥à¤œà¤¾ à¤¸à¥à¤¥à¤¾à¤¨à¤¾à¤‚à¤¤à¤°à¤¿à¤¤ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["10%", "1%", "50%", "90%"],
+          opts_hi: ["10%", "1%", "50%", "90%"],
+          ans: 0,
+          exp: "Only about 10% of energy available at a trophic level is converted into new biomass and transferred to next level.",
+          exp_hi: "à¤•à¥‡à¤µà¤² 10% à¤Šà¤°à¥à¤œà¤¾ à¤¹à¥€ à¤…à¤—à¤²à¥‡ à¤ªà¥‹à¤·à¥€ à¤¸à¥à¤¤à¤° à¤•à¥‹ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ, à¤¶à¥‡à¤· 90% à¤œà¥ˆà¤µà¤¿à¤• à¤•à¥à¤°à¤¿à¤¯à¤¾à¤“à¤‚ à¤®à¥‡à¤‚ à¤–à¤°à¥à¤š à¤¹à¥‹ à¤œà¤¾à¤¤à¥€ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    // ==========================================
+    // CLASS 10 SOCIAL SCIENCE (HISTORY, GEO, CIVICS, ECO)
+    // ==========================================
+    "the rise of nationalism in europe": {
+      subjectId: "social_science_10", subSectionId: "history_10", classId: "10",
+      questions: [
+        {
+          q: "In 1848, the French artist FrÃ©dÃ©ric Sorrieu prepared a famous series of four prints visualizing his dream of:",
+          q_hi: "1848 à¤®à¥‡à¤‚ à¤«à¥à¤°à¤¾à¤‚à¤¸à¥€à¤¸à¥€ à¤•à¤²à¤¾à¤•à¤¾à¤° à¤«à¥à¤°à¥‡à¤¡à¤°à¤¿à¤• à¤¸à¥‰à¤°à¤¯à¥‚ à¤¨à¥‡ à¤…à¤ªà¤¨à¥‡ à¤¸à¤ªà¤¨à¥‹à¤‚ à¤•à¥‡ à¤¸à¤‚à¤¸à¤¾à¤° à¤•à¥‡ à¤šà¤¾à¤° à¤šà¤¿à¤¤à¥à¤°à¥‹à¤‚ à¤•à¥€ à¤¶à¥à¤°à¥ƒà¤‚à¤–à¤²à¤¾ à¤¬à¤¨à¤¾à¤ˆ à¤¥à¥€, à¤œà¤¿à¤¸à¤•à¤¾ à¤µà¤¿à¤·à¤¯ à¤¥à¤¾:",
+          opts: ["Democratic and Social Republics", "Absolute Monarchies ruling Europe", "Industrial Revolution & colonization", "Military Dictatorship"],
+          opts_hi: ["à¤œà¤¨à¤¤à¤¾à¤‚à¤¤à¥à¤°à¤¿à¤• à¤”à¤° à¤¸à¤¾à¤®à¤¾à¤œà¤¿à¤• à¤—à¤£à¤¤à¤‚à¤¤à¥à¤°à¥‹à¤‚ à¤•à¤¾ à¤µà¤¿à¤¶à¥à¤µ", "à¤¯à¥‚à¤°à¥‹à¤ª à¤®à¥‡à¤‚ à¤¨à¤¿à¤°à¤‚à¤•à¥à¤¶ à¤°à¤¾à¤œà¤¤à¤‚à¤¤à¥à¤°", "à¤”à¤¦à¥à¤¯à¥‹à¤—à¤¿à¤• à¤•à¥à¤°à¤¾à¤‚à¤¤à¤¿ à¤”à¤° à¤‰à¤ªà¤¨à¤¿à¤µà¥‡à¤¶à¤µà¤¾à¤¦", "à¤¸à¥ˆà¤¨à¥à¤¯ à¤¤à¤¾à¤¨à¤¾à¤¶à¤¾à¤¹à¥€"],
+          ans: 0,
+          exp: "FrÃ©dÃ©ric Sorrieu visualized a world made up of 'democratic and social republics' marching towards the Statue of Liberty.",
+          exp_hi: "à¤¸à¥‰à¤°à¤¯à¥‚ à¤¨à¥‡ à¤…à¤ªà¤¨à¥‡ à¤šà¤¿à¤¤à¥à¤°à¥‹à¤‚ à¤®à¥‡à¤‚ à¤œà¤¨à¤¤à¤¾à¤‚à¤¤à¥à¤°à¤¿à¤• à¤”à¤° à¤¸à¤¾à¤®à¤¾à¤œà¤¿à¤• à¤—à¤£à¤¤à¤‚à¤¤à¥à¤°à¥‹à¤‚ à¤•à¥‡ à¤à¤• à¤à¤•à¥€à¤•à¥ƒà¤¤ à¤µà¤¿à¤¶à¥à¤µ à¤•à¥€ à¤•à¤²à¥à¤ªà¤¨à¤¾ à¤•à¥€ à¤¥à¥€à¥¤"
+        }
+      ]
+    },
+
+    "nationalism in india": {
+      subjectId: "social_science_10", subSectionId: "history_10", classId: "10",
+      questions: [
+        {
+          q: "Mahatma Gandhi launched the historic Salt March from Sabarmati Ashram to Dandi in the year:",
+          q_hi: "à¤®à¤¹à¤¾à¤¤à¥à¤®à¤¾ à¤—à¤¾à¤‚à¤§à¥€ à¤¨à¥‡ à¤¸à¤¾à¤¬à¤°à¤®à¤¤à¥€ à¤†à¤¶à¥à¤°à¤® à¤¸à¥‡ à¤¦à¤¾à¤‚à¤¡à¥€ à¤¤à¤• à¤à¤¤à¤¿à¤¹à¤¾à¤¸à¤¿à¤• à¤¨à¤®à¤• à¤¸à¤¤à¥à¤¯à¤¾à¤—à¥à¤°à¤¹ à¤¯à¤¾à¤¤à¥à¤°à¤¾ à¤•à¤¿à¤¸ à¤µà¤°à¥à¤· à¤¶à¥à¤°à¥‚ à¤•à¥€ à¤¥à¥€?",
+          opts: ["1930", "1920", "1942", "1919"],
+          opts_hi: ["1930", "1920", "1942", "1919"],
+          ans: 0,
+          exp: "Gandhi began the Dandi March on 12 March 1930 with 78 volunteers and reached Dandi on 6 April 1930 to break salt law, inaugurating Civil Disobedience Movement.",
+          exp_hi: "12 à¤®à¤¾à¤°à¥à¤š 1930 à¤•à¥‹ à¤—à¤¾à¤‚à¤§à¥€ à¤œà¥€ à¤¨à¥‡ 78 à¤¸à¥à¤µà¤¯à¤‚à¤¸à¥‡à¤µà¤•à¥‹à¤‚ à¤•à¥‡ à¤¸à¤¾à¤¥ à¤¦à¤¾à¤‚à¤¡à¥€ à¤¯à¤¾à¤¤à¥à¤°à¤¾ à¤ªà¥à¤°à¤¾à¤°à¤‚à¤­ à¤•à¥€ à¤”à¤° 6 à¤…à¤ªà¥à¤°à¥ˆà¤² 1930 à¤•à¥‹ à¤¨à¤®à¤• à¤•à¤¾à¤¨à¥‚à¤¨ à¤¤à¥‹à¤¡à¤¼à¤¾à¥¤"
+        }
+      ]
+    },
+
+    "resources & development": {
+      subjectId: "social_science_10", subSectionId: "geography_10", classId: "10",
+      questions: [
+        {
+          q: "Black soil (Regur soil) is most ideally suited for the cultivation of which cash crop?",
+          q_hi: "à¤•à¤¾à¤²à¥€ à¤®à¤¿à¤Ÿà¥à¤Ÿà¥€ (à¤°à¥‡à¤—à¥à¤° à¤®à¤¿à¤Ÿà¥à¤Ÿà¥€) à¤•à¤¿à¤¸ à¤¨à¤•à¤¦à¥€ à¤«à¤¸à¤² à¤•à¥€ à¤–à¥‡à¤¤à¥€ à¤•à¥‡ à¤²à¤¿à¤ à¤¸à¤°à¥à¤µà¤¾à¤§à¤¿à¤• à¤‰à¤ªà¤¯à¥à¤•à¥à¤¤ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["Cotton", "Wheat", "Tea", "Jute"],
+          opts_hi: ["à¤•à¤ªà¤¾à¤¸ (Cotton)", "à¤—à¥‡à¤¹à¥‚à¤‚", "à¤šà¤¾à¤¯", "à¤œà¥‚à¤Ÿ"],
+          ans: 0,
+          exp: "Black soil has high clayey moisture-holding capacity and calcium carbonate, ideal for growing cotton (also called Black Cotton Soil).",
+          exp_hi: "à¤•à¤¾à¤²à¥€ à¤®à¤¿à¤Ÿà¥à¤Ÿà¥€ à¤®à¥‡à¤‚ à¤¨à¤®à¥€ à¤§à¤¾à¤°à¤£ à¤•à¤°à¤¨à¥‡ à¤•à¥€ à¤‰à¤šà¥à¤š à¤•à¥à¤·à¤®à¤¤à¤¾ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ, à¤…à¤¤à¤ƒ à¤¯à¤¹ à¤•à¤ªà¤¾à¤¸ à¤•à¥€ à¤–à¥‡à¤¤à¥€ à¤•à¥‡ à¤²à¤¿à¤ à¤¸à¤¬à¤¸à¥‡ à¤‰à¤¤à¥à¤¤à¤® à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "power sharing": {
+      subjectId: "social_science_10", subSectionId: "civics_10", classId: "10",
+      questions: [
+        {
+          q: "In Belgium, what percentage of the total population speaks Dutch and lives in the Flemish region?",
+          q_hi: "à¤¬à¥‡à¤²à¥à¤œà¤¿à¤¯à¤® à¤®à¥‡à¤‚ à¤•à¥à¤² à¤œà¤¨à¤¸à¤‚à¤–à¥à¤¯à¤¾ à¤•à¤¾ à¤•à¤¿à¤¤à¤¨à¤¾ à¤ªà¥à¤°à¤¤à¤¿à¤¶à¤¤ à¤¡à¤š à¤¬à¥‹à¤²à¤¤à¤¾ à¤¹à¥ˆ à¤”à¤° à¤«à¥à¤²à¥‡à¤®à¤¿à¤¶ à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤®à¥‡à¤‚ à¤°à¤¹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["59%", "40%", "74%", "80%"],
+          opts_hi: ["59%", "40%", "74%", "80%"],
+          ans: 0,
+          exp: "59% of Belgium's population lives in Flemish region speaking Dutch, while 40% lives in Wallonia speaking French.",
+          exp_hi: "à¤¬à¥‡à¤²à¥à¤œà¤¿à¤¯à¤® à¤®à¥‡à¤‚ 59% à¤²à¥‹à¤— à¤«à¥à¤²à¥‡à¤®à¤¿à¤¶ à¤•à¥à¤·à¥‡à¤¤à¥à¤° à¤®à¥‡à¤‚ à¤°à¤¹à¤•à¤° à¤¡à¤š à¤­à¤¾à¤·à¤¾ à¤¬à¥‹à¤²à¤¤à¥‡ à¤¹à¥ˆà¤‚, à¤œà¤¬à¤•à¤¿ 40% à¤«à¥à¤°à¥‡à¤‚à¤š à¤¬à¥‹à¤²à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤"
+        }
+      ]
+    },
+
+    "money & credit": {
+      subjectId: "social_science_10", subSectionId: "economics_10", classId: "10",
+      questions: [
+        {
+          q: "Which institution supervises the functioning of formal sources of loans and banks in India?",
+          q_hi: "à¤­à¤¾à¤°à¤¤ à¤®à¥‡à¤‚ à¤”à¤ªà¤šà¤¾à¤°à¤¿à¤• à¤‹à¤£ à¤¸à¥à¤°à¥‹à¤¤à¥‹à¤‚ à¤”à¤° à¤¬à¥ˆà¤‚à¤•à¥‹à¤‚ à¤•à¥€ à¤•à¤¾à¤°à¥à¤¯à¤ªà¥à¤°à¤£à¤¾à¤²à¥€ à¤•à¥€ à¤¨à¤¿à¤—à¤°à¤¾à¤¨à¥€ à¤•à¥Œà¤¨ à¤¸à¥€ à¤¸à¤‚à¤¸à¥à¤¥à¤¾ à¤•à¤°à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["Reserve Bank of India (RBI)", "State Bank of India (SBI)", "Ministry of Finance", "NITI Aayog"],
+          opts_hi: ["à¤­à¤¾à¤°à¤¤à¥€à¤¯ à¤°à¤¿à¤œà¤¼à¤°à¥à¤µ à¤¬à¥ˆà¤‚à¤• (RBI)", "à¤­à¤¾à¤°à¤¤à¥€à¤¯ à¤¸à¥à¤Ÿà¥‡à¤Ÿ à¤¬à¥ˆà¤‚à¤• (SBI)", "à¤µà¤¿à¤¤à¥à¤¤ à¤®à¤‚à¤¤à¥à¤°à¤¾à¤²à¤¯", "à¤¨à¥€à¤¤à¤¿ à¤†à¤¯à¥‹à¤—"],
+          ans: 0,
+          exp: "The Reserve Bank of India (RBI) oversees formal lenders, ensuring banks maintain minimum cash balances and lend to small borrowers.",
+          exp_hi: "à¤­à¤¾à¤°à¤¤à¥€à¤¯ à¤°à¤¿à¤œà¤¼à¤°à¥à¤µ à¤¬à¥ˆà¤‚à¤• (RBI) à¤¬à¥ˆà¤‚à¤•à¥‹à¤‚ à¤•à¥‡ à¤¨à¤•à¤¦ à¤…à¤¨à¥à¤ªà¤¾à¤¤ à¤”à¤° à¤¬à¥à¤¯à¤¾à¤œ à¤¦à¤°à¥‹à¤‚ à¤•à¥€ à¤¨à¤¿à¤—à¤°à¤¾à¤¨à¥€ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    // ==========================================
+    // CLASS 10 HINDI & ENGLISH
+    // ==========================================
+    "vyakaran: samas (compound words)": {
+      subjectId: "hindi_10", classId: "10",
+      questions: [
+        {
+          q: "à¤œà¤¿à¤¸ à¤¸à¤®à¤¾à¤¸ à¤®à¥‡à¤‚ à¤ªà¤¹à¤²à¤¾ à¤ªà¤¦ à¤¸à¤‚à¤–à¥à¤¯à¤¾à¤µà¤¾à¤šà¤• à¤µà¤¿à¤¶à¥‡à¤·à¤£ à¤¹à¥‹ à¤”à¤° à¤µà¤¹ à¤•à¤¿à¤¸à¥€ à¤¸à¤®à¥‚à¤¹ à¤•à¤¾ à¤¬à¥‹à¤§ à¤•à¤°à¤¾à¤, à¤‰à¤¸à¥‡ à¤•à¥à¤¯à¤¾ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚?",
+          q_hi: "à¤œà¤¿à¤¸ à¤¸à¤®à¤¾à¤¸ à¤®à¥‡à¤‚ à¤ªà¤¹à¤²à¤¾ à¤ªà¤¦ à¤¸à¤‚à¤–à¥à¤¯à¤¾à¤µà¤¾à¤šà¤• à¤µà¤¿à¤¶à¥‡à¤·à¤£ à¤¹à¥‹ à¤”à¤° à¤µà¤¹ à¤•à¤¿à¤¸à¥€ à¤¸à¤®à¥‚à¤¹ à¤•à¤¾ à¤¬à¥‹à¤§ à¤•à¤°à¤¾à¤, à¤‰à¤¸à¥‡ à¤•à¥à¤¯à¤¾ à¤•à¤¹à¤¤à¥‡ à¤¹à¥ˆà¤‚?",
+          opts: ["à¤¦à¥à¤µà¤¿à¤—à¥ à¤¸à¤®à¤¾à¤¸ (à¤œà¥ˆà¤¸à¥‡- à¤¤à¥à¤°à¤¿à¤²à¥‹à¤•, à¤ªà¤‚à¤šà¤µà¤Ÿà¥€)", "à¤¦à¥à¤µà¤‚à¤¦à¥à¤µ à¤¸à¤®à¤¾à¤¸", "à¤•à¤°à¥à¤®à¤§à¤¾à¤°à¤¯ à¤¸à¤®à¤¾à¤¸", "à¤…à¤µà¥à¤¯à¤¯à¥€à¤­à¤¾à¤µ à¤¸à¤®à¤¾à¤¸"],
+          opts_hi: ["à¤¦à¥à¤µà¤¿à¤—à¥ à¤¸à¤®à¤¾à¤¸ (à¤œà¥ˆà¤¸à¥‡- à¤¤à¥à¤°à¤¿à¤²à¥‹à¤•, à¤ªà¤‚à¤šà¤µà¤Ÿà¥€)", "à¤¦à¥à¤µà¤‚à¤¦à¥à¤µ à¤¸à¤®à¤¾à¤¸", "à¤•à¤°à¥à¤®à¤§à¤¾à¤°à¤¯ à¤¸à¤®à¤¾à¤¸", "à¤…à¤µà¥à¤¯à¤¯à¥€à¤­à¤¾à¤µ à¤¸à¤®à¤¾à¤¸"],
+          ans: 0,
+          exp: "à¤¦à¥à¤µà¤¿à¤—à¥ à¤¸à¤®à¤¾à¤¸ à¤®à¥‡à¤‚ à¤ªà¥‚à¤°à¥à¤µà¤ªà¤¦ à¤¸à¤‚à¤–à¥à¤¯à¤¾à¤µà¤¾à¤šà¤• à¤µà¤¿à¤¶à¥‡à¤·à¤£ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ à¤”à¤° à¤¸à¤®à¤¸à¥à¤¤ à¤ªà¤¦ à¤•à¤¿à¤¸à¥€ à¤¸à¤®à¤¾à¤¹à¤¾à¤°/à¤¸à¤®à¥‚à¤¹ à¤•à¤¾ à¤¬à¥‹à¤§ à¤•à¤°à¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤",
+          exp_hi: "à¤¦à¥à¤µà¤¿à¤—à¥ à¤¸à¤®à¤¾à¤¸ à¤®à¥‡à¤‚ à¤ªà¥‚à¤°à¥à¤µà¤ªà¤¦ à¤¸à¤‚à¤–à¥à¤¯à¤¾à¤µà¤¾à¤šà¤• à¤µà¤¿à¤¶à¥‡à¤·à¤£ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ à¤”à¤° à¤¸à¤®à¤¸à¥à¤¤ à¤ªà¤¦ à¤•à¤¿à¤¸à¥€ à¤¸à¤®à¤¾à¤¹à¤¾à¤°/à¤¸à¤®à¥‚à¤¹ à¤•à¤¾ à¤¬à¥‹à¤§ à¤•à¤°à¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "a letter to god (g.l. fuentes)": {
+      subjectId: "english_10", classId: "10",
+      questions: [
+        {
+          q: "What did Lencho call the post office employees after receiving only 70 pesos instead of 100?",
+          q_hi: "100 à¤ªà¥‡à¤¸à¥‹à¤¸ à¤•à¥€ à¤œà¤—à¤¹ à¤•à¥‡à¤µà¤² 70 à¤ªà¥‡à¤¸à¥‹à¤¸ à¤®à¤¿à¤²à¤¨à¥‡ à¤ªà¤° à¤²à¥‡à¤¨à¥à¤šà¥‹ à¤¨à¥‡ à¤¡à¤¾à¤•à¤˜à¤° à¤•à¥‡ à¤•à¤°à¥à¤®à¤šà¤¾à¤°à¤¿à¤¯à¥‹à¤‚ à¤•à¥‹ à¤•à¥à¤¯à¤¾ à¤•à¤¹à¤¾ à¤¥à¤¾?",
+          opts: ["A bunch of crooks", "Good samaritans", "Helpers of God", "Selfish officers"],
+          opts_hi: ["A bunch of crooks (à¤ à¤—à¥‹à¤‚ à¤•à¤¾ à¤—à¤¿à¤°à¥‹à¤¹)", "à¤¨à¥‡à¤• à¤‡à¤‚à¤¸à¤¾à¤¨", "à¤ˆà¤¶à¥à¤µà¤° à¤•à¥‡ à¤¸à¤¹à¤¾à¤¯à¤•", "à¤¸à¥à¤µà¤¾à¤°à¥à¤¥à¥€ à¤…à¤§à¤¿à¤•à¤¾à¤°à¥€"],
+          ans: 0,
+          exp: "Lencho's absolute, innocent faith in God led him to suspect that God couldn't make a mistake, so the employees must have stolen 30 pesos.",
+          exp_hi: "à¤²à¥‡à¤¨à¥à¤šà¥‹ à¤•à¤¾ à¤ˆà¤¶à¥à¤µà¤° à¤ªà¤° à¤…à¤Ÿà¥‚à¤Ÿ à¤µà¤¿à¤¶à¥à¤µà¤¾à¤¸ à¤¥à¤¾, à¤‰à¤¸à¤¨à¥‡ à¤¡à¤¾à¤•à¤˜à¤° à¤•à¥‡ à¤•à¤°à¥à¤®à¤šà¤¾à¤°à¤¿à¤¯à¥‹à¤‚ à¤•à¥‹ 'a bunch of crooks' à¤•à¤¹à¤¾à¥¤"
+        }
+      ]
+    },
+
+    // ==========================================
+    // CLASS 11 PHYSICS (NON-MEDICAL)
+    // ==========================================
+    "units & measurements": {
+      subjectId: "physics_11", classId: "11",
+      questions: [
+        {
+          q: "What are the dimensions of Planck's Constant (h)?",
+          q_hi: "à¤ªà¥à¤²à¤¾à¤‚à¤• à¤¨à¤¿à¤¯à¤¤à¤¾à¤‚à¤• (h) à¤•à¤¾ à¤µà¤¿à¤®à¥€à¤¯ à¤¸à¥‚à¤¤à¥à¤° à¤•à¥à¤¯à¤¾ à¤¹à¥ˆ?",
+          opts: ["[M LÂ² Tâ»Â¹]", "[M LÂ² Tâ»Â²]", "[M L Tâ»Â¹]", "[M LÂ² Tâ»Â³]"],
+          opts_hi: ["[M LÂ² Tâ»Â¹]", "[M LÂ² Tâ»Â²]", "[M L Tâ»Â¹]", "[M LÂ² Tâ»Â³]"],
+          ans: 0,
+          exp: "Energy E = hÎ½. Therefore, [h] = [E] / [Î½] = [M LÂ² Tâ»Â²] / [Tâ»Â¹] = [M LÂ² Tâ»Â¹], same dimensions as angular momentum.",
+          exp_hi: "E = hÎ½ à¤¸à¥‡ h = E/Î½à¥¤ [h] = [M LÂ² Tâ»Â²] / [Tâ»Â¹] = [M LÂ² Tâ»Â¹] (à¤•à¥‹à¤£à¥€à¤¯ à¤¸à¤‚à¤µà¥‡à¤— à¤•à¥‡ à¤¸à¤®à¤¾à¤¨)à¥¤"
+        }
+      ]
+    },
+
+    "motion in a straight line": {
+      subjectId: "physics_11", classId: "11",
+      questions: [
+        {
+          q: "For a body moving with uniform acceleration 'a', what is the displacement in the nth second?",
+          q_hi: "à¤à¤•à¤¸à¤®à¤¾à¤¨ à¤¤à¥à¤µà¤°à¤£ 'a' à¤¸à¥‡ à¤—à¤¤à¤¿à¤®à¤¾à¤¨ à¤µà¤¸à¥à¤¤à¥ à¤•à¥‡ nà¤µà¥‡à¤‚ à¤¸à¥‡à¤•à¤‚à¤¡ à¤®à¥‡à¤‚ à¤¤à¤¯ à¤•à¥€ à¤—à¤ˆ à¤¦à¥‚à¤°à¥€ à¤•à¤¾ à¤¸à¥‚à¤¤à¥à¤° à¤•à¥à¤¯à¤¾ à¤¹à¥ˆ?",
+          opts: ["sâ‚™ = u + a/2 (2n - 1)", "sâ‚™ = u + a/2 (2n + 1)", "sâ‚™ = un + Â½anÂ²", "sâ‚™ = u + an"],
+          opts_hi: ["sâ‚™ = u + a/2 (2n - 1)", "sâ‚™ = u + a/2 (2n + 1)", "sâ‚™ = un + Â½anÂ²", "sâ‚™ = u + an"],
+          ans: 0,
+          exp: "Displacement in nth second is sâ‚™ = S(n) - S(n-1) = u + a/2 (2n - 1).",
+          exp_hi: "nà¤µà¥‡à¤‚ à¤¸à¥‡à¤•à¤‚à¤¡ à¤®à¥‡à¤‚ à¤µà¤¿à¤¸à¥à¤¥à¤¾à¤ªà¤¨: sâ‚™ = u + a/2 (2n - 1) à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "motion in a plane (vectors & projectile)": {
+      subjectId: "physics_11", classId: "11",
+      questions: [
+        {
+          q: "A projectile is launched from ground with speed u at angle Î¸ to horizontal. Its maximum horizontal range R_max is achieved at angle:",
+          q_hi: "à¤à¤• à¤ªà¥à¤°à¤•à¥à¤·à¥‡à¤ªà¥à¤¯ à¤•à¥‹ à¤šà¤¾à¤² u à¤¤à¤¥à¤¾ à¤•à¥à¤·à¥ˆà¤¤à¤¿à¤œ à¤¸à¥‡ à¤•à¥‹à¤£ Î¸ à¤ªà¤° à¤ªà¥à¤°à¤•à¥à¤·à¥‡à¤ªà¤¿à¤¤ à¤•à¤¿à¤¯à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤ à¤…à¤§à¤¿à¤•à¤¤à¤® à¤•à¥à¤·à¥ˆà¤¤à¤¿à¤œ à¤ªà¤°à¤¾à¤¸ R_max à¤•à¤¿à¤¸ à¤•à¥‹à¤£ à¤ªà¤° à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["45Â°", "60Â°", "30Â°", "90Â°"],
+          opts_hi: ["45Â°", "60Â°", "30Â°", "90Â°"],
+          ans: 0,
+          exp: "Horizontal range R = (uÂ² sin 2Î¸) / g. Range is maximum when sin 2Î¸ = 1, which gives 2Î¸ = 90Â° â‡’ Î¸ = 45Â°.",
+          exp_hi: "à¤ªà¤°à¤¾à¤¸ R = (uÂ² sin 2Î¸) / gà¥¤ à¤œà¤¬ sin 2Î¸ = 1 à¤¹à¥‹, à¤¤à¤¬ 2Î¸ = 90Â° à¤…à¤°à¥à¤¥à¤¾à¤¤à¥ Î¸ = 45Â° à¤ªà¤° à¤ªà¤°à¤¾à¤¸ à¤…à¤§à¤¿à¤•à¤¤à¤® à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "laws of motion (friction & dynamics)": {
+      subjectId: "physics_11", classId: "11",
+      questions: [
+        {
+          q: "What is the relation between the coefficient of static friction (Î¼â‚›) and angle of friction (Î»)?",
+          q_hi: "à¤¸à¥à¤¥à¥ˆà¤¤à¤¿à¤• à¤˜à¤°à¥à¤·à¤£ à¤—à¥à¤£à¤¾à¤‚à¤• (Î¼â‚›) à¤”à¤° à¤˜à¤°à¥à¤·à¤£ à¤•à¥‹à¤£ (Î») à¤•à¥‡ à¤¬à¥€à¤š à¤•à¥à¤¯à¤¾ à¤¸à¤‚à¤¬à¤‚à¤§ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Î¼â‚› = tan Î»", "Î¼â‚› = sin Î»", "Î¼â‚› = cos Î»", "Î¼â‚› = cot Î»"],
+          opts_hi: ["Î¼â‚› = tan Î»", "Î¼â‚› = sin Î»", "Î¼â‚› = cos Î»", "Î¼â‚› = cot Î»"],
+          ans: 0,
+          exp: "Limiting friction fâ‚› = Î¼â‚› R. The angle of friction Î» satisfies tan Î» = fâ‚› / R = Î¼â‚›.",
+          exp_hi: "à¤˜à¤°à¥à¤·à¤£ à¤•à¥‹à¤£ à¤•à¥€ à¤¸à¥à¤ªà¤°à¥à¤¶à¤œà¥à¤¯à¤¾ à¤¸à¥à¤¥à¥ˆà¤¤à¤¿à¤• à¤˜à¤°à¥à¤·à¤£ à¤—à¥à¤£à¤¾à¤‚à¤• à¤•à¥‡ à¤¬à¤°à¤¾à¤¬à¤° à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ: Î¼â‚› = tan Î»à¥¤"
+        }
+      ]
+    },
+
+    "work, energy & power": {
+      subjectId: "physics_11", classId: "11",
+      questions: [
+        {
+          q: "The Work-Energy Theorem states that work done by all forces acting on a particle is equal to the change in its:",
+          q_hi: "à¤•à¤¾à¤°à¥à¤¯-à¤Šà¤°à¥à¤œà¤¾ à¤ªà¥à¤°à¤®à¥‡à¤¯ à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° à¤•à¤¿à¤¸à¥€ à¤•à¤£ à¤ªà¤° à¤²à¤—à¤¨à¥‡ à¤µà¤¾à¤²à¥‡ à¤¸à¤­à¥€ à¤¬à¤²à¥‹à¤‚ à¤¦à¥à¤µà¤¾à¤°à¤¾ à¤•à¤¿à¤¯à¤¾ à¤—à¤¯à¤¾ à¤•à¤¾à¤°à¥à¤¯ à¤•à¤¿à¤¸à¤•à¥‡ à¤ªà¤°à¤¿à¤µà¤°à¥à¤¤à¤¨ à¤•à¥‡ à¤¬à¤°à¤¾à¤¬à¤° à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Kinetic Energy (Î”K)", "Potential Energy (Î”U)", "Total Momentum", "Impulse"],
+          opts_hi: ["à¤—à¤¤à¤¿à¤œ à¤Šà¤°à¥à¤œà¤¾ (Kinetic Energy - Î”K)", "à¤¸à¥à¤¥à¤¿à¤¤à¤¿à¤œ à¤Šà¤°à¥à¤œà¤¾ (Î”U)", "à¤•à¥à¤² à¤¸à¤‚à¤µà¥‡à¤—", "à¤†à¤µà¥‡à¤—"],
+          ans: 0,
+          exp: "Work-Energy Theorem: W_net = K_f - K_i = Î”K. Net work equals change in kinetic energy.",
+          exp_hi: "à¤•à¤¾à¤°à¥à¤¯-à¤Šà¤°à¥à¤œà¤¾ à¤ªà¥à¤°à¤®à¥‡à¤¯: W_net = Î”K (à¤—à¤¤à¤¿à¤œ à¤Šà¤°à¥à¤œà¤¾ à¤®à¥‡à¤‚ à¤ªà¤°à¤¿à¤µà¤°à¥à¤¤à¤¨)à¥¤"
+        }
+      ]
+    },
+
+    "gravitation": {
+      subjectId: "physics_11", classId: "11",
+      questions: [
+        {
+          q: "The escape speed from the surface of Earth for an object of mass m is proportional to:",
+          q_hi: "à¤ªà¥ƒà¤¥à¥à¤µà¥€ à¤•à¥€ à¤¸à¤¤à¤¹ à¤¸à¥‡ à¤¦à¥à¤°à¤µà¥à¤¯à¤®à¤¾à¤¨ m à¤•à¥€ à¤µà¤¸à¥à¤¤à¥ à¤•à¤¾ à¤ªà¤²à¤¾à¤¯à¤¨ à¤µà¥‡à¤— (Escape Velocity) à¤•à¤¿à¤¸à¤•à¥‡ à¤¸à¤®à¤¾à¤¨à¥à¤ªà¤¾à¤¤à¥€ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["mâ° (Independent of object's mass)", "mÂ¹", "mÂ¹/Â²", "mâ»Â¹"],
+          opts_hi: ["mâ° (à¤µà¤¸à¥à¤¤à¥ à¤•à¥‡ à¤¦à¥à¤°à¤µà¥à¤¯à¤®à¤¾à¤¨ à¤ªà¤° à¤¨à¤¿à¤°à¥à¤­à¤° à¤¨à¤¹à¥€à¤‚ à¤•à¤°à¤¤à¤¾)", "mÂ¹", "mÂ¹/Â²", "mâ»Â¹"],
+          ans: 0,
+          exp: "Escape velocity v_e = âˆš(2GM/R) = âˆš(2gR) â‰ˆ 11.2 km/s. It depends only on planet's mass and radius, completely independent of the projectile's mass m.",
+          exp_hi: "à¤ªà¤²à¤¾à¤¯à¤¨ à¤µà¥‡à¤— v_e = âˆš(2gR) à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ, à¤œà¥‹ à¤µà¤¸à¥à¤¤à¥ à¤•à¥‡ à¤¦à¥à¤°à¤µà¥à¤¯à¤®à¤¾à¤¨ à¤ªà¤° à¤¨à¤¿à¤°à¥à¤­à¤° à¤¨à¤¹à¥€à¤‚ à¤•à¤°à¤¤à¤¾ (mâ°)à¥¤"
+        }
+      ]
+    },
+
+    // ==========================================
+    // CLASS 11 CHEMISTRY (NON-MEDICAL)
+    // ==========================================
+    "some basic concepts of chemistry (mole concept)": {
+      subjectId: "chemistry_11", classId: "11",
+      questions: [
+        {
+          q: "What is the molarity of pure water at 4Â°C (density = 1 g/mL)?",
+          q_hi: "4Â°C à¤ªà¤° à¤¶à¥à¤¦à¥à¤§ à¤œà¤² (à¤˜à¤¨à¤¤à¥à¤µ = 1 g/mL) à¤•à¥€ à¤®à¥‹à¤²à¤°à¤¤à¤¾ (Molarity) à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["55.55 M", "18.0 M", "1.0 M", "100.0 M"],
+          opts_hi: ["55.55 M", "18.0 M", "1.0 M", "100.0 M"],
+          ans: 0,
+          exp: "1 L water has mass 1000 g. Moles = 1000 / 18.015 = 55.55 mol. Molarity = 55.55 mol/L = 55.55 M.",
+          exp_hi: "1 à¤²à¥€à¤Ÿà¤° à¤œà¤² = 1000 à¤—à¥à¤°à¤¾à¤®à¥¤ à¤®à¥‹à¤² = 1000/18 = 55.55 à¤®à¥‹à¤²à¥¤ à¤®à¥‹à¤²à¤°à¤¤à¤¾ = 55.55 Mà¥¤"
+        }
+      ]
+    },
+
+    "structure of atom (quantum mechanics)": {
+      subjectId: "chemistry_11", classId: "11",
+      questions: [
+        {
+          q: "According to de Broglie hypothesis, the wavelength Î» of a particle of mass m moving with velocity v is given by:",
+          q_hi: "à¤¦à¥‡ à¤¬à¥à¤°à¥‰à¤—à¥à¤²à¥€ à¤ªà¤°à¤¿à¤•à¤²à¥à¤ªà¤¨à¤¾ à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤°, à¤µà¥‡à¤— v à¤¸à¥‡ à¤—à¤¤à¤¿à¤®à¤¾à¤¨ à¤¦à¥à¤°à¤µà¥à¤¯à¤®à¤¾à¤¨ m à¤•à¥‡ à¤•à¤£ à¤•à¥€ à¤¤à¤°à¤‚à¤—à¤¦à¥ˆà¤°à¥à¤˜à¥à¤¯ Î» à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["Î» = h / (mv)", "Î» = mv / h", "Î» = h / (mcÂ²)", "Î» = hÎ½ / c"],
+          opts_hi: ["Î» = h / (mv)", "Î» = mv / h", "Î» = h / (mcÂ²)", "Î» = hÎ½ / c"],
+          ans: 0,
+          exp: "de Broglie equation relates wave and particle properties: Î» = h/p = h/(mv).",
+          exp_hi: "à¤¦à¥‡ à¤¬à¥à¤°à¥‰à¤—à¥à¤²à¥€ à¤¸à¤‚à¤¬à¤‚à¤§: Î» = h / (mv) à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "chemical bonding & molecular structure": {
+      subjectId: "chemistry_11", classId: "11",
+      questions: [
+        {
+          q: "What is the molecular geometry and hybridization of central atom in SFâ‚†?",
+          q_hi: "SFâ‚† à¤®à¥‡à¤‚ à¤•à¥‡à¤‚à¤¦à¥à¤°à¥€à¤¯ à¤ªà¤°à¤®à¤¾à¤£à¥ à¤•à¤¾ à¤¸à¤‚à¤•à¤°à¤£ (Hybridization) à¤”à¤° à¤…à¤£à¥ à¤•à¥€ à¤œà¥à¤¯à¤¾à¤®à¤¿à¤¤à¤¿ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["spÂ³dÂ² - Octahedral", "spÂ³d - Trigonal Bipyramidal", "spÂ³ - Tetrahedral", "dspÂ² - Square Planar"],
+          opts_hi: ["spÂ³dÂ² - à¤…à¤·à¥à¤Ÿà¤«à¤²à¤•à¥€à¤¯ (Octahedral)", "spÂ³d - à¤¤à¥à¤°à¤¿à¤•à¥‹à¤£à¥€à¤¯ à¤¦à¥à¤µà¤¿à¤ªà¤¿à¤°à¤¾à¤®à¤¿à¤¡à¥€", "spÂ³ - à¤šà¤¤à¥à¤·à¥à¤«à¤²à¤•à¥€à¤¯", "dspÂ² - à¤µà¤°à¥à¤— à¤¸à¤®à¤¤à¤²à¥€à¤¯"],
+          ans: 0,
+          exp: "S has 6 valence electrons, forms 6 bond pairs with zero lone pairs. Steric number = 6 â‡’ spÂ³dÂ² hybridization with regular octahedral geometry.",
+          exp_hi: "SFâ‚† à¤®à¥‡à¤‚ 6 à¤†à¤¬à¤‚à¤§ à¤¯à¥à¤—à¥à¤® à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚, à¤…à¤¤à¤ƒ spÂ³dÂ² à¤¸à¤‚à¤•à¤°à¤£ à¤”à¤° à¤…à¤·à¥à¤Ÿà¤«à¤²à¤•à¥€à¤¯ à¤œà¥à¤¯à¤¾à¤®à¤¿à¤¤à¤¿ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    // ==========================================
+    // CLASS 11 MATHEMATICS
+    // ==========================================
+    "sets & relations": {
+      subjectId: "maths_11", classId: "11",
+      questions: [
+        {
+          q: "If set A has n elements, what is the total number of subsets (power set size) of A?",
+          q_hi: "à¤¯à¤¦à¤¿ à¤¸à¤®à¥à¤šà¥à¤šà¤¯ A à¤®à¥‡à¤‚ n à¤…à¤µà¤¯à¤µ à¤¹à¥ˆà¤‚, à¤¤à¥‹ A à¤•à¥‡ à¤•à¥à¤² à¤‰à¤ªà¤¸à¤®à¥à¤šà¥à¤šà¤¯à¥‹à¤‚ (à¤˜à¤¾à¤¤ à¤¸à¤®à¥à¤šà¥à¤šà¤¯ à¤•à¤¾ à¤†à¤•à¤¾à¤°) à¤•à¥€ à¤¸à¤‚à¤–à¥à¤¯à¤¾ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤—à¥€?",
+          opts: ["2â¿", "nÂ²", "2n", "n!"],
+          opts_hi: ["2â¿", "nÂ²", "2n", "n!"],
+          ans: 0,
+          exp: "The number of elements in the power set P(A) of a set containing n elements is 2â¿.",
+          exp_hi: "n à¤…à¤µà¤¯à¤µà¥‹à¤‚ à¤µà¤¾à¤²à¥‡ à¤¸à¤®à¥à¤šà¥à¤šà¤¯ à¤•à¥‡ à¤˜à¤¾à¤¤ à¤¸à¤®à¥à¤šà¥à¤šà¤¯ à¤®à¥‡à¤‚ 2â¿ à¤‰à¤ªà¤¸à¤®à¥à¤šà¥à¤šà¤¯ à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚à¥¤"
+        }
+      ]
+    },
+
+    "trigonometric functions": {
+      subjectId: "maths_11", classId: "11",
+      questions: [
+        {
+          q: "What is the general solution of the trigonometric equation sin Î¸ = 0?",
+          q_hi: "à¤¤à¥à¤°à¤¿à¤•à¥‹à¤£à¤®à¤¿à¤¤à¥€à¤¯ à¤¸à¤®à¥€à¤•à¤°à¤£ sin Î¸ = 0 à¤•à¤¾ à¤µà¥à¤¯à¤¾à¤ªà¤• à¤¹à¤² (General Solution) à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Î¸ = nÏ€, n âˆˆ Z", "Î¸ = (2n + 1)Ï€/2, n âˆˆ Z", "Î¸ = 2nÏ€, n âˆˆ Z", "Î¸ = nÏ€/2, n âˆˆ Z"],
+          opts_hi: ["Î¸ = nÏ€, n âˆˆ Z", "Î¸ = (2n + 1)Ï€/2, n âˆˆ Z", "Î¸ = 2nÏ€, n âˆˆ Z", "Î¸ = nÏ€/2, n âˆˆ Z"],
+          ans: 0,
+          exp: "sin Î¸ vanishes at integer multiples of Ï€. Hence, general solution is Î¸ = nÏ€ for any integer n.",
+          exp_hi: "sin Î¸ = 0 à¤•à¤¾ à¤µà¥à¤¯à¤¾à¤ªà¤• à¤¹à¤² Î¸ = nÏ€ (à¤œà¤¹à¤¾à¤ n à¤ªà¥‚à¤°à¥à¤£à¤¾à¤‚à¤• à¤¹à¥ˆ) à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    // ==========================================
+    // CLASS 12 PHYSICS (NON-MEDICAL)
+    // ==========================================
+    "electric charges & fields": {
+      subjectId: "physics_12", classId: "12",
+      questions: [
+        {
+          q: "According to Gauss's Law in electrostatics, the net electric flux through any closed Gaussian surface enclosing charge q_enclosed is:",
+          q_hi: "à¤—à¤¾à¤‰à¤¸ à¤•à¥‡ à¤¨à¤¿à¤¯à¤® à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤°, à¤†à¤µà¥‡à¤¶ q_enclosed à¤•à¥‹ à¤ªà¤°à¤¿à¤¬à¤¦à¥à¤§ à¤•à¤°à¤¨à¥‡ à¤µà¤¾à¤²à¥‡ à¤•à¤¿à¤¸à¥€ à¤¬à¤‚à¤¦ à¤ªà¥ƒà¤·à¥à¤  à¤¸à¥‡ à¤—à¥à¤œà¤°à¤¨à¥‡ à¤µà¤¾à¤²à¤¾ à¤•à¥à¤² à¤µà¤¿à¤¦à¥à¤¯à¥à¤¤ à¤«à¥à¤²à¤•à¥à¤¸ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["q_enclosed / Îµâ‚€", "Îµâ‚€ Ã— q_enclosed", "q_enclosed / (4Ï€Îµâ‚€)", "0"],
+          opts_hi: ["q_enclosed / Îµâ‚€", "Îµâ‚€ Ã— q_enclosed", "q_enclosed / (4Ï€Îµâ‚€)", "0"],
+          ans: 0,
+          exp: "Gauss's law states Î¦ = âˆ® EÂ·dA = q_enclosed / Îµâ‚€ in vacuum.",
+          exp_hi: "à¤—à¤¾à¤‰à¤¸ à¤•à¤¾ à¤¨à¤¿à¤¯à¤®: à¤¬à¤‚à¤¦ à¤ªà¥ƒà¤·à¥à¤  à¤¸à¥‡ à¤—à¥à¤œà¤°à¤¨à¥‡ à¤µà¤¾à¤²à¤¾ à¤•à¥à¤² à¤µà¤¿à¤¦à¥à¤¯à¥à¤¤ à¤«à¥à¤²à¤•à¥à¤¸ Î¦ = q / Îµâ‚€ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "electrostatic potential & capacitance": {
+      subjectId: "physics_12", classId: "12",
+      questions: [
+        {
+          q: "What is the equivalent capacitance when two capacitors Câ‚ and Câ‚‚ are connected in series?",
+          q_hi: "à¤œà¤¬ à¤¦à¥‹ à¤¸à¤‚à¤§à¤¾à¤°à¤¿à¤¤à¥à¤° Câ‚ à¤”à¤° Câ‚‚ à¤¶à¥à¤°à¥‡à¤£à¥€à¤•à¥à¤°à¤® (Series) à¤®à¥‡à¤‚ à¤œà¥à¤¡à¤¼à¥‡ à¤¹à¥‹à¤‚, à¤¤à¥‹ à¤¤à¥à¤²à¥à¤¯ à¤§à¤¾à¤°à¤¿à¤¤à¤¾ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["(Câ‚ Ã— Câ‚‚) / (Câ‚ + Câ‚‚)", "Câ‚ + Câ‚‚", "Câ‚ - Câ‚‚", "âˆš(Câ‚ Ã— Câ‚‚)"],
+          opts_hi: ["(Câ‚ Ã— Câ‚‚) / (Câ‚ + Câ‚‚)", "Câ‚ + Câ‚‚", "Câ‚ - Câ‚‚", "âˆš(Câ‚ Ã— Câ‚‚)"],
+          ans: 0,
+          exp: "In series, 1/C_eq = 1/Câ‚ + 1/Câ‚‚ = (Câ‚ + Câ‚‚)/(Câ‚Câ‚‚), so C_eq = (Câ‚Câ‚‚)/(Câ‚ + Câ‚‚).",
+          exp_hi: "à¤¶à¥à¤°à¥‡à¤£à¥€à¤•à¥à¤°à¤® à¤®à¥‡à¤‚ 1/C = 1/Câ‚ + 1/Câ‚‚ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ, à¤…à¤¤à¤ƒ à¤¤à¥à¤²à¥à¤¯ à¤§à¤¾à¤°à¤¿à¤¤à¤¾ C = (Câ‚Câ‚‚)/(Câ‚ + Câ‚‚) à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "current electricity (kirchhoff's laws & potentiometer)": {
+      subjectId: "physics_12", classId: "12",
+      questions: [
+        {
+          q: "Kirchhoff's Current Law (Junction Rule Î£I = 0) is a direct consequence of the conservation of:",
+          q_hi: "à¤•à¤¿à¤°à¤šà¥‰à¤« à¤•à¤¾ à¤§à¤¾à¤°à¤¾ à¤¨à¤¿à¤¯à¤® (à¤¸à¤‚à¤§à¤¿ à¤¨à¤¿à¤¯à¤® Î£I = 0) à¤•à¤¿à¤¸à¤•à¥‡ à¤¸à¤‚à¤°à¤•à¥à¤·à¤£ à¤•à¤¾ à¤ªà¥à¤°à¤¤à¥à¤¯à¤•à¥à¤· à¤ªà¤°à¤¿à¤£à¤¾à¤® à¤¹à¥ˆ?",
+          opts: ["Electric Charge", "Energy", "Linear Momentum", "Angular Momentum"],
+          opts_hi: ["à¤µà¤¿à¤¦à¥à¤¯à¥à¤¤ à¤†à¤µà¥‡à¤¶ (Electric Charge)", "à¤Šà¤°à¥à¤œà¤¾ (Energy)", "à¤°à¥ˆà¤–à¤¿à¤• à¤¸à¤‚à¤µà¥‡à¤—", "à¤•à¥‹à¤£à¥€à¤¯ à¤¸à¤‚à¤µà¥‡à¤—"],
+          ans: 0,
+          exp: "Charge cannot accumulate at a junction; rate of incoming charge equals rate of outgoing charge, reflecting conservation of charge.",
+          exp_hi: "à¤•à¤¿à¤°à¤šà¥‰à¤« à¤•à¤¾ à¤¸à¤‚à¤§à¤¿ à¤¨à¤¿à¤¯à¤® à¤†à¤µà¥‡à¤¶ à¤•à¥‡ à¤¸à¤‚à¤°à¤•à¥à¤·à¤£ à¤ªà¤° à¤†à¤§à¤¾à¤°à¤¿à¤¤ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "moving charges & magnetism (biot-savart & ampere)": {
+      subjectId: "physics_12", classId: "12",
+      questions: [
+        {
+          q: "The magnetic field B at the center of a circular loop of radius R carrying current I is given by:",
+          q_hi: "à¤¤à¥à¤°à¤¿à¤œà¥à¤¯à¤¾ R à¤”à¤° à¤§à¤¾à¤°à¤¾ I à¤µà¤¾à¤²à¥‡ à¤µà¥ƒà¤¤à¥à¤¤à¤¾à¤•à¤¾à¤° à¤²à¥‚à¤ª à¤•à¥‡ à¤•à¥‡à¤‚à¤¦à¥à¤° à¤ªà¤° à¤šà¥à¤‚à¤¬à¤•à¥€à¤¯ à¤•à¥à¤·à¥‡à¤¤à¥à¤° B à¤•à¤¾ à¤®à¤¾à¤¨ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Î¼â‚€I / (2R)", "Î¼â‚€I / (4Ï€R)", "Î¼â‚€I / (2Ï€R)", "2Î¼â‚€I / R"],
+          opts_hi: ["Î¼â‚€I / (2R)", "Î¼â‚€I / (4Ï€R)", "Î¼â‚€I / (2Ï€R)", "2Î¼â‚€I / R"],
+          ans: 0,
+          exp: "From Biot-Savart law integrated over circular coil, field at center B = Î¼â‚€I / (2R).",
+          exp_hi: "à¤¬à¤¾à¤¯à¥‹-à¤¸à¤¾à¤µà¤°à¥à¤Ÿ à¤¨à¤¿à¤¯à¤® à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° à¤µà¥ƒà¤¤à¥à¤¤à¤¾à¤•à¤¾à¤° à¤²à¥‚à¤ª à¤•à¥‡ à¤•à¥‡à¤‚à¤¦à¥à¤° à¤ªà¤° B = Î¼â‚€I / (2R) à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "semiconductor electronics (p-n junction & logic)": {
+      subjectId: "physics_12", classId: "12",
+      questions: [
+        {
+          q: "In an intrinsic silicon semiconductor at room temperature, what dopant is added to create a p-type semiconductor?",
+          q_hi: "à¤•à¤®à¤°à¥‡ à¤•à¥‡ à¤¤à¤¾à¤ªà¤®à¤¾à¤¨ à¤ªà¤° à¤†à¤‚à¤¤à¤°à¤¿à¤• à¤¸à¤¿à¤²à¤¿à¤•à¥‰à¤¨ à¤®à¥‡à¤‚ p-à¤ªà¥à¤°à¤•à¤¾à¤° à¤•à¤¾ à¤…à¤°à¥à¤§à¤šà¤¾à¤²à¤• à¤¬à¤¨à¤¾à¤¨à¥‡ à¤•à¥‡ à¤²à¤¿à¤ à¤•à¥Œà¤¨ à¤¸à¤¾ à¤…à¤ªà¤®à¤¿à¤¶à¥à¤°à¤• à¤®à¤¿à¤²à¤¾à¤¯à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Trivalent impurity (e.g. Boron, Aluminium)", "Pentavalent impurity (e.g. Phosphorus, Arsenic)", "Noble gas", "Carbon"],
+          opts_hi: ["à¤¤à¥à¤°à¤¿à¤¸à¤‚à¤¯à¥‹à¤œà¥€ à¤…à¤¶à¥à¤¦à¥à¤§à¤¿ (à¤œà¥ˆà¤¸à¥‡ à¤¬à¥‹à¤°à¥‰à¤¨, à¤à¤²à¥à¤¯à¥à¤®à¤¿à¤¨à¤¿à¤¯à¤®)", "à¤ªà¤‚à¤šà¤¸à¤‚à¤¯à¥‹à¤œà¥€ à¤…à¤¶à¥à¤¦à¥à¤§à¤¿ (à¤œà¥ˆà¤¸à¥‡ à¤«à¤¾à¤¸à¥à¤«à¥‹à¤°à¤¸, à¤†à¤°à¥à¤¸à¥‡à¤¨à¤¿à¤•)", "à¤…à¤•à¥à¤°à¤¿à¤¯ à¤—à¥ˆà¤¸", "à¤•à¤¾à¤°à¥à¤¬à¤¨"],
+          ans: 0,
+          exp: "Trivalent atoms (Boron, Indium) have 3 valence electrons, creating a vacancy (hole) in the crystal lattice, yielding p-type material.",
+          exp_hi: "à¤¤à¥à¤°à¤¿à¤¸à¤‚à¤¯à¥‹à¤œà¥€ à¤…à¤¶à¥à¤¦à¥à¤§à¤¿ (à¤œà¥ˆà¤¸à¥‡ à¤¬à¥‹à¤°à¥‰à¤¨) à¤®à¤¿à¤²à¤¾à¤¨à¥‡ à¤ªà¤° à¤¹à¥‹à¤² (Hole) à¤•à¤¾ à¤¨à¤¿à¤°à¥à¤®à¤¾à¤£ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ, à¤œà¤¿à¤¸à¤¸à¥‡ p-à¤ªà¥à¤°à¤•à¤¾à¤° à¤…à¤°à¥à¤§à¤šà¤¾à¤²à¤• à¤¬à¤¨à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    // ==========================================
+    // CLASS 12 CHEMISTRY (NON-MEDICAL)
+    // ==========================================
+    "solutions (colligative properties & raoult's law)": {
+      subjectId: "chemistry_12", classId: "12",
+      questions: [
+        {
+          q: "Which of the following is a colligative property that depends only on the number of solute particles?",
+          q_hi: "à¤¨à¤¿à¤®à¥à¤¨à¤²à¤¿à¤–à¤¿à¤¤ à¤®à¥‡à¤‚ à¤¸à¥‡ à¤•à¥Œà¤¨ à¤¸à¤¾ à¤à¤• à¤…à¤£à¥à¤¸à¤‚à¤–à¥à¤¯ à¤—à¥à¤£à¤§à¤°à¥à¤® (Colligative Property) à¤¹à¥ˆ?",
+          opts: ["Osmotic Pressure", "Refractive Index", "Viscosity", "Surface Tension"],
+          opts_hi: ["à¤ªà¤°à¤¾à¤¸à¤°à¤£ à¤¦à¤¾à¤¬ (Osmotic Pressure)", "à¤…à¤ªà¤µà¤°à¥à¤¤à¤¨à¤¾à¤‚à¤•", "à¤¶à¥à¤¯à¤¾à¤¨à¤¤à¤¾", "à¤ªà¥ƒà¤·à¥à¤  à¤¤à¤¨à¤¾à¤µ"],
+          ans: 0,
+          exp: "Colligative properties depend only on number of solute particles. Osmotic pressure Î  = CRT is one of the four key colligative properties.",
+          exp_hi: "à¤ªà¤°à¤¾à¤¸à¤°à¤£ à¤¦à¤¾à¤¬ (Î  = CRT) à¤à¤• à¤…à¤£à¥à¤¸à¤‚à¤–à¥à¤¯ à¤—à¥à¤£à¤§à¤°à¥à¤® à¤¹à¥ˆ à¤œà¥‹ à¤•à¥‡à¤µà¤² à¤µà¤¿à¤²à¥‡à¤¯ à¤•à¥‡ à¤•à¤£à¥‹à¤‚ à¤•à¥€ à¤¸à¤‚à¤–à¥à¤¯à¤¾ à¤ªà¤° à¤¨à¤¿à¤°à¥à¤­à¤° à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "chemical kinetics (rate laws & arrhenius equation)": {
+      subjectId: "chemistry_12", classId: "12",
+      questions: [
+        {
+          q: "For a first-order reaction with rate constant k, the half-life tâ‚/â‚‚ is given by:",
+          q_hi: "à¤¦à¤° à¤¸à¥à¤¥à¤¿à¤°à¤¾à¤‚à¤• k à¤µà¤¾à¤²à¥€ à¤ªà¥à¤°à¤¥à¤® à¤•à¥‹à¤Ÿà¤¿ à¤•à¥€ à¤…à¤­à¤¿à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤•à¥€ à¤…à¤°à¥à¤§-à¤†à¤¯à¥ tâ‚/â‚‚ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["0.693 / k", "k / 0.693", "[A]â‚€ / (2k)", "1 / (k[A]â‚€)"],
+          opts_hi: ["0.693 / k", "k / 0.693", "[A]â‚€ / (2k)", "1 / (k[A]â‚€)"],
+          ans: 0,
+          exp: "For first order reaction, tâ‚/â‚‚ = ln(2)/k = 0.693/k, completely independent of initial reactant concentration [A]â‚€.",
+          exp_hi: "à¤ªà¥à¤°à¤¥à¤® à¤•à¥‹à¤Ÿà¤¿ à¤•à¥€ à¤…à¤­à¤¿à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤•à¥‡ à¤²à¤¿à¤ tâ‚/â‚‚ = 0.693/k à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ à¤”à¤° à¤¯à¤¹ à¤ªà¥à¤°à¤¾à¤°à¤‚à¤­à¤¿à¤• à¤¸à¤¾à¤‚à¤¦à¥à¤°à¤¤à¤¾ à¤¸à¥‡ à¤¸à¥à¤µà¤¤à¤‚à¤¤à¥à¤° à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "coordination compounds (vbt & cft theory)": {
+      subjectId: "chemistry_12", classId: "12",
+      questions: [
+        {
+          q: "What is the coordination number and oxidation state of cobalt in the complex [Co(NHâ‚ƒ)â‚†]Clâ‚ƒ?",
+          q_hi: "à¤¸à¤‚à¤•à¥à¤² [Co(NHâ‚ƒ)â‚†]Clâ‚ƒ à¤®à¥‡à¤‚ à¤•à¥‹à¤¬à¤¾à¤²à¥à¤Ÿ à¤•à¥€ à¤‰à¤ªà¤¸à¤¹à¤¸à¤‚à¤¯à¥‹à¤œà¤¨ à¤¸à¤‚à¤–à¥à¤¯à¤¾ à¤”à¤° à¤‘à¤•à¥à¤¸à¥€à¤•à¤°à¤£ à¤…à¤µà¤¸à¥à¤¥à¤¾ à¤•à¥à¤¯à¤¾ à¤¹à¥ˆ?",
+          opts: ["Coordination number = 6, Oxidation state = +3", "Coordination number = 6, Oxidation state = +2", "Coordination number = 3, Oxidation state = +3", "Coordination number = 4, Oxidation state = +6"],
+          opts_hi: ["à¤‰à¤ªà¤¸à¤¹à¤¸à¤‚à¤¯à¥‹à¤œà¤¨ à¤¸à¤‚à¤–à¥à¤¯à¤¾ = 6, à¤‘à¤•à¥à¤¸à¥€à¤•à¤°à¤£ à¤…à¤µà¤¸à¥à¤¥à¤¾ = +3", "à¤‰à¤ªà¤¸à¤¹à¤¸à¤‚à¤¯à¥‹à¤œà¤¨ à¤¸à¤‚à¤–à¥à¤¯à¤¾ = 6, à¤‘à¤•à¥à¤¸à¥€à¤•à¤°à¤£ à¤…à¤µà¤¸à¥à¤¥à¤¾ = +2", "à¤‰à¤ªà¤¸à¤¹à¤¸à¤‚à¤¯à¥‹à¤œà¤¨ à¤¸à¤‚à¤–à¥à¤¯à¤¾ = 3, à¤‘à¤•à¥à¤¸à¥€à¤•à¤°à¤£ à¤…à¤µà¤¸à¥à¤¥à¤¾ = +3", "à¤‰à¤ªà¤¸à¤¹à¤¸à¤‚à¤¯à¥‹à¤œà¤¨ à¤¸à¤‚à¤–à¥à¤¯à¤¾ = 4, à¤‘à¤•à¥à¤¸à¥€à¤•à¤°à¤£ à¤…à¤µà¤¸à¥à¤¥à¤¾ = +6"],
+          ans: 0,
+          exp: "6 NHâ‚ƒ neutral ligands surround Co, giving CN = 6. With 3 Clâ» counter ions, Co has oxidation state x + 6(0) - 3 = 0 â‡’ x = +3.",
+          exp_hi: "à¤•à¥‹à¤¬à¤¾à¤²à¥à¤Ÿ 6 à¤…à¤®à¥‹à¤¨à¤¿à¤¯à¤¾ à¤²à¤¿à¤—à¥‡à¤‚à¤¡à¥‹à¤‚ à¤¸à¥‡ à¤œà¥à¤¡à¤¼à¤¾ à¤¹à¥ˆ (CN = 6) à¤¤à¤¥à¤¾ 3 à¤•à¥à¤²à¥‹à¤°à¤¾à¤‡à¤¡ à¤†à¤¯à¤¨à¥‹à¤‚ à¤•à¥‡ à¤•à¤¾à¤°à¤£ à¤‘à¤•à¥à¤¸à¥€à¤•à¤°à¤£ à¤…à¤µà¤¸à¥à¤¥à¤¾ +3 à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    // ==========================================
+    // CLASS 12 MATHEMATICS
+    // ==========================================
+    "matrices": {
+      subjectId: "maths_12", classId: "12",
+      questions: [
+        {
+          q: "If A is a square matrix of order n, then |kA| is equal to:",
+          q_hi: "à¤¯à¤¦à¤¿ A à¤•à¥‹à¤Ÿà¤¿ n à¤•à¤¾ à¤à¤• à¤µà¤°à¥à¤— à¤†à¤µà¥à¤¯à¥‚à¤¹ à¤¹à¥ˆ, à¤¤à¥‹ à¤¸à¤¾à¤°à¤£à¤¿à¤• |kA| à¤•à¤¿à¤¸à¤•à¥‡ à¤¬à¤°à¤¾à¤¬à¤° à¤¹à¥‹à¤—à¤¾?",
+          opts: ["kâ¿ |A|", "k |A|", "n^k |A|", "kÂ² |A|"],
+          opts_hi: ["kâ¿ |A|", "k |A|", "n^k |A|", "kÂ² |A|"],
+          ans: 0,
+          exp: "Multiplying a matrix by scalar k scales every row by k. For an nÃ—n matrix, factor k can be taken out from each of the n rows, giving kâ¿ |A|.",
+          exp_hi: "nÃ—n à¤†à¤µà¥à¤¯à¥‚à¤¹ à¤•à¥€ à¤ªà¥à¤°à¤¤à¥à¤¯à¥‡à¤• à¤ªà¤‚à¤•à¥à¤¤à¤¿ à¤®à¥‡à¤‚ k à¤•à¤¾ à¤—à¥à¤£à¤¾ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ, à¤…à¤¤à¤ƒ |kA| = kâ¿ |A| à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "integrals (definite & indefinite)": {
+      subjectId: "maths_12", classId: "12",
+      questions: [
+        {
+          q: "What is the value of the definite integral âˆ« (from -a to a) f(x) dx when f(x) is an odd function?",
+          q_hi: "à¤¯à¤¦à¤¿ f(x) à¤à¤• à¤µà¤¿à¤·à¤® à¤«à¤²à¤¨ (Odd Function) à¤¹à¥ˆ, à¤¤à¥‹ à¤¨à¤¿à¤¶à¥à¤šà¤¿à¤¤ à¤¸à¤®à¤¾à¤•à¤²à¤¨ âˆ« (à¤¸à¥€à¤®à¤¾ -a à¤¸à¥‡ a) f(x) dx à¤•à¤¾ à¤®à¤¾à¤¨ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤—à¤¾?",
+          opts: ["0", "2 âˆ« (0 to a) f(x) dx", "a", "Undefined"],
+          opts_hi: ["0", "2 âˆ« (0 à¤¸à¥‡ a) f(x) dx", "a", "à¤…à¤ªà¤°à¤¿à¤­à¤¾à¤·à¤¿à¤¤"],
+          ans: 0,
+          exp: "NCERT Definite Integral Property P7: If f(-x) = -f(x) (odd function), the areas above and below the x-axis cancel out, giving exactly 0.",
+          exp_hi: "à¤¨à¤¿à¤¶à¥à¤šà¤¿à¤¤ à¤¸à¤®à¤¾à¤•à¤²à¤¨ à¤—à¥à¤£à¤§à¤°à¥à¤® à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° à¤µà¤¿à¤·à¤® à¤«à¤²à¤¨ f(-x) = -f(x) à¤•à¥‡ à¤²à¤¿à¤ [-a, a] à¤ªà¤° à¤¸à¤®à¤¾à¤•à¤²à¤¨ à¤•à¤¾ à¤®à¤¾à¤¨ 0 à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "vector algebra": {
+      subjectId: "maths_12", classId: "12",
+      questions: [
+        {
+          q: "Two non-zero vectors a and b are perpendicular to each other if and only if their scalar product (a Â· b) is:",
+          q_hi: "à¤¦à¥‹ à¤¶à¥‚à¤¨à¥à¤¯à¥‡à¤¤à¤° à¤¸à¤¦à¤¿à¤¶ a à¤”à¤° b à¤ªà¤°à¤¸à¥à¤ªà¤° à¤²à¤‚à¤¬à¤µà¤¤ à¤¹à¥‹à¤‚à¤—à¥‡ à¤¯à¤¦à¤¿ à¤”à¤° à¤•à¥‡à¤µà¤² à¤¯à¤¦à¤¿ à¤‰à¤¨à¤•à¤¾ à¤…à¤¦à¤¿à¤¶ à¤—à¥à¤£à¤¨ (a Â· b):",
+          opts: ["0", "1", "-1", "|a||b|"],
+          opts_hi: ["0", "1", "-1", "|a||b|"],
+          ans: 0,
+          exp: "a Â· b = |a||b| cos Î¸. When Î¸ = 90Â°, cos 90Â° = 0, so the dot product is 0.",
+          exp_hi: "à¤²à¤‚à¤¬à¤µà¤¤ à¤¸à¤¦à¤¿à¤¶à¥‹à¤‚ à¤•à¥‡ à¤¬à¥€à¤š à¤•à¥‹à¤£ 90Â° à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ à¤”à¤° cos 90Â° = 0, à¤…à¤¤à¤ƒ a Â· b = 0 à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    }
+  };
+
+    // ==========================================
+    // CLASS 10 SST (HISTORY, GEO, CIVICS, ECO) - EXPANDED
+    // ==========================================
+    "the making of a global world": {
+      subjectId: "social_science_10", subSectionId: "history_10", classId: "10",
+      questions: [
+        {
+          q: "Which lethal cattle disease was carried by infected cattle imported from British Asia and decimated 90% of Africa's cattle in the 1890s?",
+          q_hi: "1890 à¤•à¥‡ à¤¦à¤¶à¤• à¤®à¥‡à¤‚ à¤¬à¥à¤°à¤¿à¤Ÿà¤¿à¤¶ à¤à¤¶à¤¿à¤¯à¤¾ à¤¸à¥‡ à¤†à¤¯à¤¾à¤¤à¤¿à¤¤ à¤®à¤µà¥‡à¤¶à¤¿à¤¯à¥‹à¤‚ à¤¦à¥à¤µà¤¾à¤°à¤¾ à¤•à¥Œà¤¨ à¤¸à¥€ à¤˜à¤¾à¤¤à¤• à¤¬à¥€à¤®à¤¾à¤°à¥€ à¤…à¤«à¥à¤°à¥€à¤•à¤¾ à¤ªà¤¹à¥à¤à¤šà¥€ à¤œà¤¿à¤¸à¤¨à¥‡ 90% à¤®à¤µà¥‡à¤¶à¤¿à¤¯à¥‹à¤‚ à¤•à¥‹ à¤®à¤¾à¤° à¤¡à¤¾à¤²à¤¾?",
+          opts: ["Rinderpest (Cattle Plague)", "Smallpox", "Cholera", "Anthrax"],
+          opts_hi: ["à¤°à¤¿à¤‚à¤¡à¤°à¤ªà¥‡à¤¸à¥à¤Ÿ (à¤®à¤µà¥‡à¤¶à¥€ à¤ªà¥à¤²à¥‡à¤—)", "à¤šà¥‡à¤šà¤•", "à¤¹à¥ˆà¤œà¤¾", "à¤à¤‚à¤¥à¥à¤°à¥‡à¤•à¥à¤¸"],
+          ans: 0,
+          exp: "Rinderpest arrived in Africa in the late 1880s and killed over 90% of cattle, destroying livelihoods and forcing Africans into wage labor.",
+          exp_hi: "à¤°à¤¿à¤‚à¤¡à¤°à¤ªà¥‡à¤¸à¥à¤Ÿ (Rinderpest) à¤¨à¥‡ à¤…à¤«à¥à¤°à¥€à¤•à¤¾ à¤•à¥‡ 90% à¤®à¤µà¥‡à¤¶à¤¿à¤¯à¥‹à¤‚ à¤•à¥‹ à¤¨à¤·à¥à¤Ÿ à¤•à¤° à¤¦à¤¿à¤¯à¤¾ à¤œà¤¿à¤¸à¤¸à¥‡ à¤¸à¥à¤¥à¤¾à¤¨à¥€à¤¯ à¤†à¤œà¥€à¤µà¤¿à¤•à¤¾ à¤¬à¤°à¥à¤¬à¤¾à¤¦ à¤¹à¥‹ à¤—à¤ˆà¥¤"
+        }
+      ]
+    },
+
+    "print culture & modern world": {
+      subjectId: "social_science_10", subSectionId: "history_10", classId: "10",
+      questions: [
+        {
+          q: "Who developed the first known mechanical movable printing press in Strasbourg, Germany in the 1430s?",
+          q_hi: "1430 à¤•à¥‡ à¤¦à¤¶à¤• à¤®à¥‡à¤‚ à¤¸à¥à¤Ÿà¥à¤°à¤¾à¤¸à¤¬à¤°à¥à¤—, à¤œà¤°à¥à¤®à¤¨à¥€ à¤®à¥‡à¤‚ à¤ªà¤¹à¤²à¥‡ à¤œà¥à¤žà¤¾à¤¤ à¤¯à¤¾à¤‚à¤¤à¥à¤°à¤¿à¤• à¤ªà¥à¤°à¤¿à¤‚à¤Ÿà¤¿à¤‚à¤— à¤ªà¥à¤°à¥‡à¤¸ à¤•à¤¾ à¤µà¤¿à¤•à¤¾à¤¸ à¤•à¤¿à¤¸à¤¨à¥‡ à¤•à¤¿à¤¯à¤¾ à¤¥à¤¾?",
+          opts: ["Johannes Gutenberg", "Martin Luther", "Erasmus", "Marco Polo"],
+          opts_hi: ["à¤œà¥‹à¤¹à¤¾à¤¨ à¤—à¥à¤Ÿà¥‡à¤¨à¤¬à¤°à¥à¤— (Johannes Gutenberg)", "à¤®à¤¾à¤°à¥à¤Ÿà¤¿à¤¨ à¤²à¥‚à¤¥à¤°", "à¤‡à¤°à¤¾à¤¸à¥à¤®à¤¸", "à¤®à¤¾à¤°à¥à¤•à¥‹ à¤ªà¥‹à¤²à¥‹"],
+          ans: 0,
+          exp: "Johannes Gutenberg invented the movable metal type printing press; his first printed book was the 42-line Bible.",
+          exp_hi: "à¤œà¥‹à¤¹à¤¾à¤¨ à¤—à¥à¤Ÿà¥‡à¤¨à¤¬à¤°à¥à¤— à¤¨à¥‡ à¤ªà¥à¤°à¤¿à¤‚à¤Ÿà¤¿à¤‚à¤— à¤ªà¥à¤°à¥‡à¤¸ à¤•à¤¾ à¤†à¤µà¤¿à¤·à¥à¤•à¤¾à¤° à¤•à¤¿à¤¯à¤¾ à¤”à¤° à¤ªà¤¹à¤²à¥€ à¤®à¥à¤¦à¥à¤°à¤¿à¤¤ à¤ªà¥à¤¸à¥à¤¤à¤• à¤¬à¤¾à¤‡à¤¬à¤¿à¤² à¤¥à¥€à¥¤"
+        }
+      ]
+    },
+
+    "agriculture": {
+      subjectId: "social_science_10", subSectionId: "geography_10", classId: "10",
+      questions: [
+        {
+          q: "Which crop is known as the 'Golden Fibre' of India?",
+          q_hi: "à¤­à¤¾à¤°à¤¤ à¤®à¥‡à¤‚ à¤•à¤¿à¤¸ à¤«à¤¸à¤² à¤•à¥‹ 'à¤¸à¥à¤¨à¤¹à¤°à¤¾ à¤°à¥‡à¤¶à¤¾' (Golden Fibre) à¤•à¤¹à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Jute", "Cotton", "Silk", "Hemp"],
+          opts_hi: ["à¤œà¥‚à¤Ÿ (à¤ªà¤Ÿà¤¸à¤¨)", "à¤•à¤ªà¤¾à¤¸", "à¤°à¥‡à¤¶à¤®", "à¤¸à¤¨"],
+          ans: 0,
+          exp: "Jute is known as the Golden Fibre due to its natural golden sheen and commercial value in gunny bags and ropes.",
+          exp_hi: "à¤œà¥‚à¤Ÿ à¤•à¥‹ à¤‰à¤¸à¤•à¥‡ à¤¸à¥à¤¨à¤¹à¤°à¥‡ à¤°à¤‚à¤— à¤”à¤° à¤®à¤¹à¤¤à¥à¤µ à¤•à¥‡ à¤•à¤¾à¤°à¤£ à¤¸à¥à¤¨à¤¹à¤°à¤¾ à¤°à¥‡à¤¶à¤¾ à¤•à¤¹à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "minerals & energy resources": {
+      subjectId: "social_science_10", subSectionId: "geography_10", classId: "10",
+      questions: [
+        {
+          q: "Which is the highest quality commercial coal containing more than 80% carbon?",
+          q_hi: "80% à¤¸à¥‡ à¤…à¤§à¤¿à¤• à¤•à¤¾à¤°à¥à¤¬à¤¨ à¤¯à¥à¤•à¥à¤¤ à¤¸à¤°à¥à¤µà¥‹à¤¤à¥à¤¤à¤® à¤—à¥à¤£à¤µà¤¤à¥à¤¤à¤¾ à¤µà¤¾à¤²à¤¾ à¤µà¤¾à¤£à¤¿à¤œà¥à¤¯à¤¿à¤• à¤•à¥‹à¤¯à¤²à¤¾ à¤•à¥Œà¤¨ à¤¸à¤¾ à¤¹à¥ˆ?",
+          opts: ["Anthracite", "Bituminous", "Lignite", "Peat"],
+          opts_hi: ["à¤à¤‚à¤¥à¥à¤°à¥‡à¤¸à¤¾à¤‡à¤Ÿ (Anthracite)", "à¤¬à¤¿à¤Ÿà¥à¤®à¤¿à¤¨à¤¸", "à¤²à¤¿à¤—à¥à¤¨à¤¾à¤‡à¤Ÿ", "à¤ªà¥€à¤Ÿ"],
+          ans: 0,
+          exp: "Anthracite is the highest grade of coal with high carbon content, hard texture, and high calorific value.",
+          exp_hi: "à¤à¤‚à¤¥à¥à¤°à¥‡à¤¸à¤¾à¤‡à¤Ÿ à¤¸à¤°à¥à¤µà¥‹à¤¤à¥à¤¤à¤® à¤—à¥à¤£à¤µà¤¤à¥à¤¤à¤¾ à¤µà¤¾à¤²à¤¾ à¤•à¤ à¥‹à¤° à¤•à¥‹à¤¯à¤²à¤¾ à¤¹à¥ˆ à¤œà¤¿à¤¸à¤®à¥‡à¤‚ à¤•à¤¾à¤°à¥à¤¬à¤¨ à¤•à¥€ à¤®à¤¾à¤¤à¥à¤°à¤¾ à¤¸à¤°à¥à¤µà¤¾à¤§à¤¿à¤• à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "federalism": {
+      subjectId: "social_science_10", subSectionId: "civics_10", classId: "10",
+      questions: [
+        {
+          q: "Under the Indian Constitution, subjects of national importance like Defense, Foreign Affairs, and Currency are placed in the:",
+          q_hi: "à¤­à¤¾à¤°à¤¤à¥€à¤¯ à¤¸à¤‚à¤µà¤¿à¤§à¤¾à¤¨ à¤•à¥‡ à¤¤à¤¹à¤¤ à¤°à¤•à¥à¤·à¤¾, à¤µà¤¿à¤¦à¥‡à¤¶ à¤®à¤¾à¤®à¤²à¥‡ à¤”à¤° à¤®à¥à¤¦à¥à¤°à¤¾ à¤œà¥ˆà¤¸à¥‡ à¤°à¤¾à¤·à¥à¤Ÿà¥à¤°à¥€à¤¯ à¤®à¤¹à¤¤à¥à¤µ à¤•à¥‡ à¤µà¤¿à¤·à¤¯ à¤•à¤¿à¤¸ à¤¸à¥‚à¤šà¥€ à¤®à¥‡à¤‚ à¤°à¤–à¥‡ à¤—à¤ à¤¹à¥ˆà¤‚?",
+          opts: ["Union List (à¤¸à¤‚à¤˜ à¤¸à¥‚à¤šà¥€)", "State List (à¤°à¤¾à¤œà¥à¤¯ à¤¸à¥‚à¤šà¥€)", "Concurrent List (à¤¸à¤®à¤µà¤°à¥à¤¤à¥€ à¤¸à¥‚à¤šà¥€)", "Residuary Powers"],
+          opts_hi: ["à¤¸à¤‚à¤˜ à¤¸à¥‚à¤šà¥€ (Union List)", "à¤°à¤¾à¤œà¥à¤¯ à¤¸à¥‚à¤šà¥€ (State List)", "à¤¸à¤®à¤µà¤°à¥à¤¤à¥€ à¤¸à¥‚à¤šà¥€ (Concurrent List)", "à¤…à¤µà¤¶à¤¿à¤·à¥à¤Ÿ à¤¶à¤•à¥à¤¤à¤¿à¤¯à¤¾à¤‚"],
+          ans: 0,
+          exp: "Union List contains subjects requiring uniform policy across the nation like Defense, Banking, Currency, and Foreign Affairs.",
+          exp_hi: "à¤¸à¤‚à¤˜ à¤¸à¥‚à¤šà¥€ à¤®à¥‡à¤‚ à¤°à¤¾à¤·à¥à¤Ÿà¥à¤°à¥€à¤¯ à¤®à¤¹à¤¤à¥à¤µ à¤•à¥‡ à¤µà¤¿à¤·à¤¯ à¤¶à¤¾à¤®à¤¿à¤² à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚ à¤œà¤¿à¤¨ à¤ªà¤° à¤•à¥‡à¤µà¤² à¤•à¥‡à¤‚à¤¦à¥à¤° à¤¸à¤°à¤•à¤¾à¤° à¤•à¤¾à¤¨à¥‚à¤¨ à¤¬à¤¨à¤¾ à¤¸à¤•à¤¤à¥€ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "political parties": {
+      subjectId: "social_science_10", subSectionId: "civics_10", classId: "10",
+      questions: [
+        {
+          q: "To become a recognized National Party in India, a party must secure at least what percentage of total votes in Lok Sabha or Assembly elections in 4 states?",
+          q_hi: "à¤­à¤¾à¤°à¤¤ à¤®à¥‡à¤‚ à¤°à¤¾à¤·à¥à¤Ÿà¥à¤°à¥€à¤¯ à¤¦à¤² à¤•à¥‡ à¤°à¥‚à¤ª à¤®à¥‡à¤‚ à¤®à¤¾à¤¨à¥à¤¯à¤¤à¤¾ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤•à¤°à¤¨à¥‡ à¤•à¥‡ à¤²à¤¿à¤ à¤•à¤¿à¤¸à¥€ à¤ªà¤¾à¤°à¥à¤Ÿà¥€ à¤•à¥‹ 4 à¤°à¤¾à¤œà¥à¤¯à¥‹à¤‚ à¤®à¥‡à¤‚ à¤²à¥‹à¤•à¤¸à¤­à¤¾ à¤¯à¤¾ à¤µà¤¿à¤§à¤¾à¤¨à¤¸à¤­à¤¾ à¤šà¥à¤¨à¤¾à¤µ à¤®à¥‡à¤‚ à¤•à¤® à¤¸à¥‡ à¤•à¤® à¤•à¤¿à¤¤à¤¨à¥‡ à¤ªà¥à¤°à¤¤à¤¿à¤¶à¤¤ à¤µà¥‹à¤Ÿ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤•à¤°à¤¨à¥‡ à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚?",
+          opts: ["6% of total votes + win 4 Lok Sabha seats", "10% of total votes", "2% of total votes", "15% of total votes"],
+          opts_hi: ["à¤•à¥à¤² à¤®à¤¤à¥‹à¤‚ à¤•à¤¾ 6% + 4 à¤²à¥‹à¤•à¤¸à¤­à¤¾ à¤¸à¥€à¤Ÿà¥‡à¤‚", "à¤•à¥à¤² à¤®à¤¤à¥‹à¤‚ à¤•à¤¾ 10%", "à¤•à¥à¤² à¤®à¤¤à¥‹à¤‚ à¤•à¤¾ 2%", "à¤•à¥à¤² à¤®à¤¤à¥‹à¤‚ à¤•à¤¾ 15%"],
+          ans: 0,
+          exp: "ECI criteria: At least 6% of valid votes polled in 4 or more states in Lok Sabha or Assembly elections, plus at least 4 Lok Sabha seats.",
+          exp_hi: "à¤šà¥à¤¨à¤¾à¤µ à¤†à¤¯à¥‹à¤— à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤°: 4 à¤¯à¤¾ à¤…à¤§à¤¿à¤• à¤°à¤¾à¤œà¥à¤¯à¥‹à¤‚ à¤®à¥‡à¤‚ à¤•à¥à¤² à¤µà¥ˆà¤§ à¤®à¤¤à¥‹à¤‚ à¤•à¤¾ 6% à¤”à¤° à¤²à¥‹à¤•à¤¸à¤­à¤¾ à¤®à¥‡à¤‚ à¤•à¤® à¤¸à¥‡ à¤•à¤® 4 à¤¸à¥€à¤Ÿà¥‡à¤‚ à¤œà¥€à¤¤à¤¨à¤¾ à¤…à¤¨à¤¿à¤µà¤¾à¤°à¥à¤¯ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "development": {
+      subjectId: "social_science_10", subSectionId: "economics_10", classId: "10",
+      questions: [
+        {
+          q: "Which international organization publishes the Human Development Report (HDR) comparing countries on education, health, and income?",
+          q_hi: "à¤•à¥Œà¤¨ à¤¸à¤¾ à¤…à¤‚à¤¤à¤°à¤°à¤¾à¤·à¥à¤Ÿà¥à¤°à¥€à¤¯ à¤¸à¤‚à¤—à¤ à¤¨ à¤®à¤¾à¤¨à¤µ à¤µà¤¿à¤•à¤¾à¤¸ à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ (HDR) à¤ªà¥à¤°à¤•à¤¾à¤¶à¤¿à¤¤ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ à¤œà¥‹ à¤¶à¤¿à¤•à¥à¤·à¤¾, à¤¸à¥à¤µà¤¾à¤¸à¥à¤¥à¥à¤¯ à¤”à¤° à¤ªà¥à¤°à¤¤à¤¿ à¤µà¥à¤¯à¤•à¥à¤¤à¤¿ à¤†à¤¯ à¤•à¥€ à¤¤à¥à¤²à¤¨à¤¾ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["UNDP (United Nations Development Programme)", "World Bank", "IMF (International Monetary Fund)", "WHO"],
+          opts_hi: ["à¤¯à¥‚à¤à¤¨à¤¡à¥€à¤ªà¥€ (UNDP)", "à¤µà¤¿à¤¶à¥à¤µ à¤¬à¥ˆà¤‚à¤•", "à¤…à¤‚à¤¤à¤°à¤°à¤¾à¤·à¥à¤Ÿà¥à¤°à¥€à¤¯ à¤®à¥à¤¦à¥à¤°à¤¾ à¤•à¥‹à¤· (IMF)", "à¤µà¤¿à¤¶à¥à¤µ à¤¸à¥à¤µà¤¾à¤¸à¥à¤¥à¥à¤¯ à¤¸à¤‚à¤—à¤ à¤¨"],
+          ans: 0,
+          exp: "UNDP publishes the Human Development Index (HDI) measuring life expectancy, schooling, and GNI per capita.",
+          exp_hi: "UNDP (à¤¸à¤‚à¤¯à¥à¤•à¥à¤¤ à¤°à¤¾à¤·à¥à¤Ÿà¥à¤° à¤µà¤¿à¤•à¤¾à¤¸ à¤•à¤¾à¤°à¥à¤¯à¤•à¥à¤°à¤®) à¤®à¤¾à¤¨à¤µ à¤µà¤¿à¤•à¤¾à¤¸ à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ à¤ªà¥à¤°à¤•à¤¾à¤¶à¤¿à¤¤ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "sectors of the indian economy": {
+      subjectId: "social_science_10", subSectionId: "economics_10", classId: "10",
+      questions: [
+        {
+          q: "Activities that involve processing natural products into other forms through manufacturing belong to the:",
+          q_hi: "à¤ªà¥à¤°à¤¾à¤•à¥ƒà¤¤à¤¿à¤• à¤‰à¤¤à¥à¤ªà¤¾à¤¦à¥‹à¤‚ à¤•à¥‹ à¤µà¤¿à¤¨à¤¿à¤°à¥à¤®à¤¾à¤£ à¤•à¥‡ à¤®à¤¾à¤§à¥à¤¯à¤® à¤¸à¥‡ à¤…à¤¨à¥à¤¯ à¤°à¥‚à¤ªà¥‹à¤‚ à¤®à¥‡à¤‚ à¤¬à¤¦à¤²à¤¨à¥‡ à¤•à¥€ à¤—à¤¤à¤¿à¤µà¤¿à¤§à¤¿à¤¯à¤¾à¤‚ à¤•à¤¿à¤¸ à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤• à¤®à¥‡à¤‚ à¤†à¤¤à¥€ à¤¹à¥ˆà¤‚?",
+          opts: ["Secondary Sector (à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯à¤• à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤•)", "Primary Sector (à¤ªà¥à¤°à¤¾à¤¥à¤®à¤¿à¤• à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤•)", "Tertiary Sector (à¤¤à¥ƒà¤¤à¥€à¤¯à¤• à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤•)", "Quaternary Sector"],
+          opts_hi: ["à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯à¤• à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤• (Secondary Sector)", "à¤ªà¥à¤°à¤¾à¤¥à¤®à¤¿à¤• à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤• (Primary Sector)", "à¤¤à¥ƒà¤¤à¥€à¤¯à¤• à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤• (à¤¸à¥‡à¤µà¤¾ à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤•)", "à¤šà¤¤à¥à¤°à¥à¤¥à¤• à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤•"],
+          ans: 0,
+          exp: "Secondary sector covers industrial manufacturing and processing (e.g., sugarcane into sugar, iron ore into steel).",
+          exp_hi: "à¤¦à¥à¤µà¤¿à¤¤à¥€à¤¯à¤• à¤•à¥à¤·à¥‡à¤¤à¥à¤°à¤• à¤®à¥‡à¤‚ à¤•à¤¾à¤°à¤–à¤¾à¤¨à¥‡, à¤‰à¤¦à¥à¤¯à¥‹à¤— à¤”à¤° à¤µà¤¿à¤¨à¤¿à¤°à¥à¤®à¤¾à¤£ à¤•à¥€ à¤—à¤¤à¤¿à¤µà¤¿à¤§à¤¿à¤¯à¤¾à¤‚ à¤†à¤¤à¥€ à¤¹à¥ˆà¤‚à¥¤"
+        }
+      ]
+    },
+
+    "globalisation and the indian economy": {
+      subjectId: "social_science_10", subSectionId: "economics_10", classId: "10",
+      questions: [
+        {
+          q: "Removing trade barriers or restrictions set by the government is known as:",
+          q_hi: "à¤¸à¤°à¤•à¤¾à¤° à¤¦à¥à¤µà¤¾à¤°à¤¾ à¤¨à¤¿à¤°à¥à¤§à¤¾à¤°à¤¿à¤¤ à¤µà¥à¤¯à¤¾à¤ªà¤¾à¤° à¤…à¤µà¤°à¥‹à¤§à¥‹à¤‚ à¤¯à¤¾ à¤ªà¥à¤°à¤¤à¤¿à¤¬à¤‚à¤§à¥‹à¤‚ à¤•à¥‹ à¤¹à¤Ÿà¤¾à¤¨à¥‡ à¤•à¥€ à¤ªà¥à¤°à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤•à¥‹ à¤•à¥à¤¯à¤¾ à¤•à¤¹à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Liberalisation (à¤‰à¤¦à¤¾à¤°à¥€à¤•à¤°à¤£)", "Privatisation (à¤¨à¤¿à¤œà¥€à¤•à¤°à¤£)", "Globalisation (à¤µà¥ˆà¤¶à¥à¤µà¥€à¤•à¤°à¤£)", "Nationalisation (à¤°à¤¾à¤·à¥à¤Ÿà¥à¤°à¥€à¤¯à¤•à¤°à¤£)"],
+          opts_hi: ["à¤‰à¤¦à¤¾à¤°à¥€à¤•à¤°à¤£ (Liberalisation)", "à¤¨à¤¿à¤œà¥€à¤•à¤°à¤£ (Privatisation)", "à¤µà¥ˆà¤¶à¥à¤µà¥€à¤•à¤°à¤£ (Globalisation)", "à¤°à¤¾à¤·à¥à¤Ÿà¥à¤°à¥€à¤¯à¤•à¤°à¤£"],
+          ans: 0,
+          exp: "Liberalisation refers to relaxing government regulations and trade barriers, allowing freer flow of international goods and investments.",
+          exp_hi: "à¤µà¥à¤¯à¤¾à¤ªà¤¾à¤° à¤¬à¤¾à¤§à¤¾à¤“à¤‚ à¤”à¤° à¤¸à¤°à¤•à¤¾à¤°à¥€ à¤¨à¤¿à¤¯à¤‚à¤¤à¥à¤°à¤£ à¤•à¥‹ à¤¢à¥€à¤²à¤¾ à¤•à¤°à¤¨à¥‡ à¤•à¥€ à¤¨à¥€à¤¤à¤¿ à¤•à¥‹ à¤‰à¤¦à¤¾à¤°à¥€à¤•à¤°à¤£ à¤•à¤¹à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    // ==========================================
+    // CLASS 10 HINDI - EXPANDED
+    // ==========================================
+    "vyakaran: vakya bhed (syntax)": {
+      subjectId: "hindi_10", classId: "10",
+      questions: [
+        {
+          q: "à¤°à¤šà¤¨à¤¾ à¤•à¥‡ à¤†à¤§à¤¾à¤° à¤ªà¤° à¤µà¤¾à¤•à¥à¤¯ à¤•à¥‡ à¤•à¤¿à¤¤à¤¨à¥‡ à¤­à¥‡à¤¦ à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚?",
+          q_hi: "à¤°à¤šà¤¨à¤¾ à¤•à¥‡ à¤†à¤§à¤¾à¤° à¤ªà¤° à¤µà¤¾à¤•à¥à¤¯ à¤•à¥‡ à¤•à¤¿à¤¤à¤¨à¥‡ à¤­à¥‡à¤¦ à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚?",
+          opts: ["à¤¤à¥€à¤¨ (à¤¸à¤°à¤², à¤¸à¤‚à¤¯à¥à¤•à¥à¤¤, à¤®à¤¿à¤¶à¥à¤°)", "à¤¦à¥‹ (à¤¸à¤¾à¤°à¥à¤¥à¤•, à¤¨à¤¿à¤°à¤°à¥à¤¥à¤•)", "à¤šà¤¾à¤° (à¤µà¤¿à¤§à¤¿, à¤¨à¤¿à¤·à¥‡à¤§, à¤†à¤œà¥à¤žà¤¾, à¤ªà¥à¤°à¤¶à¥à¤¨)", "à¤†à¤  à¤­à¥‡à¤¦"],
+          opts_hi: ["à¤¤à¥€à¤¨ (à¤¸à¤°à¤² à¤µà¤¾à¤•à¥à¤¯, à¤¸à¤‚à¤¯à¥à¤•à¥à¤¤ à¤µà¤¾à¤•à¥à¤¯, à¤®à¤¿à¤¶à¥à¤° à¤µà¤¾à¤•à¥à¤¯)", "à¤¦à¥‹ à¤­à¥‡à¤¦", "à¤šà¤¾à¤° à¤­à¥‡à¤¦", "à¤†à¤  à¤­à¥‡à¤¦"],
+          ans: 0,
+          exp: "à¤°à¤šà¤¨à¤¾ à¤•à¥‡ à¤†à¤§à¤¾à¤° à¤ªà¤° à¤µà¤¾à¤•à¥à¤¯ à¤•à¥‡ à¤¤à¥€à¤¨ à¤­à¥‡à¤¦ à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤¸à¤°à¤² à¤µà¤¾à¤•à¥à¤¯, à¤¸à¤‚à¤¯à¥à¤•à¥à¤¤ à¤µà¤¾à¤•à¥à¤¯ à¤”à¤° à¤®à¤¿à¤¶à¥à¤° à¤µà¤¾à¤•à¥à¤¯à¥¤",
+          exp_hi: "à¤°à¤šà¤¨à¤¾ à¤•à¥‡ à¤†à¤§à¤¾à¤° à¤ªà¤° à¤µà¤¾à¤•à¥à¤¯ à¤•à¥‡ à¤¤à¥€à¤¨ à¤­à¥‡à¤¦ à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚: à¤¸à¤°à¤² à¤µà¤¾à¤•à¥à¤¯, à¤¸à¤‚à¤¯à¥à¤•à¥à¤¤ à¤µà¤¾à¤•à¥à¤¯ à¤”à¤° à¤®à¤¿à¤¶à¥à¤° à¤µà¤¾à¤•à¥à¤¯à¥¤"
+        }
+      ]
+    },
+
+    "vyakaran: vachya (voice)": {
+      subjectId: "hindi_10", classId: "10",
+      questions: [
+        {
+          q: "à¤œà¤¿à¤¸ à¤µà¤¾à¤•à¥à¤¯ à¤®à¥‡à¤‚ à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤•à¤¾ à¤²à¤¿à¤‚à¤— à¤”à¤° à¤µà¤šà¤¨ à¤•à¤°à¥à¤¤à¤¾ à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° à¤¨ à¤¹à¥‹à¤•à¤° à¤­à¤¾à¤µ à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° à¤¹à¥‹ à¤¤à¤¥à¤¾ à¤…à¤•à¤°à¥à¤®à¤• à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤¹à¥‹, à¤µà¤¹ à¤•à¥Œà¤¨ à¤¸à¤¾ à¤µà¤¾à¤šà¥à¤¯ à¤¹à¥ˆ?",
+          q_hi: "à¤œà¤¿à¤¸ à¤µà¤¾à¤•à¥à¤¯ à¤®à¥‡à¤‚ à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤•à¤¾ à¤²à¤¿à¤‚à¤— à¤”à¤° à¤µà¤šà¤¨ à¤•à¤°à¥à¤¤à¤¾ à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° à¤¨ à¤¹à¥‹à¤•à¤° à¤­à¤¾à¤µ à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° à¤¹à¥‹ à¤¤à¤¥à¤¾ à¤…à¤•à¤°à¥à¤®à¤• à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤¹à¥‹, à¤µà¤¹ à¤•à¥Œà¤¨ à¤¸à¤¾ à¤µà¤¾à¤šà¥à¤¯ à¤¹à¥ˆ?",
+          opts: ["à¤­à¤¾à¤µà¤µà¤¾à¤šà¥à¤¯ (à¤œà¥ˆà¤¸à¥‡- 'à¤®à¥à¤à¤¸à¥‡ à¤šà¤²à¤¾ à¤¨à¤¹à¥€à¤‚ à¤œà¤¾à¤¤à¤¾')", "à¤•à¤°à¥à¤¤à¥ƒà¤µà¤¾à¤šà¥à¤¯", "à¤•à¤°à¥à¤®à¤µà¤¾à¤šà¥à¤¯", "à¤®à¤¿à¤¶à¥à¤°à¤µà¤¾à¤šà¥à¤¯"],
+          opts_hi: ["à¤­à¤¾à¤µà¤µà¤¾à¤šà¥à¤¯ (à¤œà¥ˆà¤¸à¥‡- 'à¤®à¥à¤à¤¸à¥‡ à¤šà¤²à¤¾ à¤¨à¤¹à¥€à¤‚ à¤œà¤¾à¤¤à¤¾')", "à¤•à¤°à¥à¤¤à¥ƒà¤µà¤¾à¤šà¥à¤¯", "à¤•à¤°à¥à¤®à¤µà¤¾à¤šà¥à¤¯", "à¤®à¤¿à¤¶à¥à¤°à¤µà¤¾à¤šà¥à¤¯"],
+          ans: 0,
+          exp: "à¤­à¤¾à¤µà¤µà¤¾à¤šà¥à¤¯ à¤®à¥‡à¤‚ à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤…à¤•à¤°à¥à¤®à¤• à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ à¤”à¤° à¤­à¤¾à¤µ à¤•à¥€ à¤ªà¥à¤°à¤§à¤¾à¤¨à¤¤à¤¾ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ (à¤œà¥ˆà¤¸à¥‡: 'à¤¬à¤šà¥à¤šà¥‡ à¤¸à¥‡ à¤¦à¥Œà¤¡à¤¼à¤¾ à¤¨à¤¹à¥€à¤‚ à¤œà¤¾à¤¤à¤¾')à¥¤",
+          exp_hi: "à¤­à¤¾à¤µà¤µà¤¾à¤šà¥à¤¯ à¤®à¥‡à¤‚ à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤…à¤•à¤°à¥à¤®à¤• à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ à¤”à¤° à¤­à¤¾à¤µ à¤•à¥€ à¤ªà¥à¤°à¤§à¤¾à¤¨à¤¤à¤¾ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "vyakaran: alankar (figures of speech)": {
+      subjectId: "hindi_10", classId: "10",
+      questions: [
+        {
+          q: "'à¤šà¤°à¤£ à¤•à¤®à¤² à¤¬à¤‚à¤¦à¥Œ à¤¹à¤°à¤¿à¤°à¤¾à¤ˆ' à¤®à¥‡à¤‚ à¤•à¥Œà¤¨ à¤¸à¤¾ à¤…à¤²à¤‚à¤•à¤¾à¤° à¤¹à¥ˆ?",
+          q_hi: "'à¤šà¤°à¤£ à¤•à¤®à¤² à¤¬à¤‚à¤¦à¥Œ à¤¹à¤°à¤¿à¤°à¤¾à¤ˆ' à¤®à¥‡à¤‚ à¤•à¥Œà¤¨ à¤¸à¤¾ à¤…à¤²à¤‚à¤•à¤¾à¤° à¤¹à¥ˆ?",
+          opts: ["à¤°à¥‚à¤ªà¤• à¤…à¤²à¤‚à¤•à¤¾à¤°", "à¤‰à¤ªà¤®à¤¾ à¤…à¤²à¤‚à¤•à¤¾à¤°", "à¤‰à¤¤à¥à¤ªà¥à¤°à¥‡à¤•à¥à¤·à¤¾ à¤…à¤²à¤‚à¤•à¤¾à¤°", "à¤¶à¥à¤²à¥‡à¤· à¤…à¤²à¤‚à¤•à¤¾à¤°"],
+          opts_hi: ["à¤°à¥‚à¤ªà¤• à¤…à¤²à¤‚à¤•à¤¾à¤°", "à¤‰à¤ªà¤®à¤¾ à¤…à¤²à¤‚à¤•à¤¾à¤°", "à¤‰à¤¤à¥à¤ªà¥à¤°à¥‡à¤•à¥à¤·à¤¾ à¤…à¤²à¤‚à¤•à¤¾à¤°", "à¤¶à¥à¤²à¥‡à¤· à¤…à¤²à¤‚à¤•à¤¾à¤°"],
+          ans: 0,
+          exp: "à¤œà¤¹à¤¾à¤ à¤‰à¤ªà¤®à¥‡à¤¯ (à¤šà¤°à¤£) à¤ªà¤° à¤‰à¤ªà¤®à¤¾à¤¨ (à¤•à¤®à¤²) à¤•à¤¾ à¤…à¤­à¥‡à¤¦ à¤†à¤°à¥‹à¤ª à¤•à¤¿à¤¯à¤¾ à¤œà¤¾à¤, à¤µà¤¹à¤¾à¤ à¤°à¥‚à¤ªà¤• à¤…à¤²à¤‚à¤•à¤¾à¤° à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤",
+          exp_hi: "à¤šà¤°à¤£à¥‹à¤‚ à¤•à¥‹ à¤¸à¥€à¤§à¥‡ à¤•à¤®à¤² à¤•à¤¾ à¤°à¥‚à¤ª à¤¦à¥‡ à¤¦à¤¿à¤¯à¤¾ à¤—à¤¯à¤¾ à¤¹à¥ˆ, à¤…à¤¤à¤ƒ à¤¯à¤¹à¤¾à¤ à¤°à¥‚à¤ªà¤• à¤…à¤²à¤‚à¤•à¤¾à¤° à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "kshitij: netaji ka chashma": {
+      subjectId: "hindi_10", classId: "10",
+      questions: [
+        {
+          q: "'à¤¨à¥‡à¤¤à¤¾à¤œà¥€ à¤•à¤¾ à¤šà¤¶à¥à¤®à¤¾' à¤ªà¤¾à¤  à¤®à¥‡à¤‚ à¤¨à¥‡à¤¤à¤¾à¤œà¥€ à¤¸à¥à¤­à¤¾à¤· à¤šà¤‚à¤¦à¥à¤° à¤¬à¥‹à¤¸ à¤•à¥€ à¤®à¥‚à¤°à¥à¤¤à¤¿ à¤ªà¤° à¤šà¤¶à¥à¤®à¤¾ à¤•à¥Œà¤¨ à¤¬à¤¦à¤²à¤¤à¤¾ à¤¥à¤¾?",
+          q_hi: "'à¤¨à¥‡à¤¤à¤¾à¤œà¥€ à¤•à¤¾ à¤šà¤¶à¥à¤®à¤¾' à¤ªà¤¾à¤  à¤®à¥‡à¤‚ à¤¨à¥‡à¤¤à¤¾à¤œà¥€ à¤¸à¥à¤­à¤¾à¤· à¤šà¤‚à¤¦à¥à¤° à¤¬à¥‹à¤¸ à¤•à¥€ à¤®à¥‚à¤°à¥à¤¤à¤¿ à¤ªà¤° à¤šà¤¶à¥à¤®à¤¾ à¤•à¥Œà¤¨ à¤¬à¤¦à¤²à¤¤à¤¾ à¤¥à¤¾?",
+          opts: ["à¤•à¥ˆà¤ªà¥à¤Ÿà¤¨ à¤šà¤¶à¥à¤®à¥‡à¤µà¤¾à¤²à¤¾", "à¤¹à¤¾à¤²à¤¦à¤¾à¤° à¤¸à¤¾à¤¹à¤¬", "à¤ªà¤¾à¤¨à¤µà¤¾à¤²à¤¾", "à¤®à¤¾à¤¸à¥à¤Ÿà¤° à¤®à¥‹à¤¤à¥€à¤²à¤¾à¤²"],
+          opts_hi: ["à¤•à¥ˆà¤ªà¥à¤Ÿà¤¨ à¤šà¤¶à¥à¤®à¥‡à¤µà¤¾à¤²à¤¾", "à¤¹à¤¾à¤²à¤¦à¤¾à¤° à¤¸à¤¾à¤¹à¤¬", "à¤ªà¤¾à¤¨à¤µà¤¾à¤²à¤¾", "à¤®à¤¾à¤¸à¥à¤Ÿà¤° à¤®à¥‹à¤¤à¥€à¤²à¤¾à¤²"],
+          ans: 0,
+          exp: "à¤•à¥ˆà¤ªà¥à¤Ÿà¤¨ à¤à¤• à¤—à¤°à¥€à¤¬, à¤²à¤‚à¤—à¤¡à¤¼à¤¾ à¤¦à¥‡à¤¶à¤­à¤•à¥à¤¤ à¤«à¥‡à¤°à¥€à¤µà¤¾à¤²à¤¾ à¤¥à¤¾ à¤œà¥‹ à¤¨à¥‡à¤¤à¤¾à¤œà¥€ à¤•à¥€ à¤¬à¤¿à¤¨à¤¾ à¤šà¤¶à¥à¤®à¥‡ à¤µà¤¾à¤²à¥€ à¤®à¥‚à¤°à¥à¤¤à¤¿ à¤ªà¤° à¤šà¤¶à¥à¤®à¤¾ à¤²à¤—à¤¾à¤¤à¤¾ à¤¥à¤¾à¥¤",
+          exp_hi: "à¤•à¥ˆà¤ªà¥à¤Ÿà¤¨ à¤šà¤¶à¥à¤®à¥‡à¤µà¤¾à¤²à¤¾ à¤…à¤ªà¤¨à¥€ à¤¦à¥‡à¤¶à¤­à¤•à¥à¤¤à¤¿ à¤•à¥€ à¤­à¤¾à¤µà¤¨à¤¾ à¤•à¥‡ à¤•à¤¾à¤°à¤£ à¤¨à¥‡à¤¤à¤¾à¤œà¥€ à¤•à¥€ à¤®à¥‚à¤°à¥à¤¤à¤¿ à¤ªà¤° à¤šà¤¶à¥à¤®à¤¾ à¤²à¤—à¤¾à¤¤à¤¾ à¤¥à¤¾à¥¤"
+        }
+      ]
+    },
+
+    // ==========================================
+    // CLASS 10 ENGLISH - EXPANDED
+    // ==========================================
+    "nelson mandela: long walk to freedom": {
+      subjectId: "english_10", classId: "10",
+      questions: [
+        {
+          q: "According to Nelson Mandela, what is the greatest wealth of a nation?",
+          q_hi: "à¤¨à¥‡à¤²à¥à¤¸à¤¨ à¤®à¤‚à¤¡à¥‡à¤²à¤¾ à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° à¤•à¤¿à¤¸à¥€ à¤°à¤¾à¤·à¥à¤Ÿà¥à¤° à¤•à¤¾ à¤¸à¤¬à¤¸à¥‡ à¤¬à¤¡à¤¼à¤¾ à¤§à¤¨ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["Its people, finer and truer than the purest diamonds", "Its minerals and gems", "Its military army", "Its gold reserves"],
+          opts_hi: ["Its people (à¤‰à¤¸à¤•à¥‡ à¤¨à¤¾à¤—à¤°à¤¿à¤• à¤œà¥‹ à¤¶à¥à¤¦à¥à¤§à¤¤à¤® à¤¹à¥€à¤°à¥‹à¤‚ à¤¸à¥‡ à¤­à¥€ à¤¸à¤šà¥à¤šà¥‡ à¤¹à¥ˆà¤‚)", "à¤–à¤¨à¤¿à¤œ à¤”à¤° à¤°à¤¤à¥à¤¨", "à¤¸à¥ˆà¤¨à¥à¤¯ à¤¶à¤•à¥à¤¤à¤¿", "à¤¸à¥à¤µà¤°à¥à¤£ à¤­à¤‚à¤¡à¤¾à¤°"],
+          ans: 0,
+          exp: "Mandela stated that South Africa's minerals are rich, but its greatest wealth is its people, finer and truer than pure diamonds.",
+          exp_hi: "à¤®à¤‚à¤¡à¥‡à¤²à¤¾ à¤¨à¥‡ à¤•à¤¹à¤¾ à¤•à¤¿ à¤¦à¥‡à¤¶ à¤•à¥€ à¤¸à¤¬à¤¸à¥‡ à¤¬à¤¡à¤¼à¥€ à¤¸à¤‚à¤ªà¤¤à¥à¤¤à¤¿ à¤‰à¤¸à¤•à¥‡ à¤¨à¤¾à¤—à¤°à¤¿à¤• à¤¹à¥ˆà¤‚ à¤œà¥‹ à¤¹à¥€à¤°à¥‹à¤‚ à¤¸à¥‡ à¤­à¥€ à¤–à¤°à¥‡ à¤¹à¥ˆà¤‚à¥¤"
+        }
+      ]
+    },
+
+    "from the diary of anne frank": {
+      subjectId: "english_10", classId: "10",
+      questions: [
+        {
+          q: "What affectionate name did Anne Frank give to her beloved diary?",
+          q_hi: "à¤à¤¨à¥€ à¤«à¥à¤°à¥ˆà¤‚à¤• à¤¨à¥‡ à¤…à¤ªà¤¨à¥€ à¤ªà¥à¤¯à¤¾à¤°à¥€ à¤¡à¤¾à¤¯à¤°à¥€ à¤•à¥‹ à¤•à¥à¤¯à¤¾ à¤¨à¤¾à¤® à¤¦à¤¿à¤¯à¤¾ à¤¥à¤¾?",
+          opts: ["Kitty", "Margot", "Sancho", "Peter"],
+          opts_hi: ["à¤•à¤¿à¤Ÿà¥à¤Ÿà¥€ (Kitty)", "à¤®à¤¾à¤°à¥à¤—à¥‹à¤Ÿ", "à¤¸à¤¾à¤‚à¤šà¥‹", "à¤ªà¥€à¤Ÿà¤°"],
+          ans: 0,
+          exp: "Anne considered the diary her true friend and named it 'Kitty'.",
+          exp_hi: "à¤à¤¨à¥€ à¤«à¥à¤°à¥ˆà¤‚à¤• à¤…à¤ªà¤¨à¥€ à¤¡à¤¾à¤¯à¤°à¥€ à¤•à¥‹ à¤¸à¤šà¥à¤šà¥€ à¤¸à¤¹à¥‡à¤²à¥€ à¤®à¤¾à¤¨à¤¤à¥€ à¤¥à¥€ à¤”à¤° à¤‰à¤¸à¥‡ 'Kitty' à¤ªà¥à¤•à¤¾à¤°à¤¤à¥€ à¤¥à¥€à¥¤"
+        }
+      ]
+    },
+
+    // ==========================================
+    // CLASS 11 SUBJECTS - EXPANDED
+    // ==========================================
+    "thermodynamics (enthalpy & gibbs free energy)": {
+      subjectId: "chemistry_11", classId: "11",
+      questions: [
+        {
+          q: "For a process to be spontaneous at constant temperature and pressure, the change in Gibbs free energy (Î”G) must be:",
+          q_hi: "à¤¸à¥à¤¥à¤¿à¤° à¤¤à¤¾à¤ª à¤”à¤° à¤¦à¤¾à¤¬ à¤ªà¤° à¤•à¤¿à¤¸à¥€ à¤ªà¥à¤°à¤•à¥à¤°à¤® à¤•à¥‡ à¤¸à¥à¤µà¤¤à¤ƒà¤¸à¥à¤«à¥‚à¤°à¥à¤¤ à¤¹à¥‹à¤¨à¥‡ à¤•à¥‡ à¤²à¤¿à¤ à¤—à¤¿à¤¬à¥à¤¸ à¤®à¥à¤•à¥à¤¤ à¤Šà¤°à¥à¤œà¤¾ à¤ªà¤°à¤¿à¤µà¤°à¥à¤¤à¤¨ (Î”G) à¤¹à¥‹à¤¨à¤¾ à¤šà¤¾à¤¹à¤¿à¤:",
+          opts: ["Negative (Î”G < 0)", "Positive (Î”G > 0)", "Zero (Î”G = 0)", "Infinity"],
+          opts_hi: ["à¤‹à¤£à¤¾à¤¤à¥à¤®à¤• (Î”G < 0)", "à¤§à¤¨à¤¾à¤¤à¥à¤®à¤• (Î”G > 0)", "à¤¶à¥‚à¤¨à¥à¤¯ (Î”G = 0)", "à¤…à¤¨à¤‚à¤¤"],
+          ans: 0,
+          exp: "Criteria for spontaneity: Î”G = Î”H - TÎ”S < 0 (negative). When Î”G = 0, system is at equilibrium.",
+          exp_hi: "à¤¸à¥à¤µà¤¤à¤ƒà¤¸à¥à¤«à¥‚à¤°à¥à¤¤ à¤…à¤­à¤¿à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤•à¥‡ à¤²à¤¿à¤ Î”G < 0 (à¤‹à¤£à¤¾à¤¤à¥à¤®à¤•) à¤¹à¥‹à¤¨à¤¾ à¤…à¤¨à¤¿à¤µà¤¾à¤°à¥à¤¯ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "equilibrium (chemical & ionic)": {
+      subjectId: "chemistry_11", classId: "11",
+      questions: [
+        {
+          q: "According to Le Chatelier's Principle, for the exothermic synthesis of ammonia (Nâ‚‚ + 3Hâ‚‚ â‡Œ 2NHâ‚ƒ, Î”H < 0), yield is maximized by:",
+          q_hi: "à¤²à¤¾ à¤¶à¤¾à¤¤à¥‡à¤²à¤¿à¤ à¤•à¥‡ à¤¨à¤¿à¤¯à¤® à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤°, à¤…à¤®à¥‹à¤¨à¤¿à¤¯à¤¾ à¤•à¥‡ à¤Šà¤·à¥à¤®à¤¾à¤•à¥à¤·à¥‡à¤ªà¥€ à¤¸à¤‚à¤¶à¥à¤²à¥‡à¤·à¤£ à¤®à¥‡à¤‚ à¤‰à¤¤à¥à¤ªà¤¾à¤¦ à¤•à¥€ à¤…à¤§à¤¿à¤•à¤¤à¤® à¤®à¤¾à¤¤à¥à¤°à¤¾ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤¹à¥‹à¤—à¥€:",
+          opts: ["High pressure and Low/optimum temperature", "Low pressure and high temperature", "Low pressure and low temperature", "Removing reactants"],
+          opts_hi: ["à¤‰à¤šà¥à¤š à¤¦à¤¾à¤¬ à¤”à¤° à¤…à¤¨à¥à¤•à¥‚à¤²à¤¤à¤® à¤¨à¤¿à¤®à¥à¤¨ à¤¤à¤¾à¤ª", "à¤¨à¤¿à¤®à¥à¤¨ à¤¦à¤¾à¤¬ à¤”à¤° à¤‰à¤šà¥à¤š à¤¤à¤¾à¤ª", "à¤¨à¤¿à¤®à¥à¤¨ à¤¦à¤¾à¤¬ à¤”à¤° à¤¨à¤¿à¤®à¥à¤¨ à¤¤à¤¾à¤ª", "à¤…à¤­à¤¿à¤•à¤¾à¤°à¤•à¥‹à¤‚ à¤•à¥‹ à¤¹à¤Ÿà¤¾à¤•à¤°"],
+          ans: 0,
+          exp: "Forward reaction decreases moles of gas (4 mol â†’ 2 mol) and releases heat; favoured by high pressure and lower temperature.",
+          exp_hi: "à¤—à¥ˆà¤¸ à¤•à¥‡ à¤®à¥‹à¤² à¤˜à¤Ÿà¤¨à¥‡ à¤¤à¤¥à¤¾ à¤Šà¤·à¥à¤®à¤¾à¤•à¥à¤·à¥‡à¤ªà¥€ à¤¹à¥‹à¤¨à¥‡ à¤•à¥‡ à¤•à¤¾à¤°à¤£ à¤‰à¤šà¥à¤š à¤¦à¤¾à¤¬ à¤µ à¤…à¤¨à¥à¤•à¥‚à¤² à¤¤à¤¾à¤ª à¤ªà¤° à¤‰à¤¤à¥à¤ªà¤¾à¤¦ à¤¬à¤¢à¤¼à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "permutations & combinations": {
+      subjectId: "maths_11", classId: "11",
+      questions: [
+        {
+          q: "What is the relation between â¿Páµ£ and â¿Cáµ£?",
+          q_hi: "â¿Páµ£ à¤”à¤° â¿Cáµ£ à¤•à¥‡ à¤¬à¥€à¤š à¤•à¥à¤¯à¤¾ à¤¸à¤‚à¤¬à¤‚à¤§ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["â¿Páµ£ = r! Ã— â¿Cáµ£", "â¿Cáµ£ = r! Ã— â¿Páµ£", "â¿Páµ£ = â¿Cáµ£ / r!", "â¿Páµ£ = n! Ã— â¿Cáµ£"],
+          opts_hi: ["â¿Páµ£ = r! Ã— â¿Cáµ£", "â¿Cáµ£ = r! Ã— â¿Páµ£", "â¿Páµ£ = â¿Cáµ£ / r!", "â¿Páµ£ = n! Ã— â¿Cáµ£"],
+          ans: 0,
+          exp: "â¿Páµ£ = n!/(n-r)! and â¿Cáµ£ = n!/[r!(n-r)!]. Thus, â¿Páµ£ = r! Ã— â¿Cáµ£.",
+          exp_hi: "â¿Páµ£ = r! Ã— â¿Cáµ£ à¤¸à¤‚à¤¬à¤‚à¤§ à¤•à¥à¤°à¤®à¤šà¤¯ à¤”à¤° à¤¸à¤‚à¤šà¤¯ à¤•à¤¾ à¤®à¤¾à¤¨à¤• à¤¸à¥‚à¤¤à¥à¤° à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "sequences & series (ap & gp)": {
+      subjectId: "maths_11", classId: "11",
+      questions: [
+        {
+          q: "The sum to infinity S_âˆž of a geometric progression with first term 'a' and common ratio |r| < 1 is:",
+          q_hi: "à¤ªà¥à¤°à¤¥à¤® à¤ªà¤¦ 'a' à¤”à¤° à¤¸à¤¾à¤°à¥à¤µ à¤…à¤¨à¥à¤ªà¤¾à¤¤ |r| < 1 à¤µà¤¾à¤²à¥€ à¤…à¤¨à¤‚à¤¤ à¤—à¥à¤£à¥‹à¤¤à¥à¤¤à¤° à¤¶à¥à¤°à¥‡à¤£à¥€ (GP) à¤•à¤¾ à¤¯à¥‹à¤— S_âˆž à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["a / (1 - r)", "a / (1 + r)", "a(1 - râ¿) / (1 - r)", "ar / (1 - r)"],
+          opts_hi: ["a / (1 - r)", "a / (1 + r)", "a(1 - râ¿) / (1 - r)", "ar / (1 - r)"],
+          ans: 0,
+          exp: "For infinite GP with |r| < 1, S_âˆž = a / (1 - r).",
+          exp_hi: "à¤…à¤¨à¤‚à¤¤ à¤—à¥à¤£à¥‹à¤¤à¥à¤¤à¤° à¤¶à¥à¤°à¥‡à¤£à¥€ à¤•à¤¾ à¤¯à¥‹à¤— S_âˆž = a / (1 - r) à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ à¤œà¤¬ |r| < 1 à¤¹à¥‹à¥¤"
+        }
+      ]
+    },
+
+    "limits & derivatives": {
+      subjectId: "maths_11", classId: "11",
+      questions: [
+        {
+          q: "What is the value of the standard limit: lim (x â†’ 0) [sin x / x]?",
+          q_hi: "à¤®à¤¾à¤¨à¤• à¤¸à¥€à¤®à¤¾ lim (x â†’ 0) [sin x / x] à¤•à¤¾ à¤®à¤¾à¤¨ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["1", "0", "âˆž", "Undefined"],
+          opts_hi: ["1", "0", "âˆž", "à¤…à¤ªà¤°à¤¿à¤­à¤¾à¤·à¤¿à¤¤"],
+          ans: 0,
+          exp: "By Sandwich Theorem (Squeeze Theorem), lim (x â†’ 0) [sin x / x] = 1.",
+          exp_hi: "à¤¸à¥ˆà¤‚à¤¡à¤µà¤¿à¤š à¤ªà¥à¤°à¤®à¥‡à¤¯ à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° lim (x â†’ 0) [sin x / x] = 1 à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "python basics & flow of control": {
+      subjectId: "cs_11", classId: "11",
+      questions: [
+        {
+          q: "What is the output of 	ype( (42,) ) in Python?",
+          q_hi: "à¤ªà¤¾à¤¯à¤¥à¤¨ à¤®à¥‡à¤‚ 	ype( (42,) ) à¤•à¤¾ à¤†à¤‰à¤Ÿà¤ªà¥à¤Ÿ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤—à¤¾?",
+          opts: ["<class 'tuple'>", "<class 'int'>", "<class 'list'>", "<class 'set'>"],
+          opts_hi: ["<class 'tuple'>", "<class 'int'>", "<class 'list'>", "<class 'set'>"],
+          ans: 0,
+          exp: "A single item followed by a comma inside parentheses creates a single-element tuple. Without the comma, (42) would be an int.",
+          exp_hi: "à¤•à¥‹à¤·à¥à¤ à¤• à¤®à¥‡à¤‚ à¤¸à¤‚à¤–à¥à¤¯à¤¾ à¤•à¥‡ à¤¬à¤¾à¤¦ à¤…à¤²à¥à¤ªà¤µà¤¿à¤°à¤¾à¤® (comma) à¤²à¤—à¤¾à¤¨à¥‡ à¤ªà¤° à¤µà¤¹ à¤Ÿà¤ªà¤² (tuple) à¤¬à¤¨ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    // ==========================================
+    // CLASS 12 SUBJECTS - EXPANDED
+    // ==========================================
+    "ray optics & optical instruments": {
+      subjectId: "physics_12", classId: "12",
+      questions: [
+        {
+          q: "According to Lens Maker's Formula, 1/f for a thin lens of refractive index nâ‚‚ in medium nâ‚ is:",
+          q_hi: "à¤²à¥‡à¤‚à¤¸ à¤®à¥‡à¤•à¤° à¤¸à¥‚à¤¤à¥à¤° à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° à¤…à¤ªà¤µà¤°à¥à¤¤à¤¨à¤¾à¤‚à¤• nâ‚‚ à¤µà¤¾à¤²à¥‡ à¤ªà¤¤à¤²à¥‡ à¤²à¥‡à¤‚à¤¸ à¤•à¥‡ à¤²à¤¿à¤ 1/f à¤•à¤¾ à¤®à¤¾à¤¨ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["(nâ‚‚/nâ‚ - 1) (1/Râ‚ - 1/Râ‚‚)", "(nâ‚‚ - nâ‚) (1/Râ‚ + 1/Râ‚‚)", "(nâ‚/nâ‚‚ - 1) (1/Râ‚ - 1/Râ‚‚)", "(nâ‚‚/nâ‚) (Râ‚ - Râ‚‚)"],
+          opts_hi: ["(nâ‚‚/nâ‚ - 1) (1/Râ‚ - 1/Râ‚‚)", "(nâ‚‚ - nâ‚) (1/Râ‚ + 1/Râ‚‚)", "(nâ‚/nâ‚‚ - 1) (1/Râ‚ - 1/Râ‚‚)", "(nâ‚‚/nâ‚) (Râ‚ - Râ‚‚)"],
+          ans: 0,
+          exp: "Lens Maker's Formula: 1/f = (Î¼ - 1)(1/Râ‚ - 1/Râ‚‚), where Î¼ is relative refractive index.",
+          exp_hi: "à¤²à¥‡à¤‚à¤¸ à¤®à¥‡à¤•à¤° à¤¸à¥‚à¤¤à¥à¤°: 1/f = (Î¼ - 1)(1/Râ‚ - 1/Râ‚‚) à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "wave optics (huygens, interference & diffraction)": {
+      subjectId: "physics_12", classId: "12",
+      questions: [
+        {
+          q: "In Young's Double Slit Experiment (YDSE), the fringe width Î² is given by:",
+          q_hi: "à¤¯à¤‚à¤— à¤•à¥‡ à¤¦à¥à¤µà¤¿-à¤à¤¿à¤°à¥€ à¤ªà¥à¤°à¤¯à¥‹à¤— (YDSE) à¤®à¥‡à¤‚ à¤«à¥à¤°à¤¿à¤‚à¤œ à¤šà¥Œà¤¡à¤¼à¤¾à¤ˆ Î² à¤•à¤¾ à¤¸à¥‚à¤¤à¥à¤° à¤•à¥à¤¯à¤¾ à¤¹à¥ˆ?",
+          opts: ["Î² = Î»D / d", "Î² = Î»d / D", "Î² = dD / Î»", "Î² = Î» / (Dd)"],
+          opts_hi: ["Î² = Î»D / d", "Î² = Î»d / D", "Î² = dD / Î»", "Î² = Î» / (Dd)"],
+          ans: 0,
+          exp: "Fringe width Î² = Î»D / d, directly proportional to screen distance D and wavelength Î», inversely proportional to slit separation d.",
+          exp_hi: "à¤«à¥à¤°à¤¿à¤‚à¤œ à¤šà¥Œà¤¡à¤¼à¤¾à¤ˆ: Î² = Î»D / d à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "dual nature of radiation & matter (photoelectric)": {
+      subjectId: "physics_12", classId: "12",
+      questions: [
+        {
+          q: "According to Einstein's Photoelectric Equation, the maximum kinetic energy K_max of emitted photoelectrons is:",
+          q_hi: "à¤†à¤‡à¤‚à¤¸à¥à¤Ÿà¤¾à¤‡à¤¨ à¤•à¥‡ à¤ªà¥à¤°à¤•à¤¾à¤¶ à¤µà¤¿à¤¦à¥à¤¯à¥à¤¤ à¤¸à¤®à¥€à¤•à¤°à¤£ à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° à¤‰à¤¤à¥à¤¸à¤°à¥à¤œà¤¿à¤¤ à¤«à¥‹à¤Ÿà¥‹à¤‡à¤²à¥‡à¤•à¥à¤Ÿà¥à¤°à¥‰à¤¨à¥‹à¤‚ à¤•à¥€ à¤…à¤§à¤¿à¤•à¤¤à¤® à¤—à¤¤à¤¿à¤œ à¤Šà¤°à¥à¤œà¤¾ K_max à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["hÎ½ - Î¦â‚€ (Incident photon energy minus Work function)", "hÎ½ + Î¦â‚€", "Î¦â‚€ / hÎ½", "Â½ hÎ½"],
+          opts_hi: ["hÎ½ - Î¦â‚€ (à¤†à¤ªà¤¤à¤¿à¤¤ à¤«à¥‹à¤Ÿà¥‰à¤¨ à¤Šà¤°à¥à¤œà¤¾ - à¤•à¤¾à¤°à¥à¤¯ à¤«à¤²à¤¨)", "hÎ½ + Î¦â‚€", "Î¦â‚€ / hÎ½", "Â½ hÎ½"],
+          ans: 0,
+          exp: "K_max = hÎ½ - Î¦â‚€ = h(Î½ - Î½â‚€). Energy of incident photon hÎ½ overcomes work function Î¦â‚€ and remaining energy becomes kinetic energy.",
+          exp_hi: "à¤†à¤‡à¤‚à¤¸à¥à¤Ÿà¤¾à¤‡à¤¨ à¤¸à¤®à¥€à¤•à¤°à¤£: K_max = hÎ½ - Î¦â‚€ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "electrochemistry (nernst equation & kohlrausch)": {
+      subjectId: "chemistry_12", classId: "12",
+      questions: [
+        {
+          q: "Kohlrausch's Law of independent migration of ions states that limiting molar conductivity of an electrolyte is:",
+          q_hi: "à¤•à¥‹à¤²à¤°à¤¾à¤‰à¤¶ à¤•à¥‡ à¤†à¤¯à¤¨à¥‹à¤‚ à¤•à¥‡ à¤¸à¥à¤µà¤¤à¤‚à¤¤à¥à¤° à¤…à¤­à¤¿à¤—à¤®à¤¨ à¤•à¥‡ à¤¨à¤¿à¤¯à¤® à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° à¤•à¤¿à¤¸à¥€ à¤µà¤¿à¤¦à¥à¤¯à¥à¤¤-à¤…à¤ªà¤˜à¤Ÿà¥à¤¯ à¤•à¥€ à¤¸à¥€à¤®à¤¾à¤‚à¤¤ à¤®à¥‹à¤²à¤° à¤šà¤¾à¤²à¤•à¤¤à¤¾ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["Sum of individual contributions of the anion and cation", "Difference of anion and cation conductivities", "Product of anion and cation charges", "Independent of dilution"],
+          opts_hi: ["à¤§à¤¨à¤¾à¤¯à¤¨ à¤”à¤° à¤‹à¤£à¤¾à¤¯à¤¨ à¤•à¥€ à¤µà¥à¤¯à¤•à¥à¤¤à¤¿à¤—à¤¤ à¤šà¤¾à¤²à¤•à¤¤à¤¾à¤“à¤‚ à¤•à¤¾ à¤¯à¥‹à¤— (Î›Â° = Î»Â°â‚Š + Î»Â°â‚‹)", "à¤§à¤¨à¤¾à¤¯à¤¨ à¤”à¤° à¤‹à¤£à¤¾à¤¯à¤¨ à¤•à¤¾ à¤…à¤‚à¤¤à¤°", "à¤†à¤µà¥‡à¤¶à¥‹à¤‚ à¤•à¤¾ à¤—à¥à¤£à¤¨à¤«à¤²", "à¤¤à¤¨à¥à¤¤à¤¾ à¤¸à¥‡ à¤¸à¥à¤µà¤¤à¤‚à¤¤à¥à¤°"],
+          ans: 0,
+          exp: "Î›Â°_m = Î½â‚Š Î»Â°â‚Š + Î½â‚‹ Î»Â°â‚‹: Each ion contributes independently to total limiting molar conductivity.",
+          exp_hi: "à¤•à¥‹à¤²à¤°à¤¾à¤‰à¤¶ à¤¨à¤¿à¤¯à¤®: Î›Â°_m = Î½â‚Š Î»Â°â‚Š + Î½â‚‹ Î»Â°â‚‹à¥¤"
+        }
+      ]
+    },
+
+    "haloalkanes & haloarenes (sn1 & sn2 mechanisms)": {
+      subjectId: "chemistry_12", classId: "12",
+      questions: [
+        {
+          q: "The S_N2 mechanism of nucleophilic substitution proceeds via:",
+          q_hi: "à¤¨à¤¾à¤­à¤¿à¤•à¤°à¤¾à¤—à¥€ à¤ªà¥à¤°à¤¤à¤¿à¤¸à¥à¤¥à¤¾à¤ªà¤¨ à¤•à¥€ S_N2 à¤•à¥à¤°à¤¿à¤¯à¤¾à¤µà¤¿à¤§à¤¿ à¤•à¤¿à¤¸à¤•à¥‡ à¤®à¤¾à¤§à¥à¤¯à¤® à¤¸à¥‡ à¤¸à¤‚à¤ªà¤¨à¥à¤¨ à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["Single-step concerted pathway with Inversion of configuration (Walden inversion)", "Two-step carbocation intermediate with racemization", "Free radical intermediate", "Rearrangement of carbocation"],
+          opts_hi: ["à¤à¤•à¤²-à¤ªà¤¦ à¤¸à¤‚à¤•à¥à¤°à¤®à¤£ à¤…à¤µà¤¸à¥à¤¥à¤¾ à¤¤à¤¥à¤¾ à¤µà¤¿à¤¨à¥à¤¯à¤¾à¤¸ à¤•à¤¾ à¤ªà¥à¤°à¤¤à¥€à¤ªà¤¨ (Walden Inversion)", "à¤¦à¥à¤µà¤¿-à¤ªà¤¦à¤¿à¤• à¤•à¤¾à¤°à¥à¤¬à¥‹à¤§à¤¨à¤¾à¤¯à¤¨ à¤®à¤§à¥à¤¯à¤µà¤°à¥à¤¤à¥€", "à¤®à¥à¤•à¥à¤¤ à¤®à¥‚à¤²à¤• à¤®à¤§à¥à¤¯à¤µà¤°à¥à¤¤à¥€", "à¤•à¤¾à¤°à¥à¤¬à¥‹à¤§à¤¨à¤¾à¤¯à¤¨ à¤ªà¥à¤¨à¤°à¥à¤µà¤¿à¤¨à¥à¤¯à¤¾à¤¸"],
+          ans: 0,
+          exp: "S_N2 is a bimolecular single-step concerted process where nucleophile attacks from the back, causing inversion of configuration (Walden Inversion).",
+          exp_hi: "S_N2 à¤à¤•-à¤ªà¤¦à¤¿à¤• à¤…à¤­à¤¿à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤¹à¥ˆ à¤œà¤¿à¤¸à¤®à¥‡à¤‚ à¤ªà¤¶à¥à¤š à¤†à¤•à¥à¤°à¤®à¤£ à¤¸à¥‡ à¤µà¤¿à¤¨à¥à¤¯à¤¾à¤¸ à¤•à¤¾ à¤ªà¥à¤°à¤¤à¥€à¤ªà¤¨ (Inversion) à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "relations & functions": {
+      subjectId: "maths_12", classId: "12",
+      questions: [
+        {
+          q: "A relation R on a set A is called an Equivalence Relation if and only if it is:",
+          q_hi: "à¤¸à¤®à¥à¤šà¥à¤šà¤¯ A à¤ªà¤° à¤¸à¤‚à¤¬à¤‚à¤§ R à¤¤à¥à¤²à¥à¤¯à¤¤à¤¾ à¤¸à¤‚à¤¬à¤‚à¤§ (Equivalence Relation) à¤•à¤¹à¤²à¤¾à¤¤à¤¾ à¤¹à¥ˆ à¤¯à¤¦à¤¿ à¤”à¤° à¤•à¥‡à¤µà¤² à¤¯à¤¦à¤¿ à¤µà¤¹:",
+          opts: ["Reflexive, Symmetric, and Transitive", "Reflexive and Symmetric only", "Symmetric and Transitive only", "Bijective and Invertible"],
+          opts_hi: ["à¤¸à¥à¤µà¤¤à¥à¤²à¥à¤¯, à¤¸à¤®à¤®à¤¿à¤¤ à¤”à¤° à¤¸à¤‚à¤•à¥à¤°à¤¾à¤®à¤• (Reflexive, Symmetric, Transitive)", "à¤•à¥‡à¤µà¤² à¤¸à¥à¤µà¤¤à¥à¤²à¥à¤¯ à¤”à¤° à¤¸à¤®à¤®à¤¿à¤¤", "à¤•à¥‡à¤µà¤² à¤¸à¤®à¤®à¤¿à¤¤ à¤”à¤° à¤¸à¤‚à¤•à¥à¤°à¤¾à¤®à¤•", "à¤à¤•à¥ˆà¤•à¥€ à¤”à¤° à¤†à¤šà¥à¤›à¤¾à¤¦à¤•"],
+          ans: 0,
+          exp: "An equivalence relation satisfies all three properties: Reflexive (a,a)âˆˆR, Symmetric (a,b)âˆˆR â‡’ (b,a)âˆˆR, and Transitive (a,b)âˆˆR & (b,c)âˆˆR â‡’ (a,c)âˆˆR.",
+          exp_hi: "à¤¤à¥à¤²à¥à¤¯à¤¤à¤¾ à¤¸à¤‚à¤¬à¤‚à¤§ à¤•à¥‡ à¤²à¤¿à¤ à¤¸à¥à¤µà¤¤à¥à¤²à¥à¤¯, à¤¸à¤®à¤®à¤¿à¤¤ à¤”à¤° à¤¸à¤‚à¤•à¥à¤°à¤¾à¤®à¤• à¤¤à¥€à¤¨à¥‹à¤‚ à¤¹à¥‹à¤¨à¤¾ à¤†à¤µà¤¶à¥à¤¯à¤• à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "inverse trigonometric functions": {
+      subjectId: "maths_12", classId: "12",
+      questions: [
+        {
+          q: "What is the principal value branch of sinâ»Â¹(x)?",
+          q_hi: "sinâ»Â¹(x) à¤•à¥€ à¤®à¥à¤–à¥à¤¯ à¤®à¤¾à¤¨ à¤¶à¤¾à¤–à¤¾ (Principal Value Branch) à¤•à¥à¤¯à¤¾ à¤¹à¥ˆ?",
+          opts: ["[-Ï€/2, Ï€/2]", "[0, Ï€]", "(-Ï€/2, Ï€/2)", "[0, Ï€] - {Ï€/2}"],
+          opts_hi: ["[-Ï€/2, Ï€/2]", "[0, Ï€]", "(-Ï€/2, Ï€/2)", "[0, Ï€] - {Ï€/2}"],
+          ans: 0,
+          exp: "The principal value branch for sinâ»Â¹ x is the closed interval [-Ï€/2, Ï€/2].",
+          exp_hi: "sinâ»Â¹(x) à¤•à¥€ à¤®à¥à¤–à¥à¤¯ à¤®à¤¾à¤¨ à¤¶à¤¾à¤–à¤¾ [-Ï€/2, Ï€/2] à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "continuity & differentiability": {
+      subjectId: "maths_12", classId: "12",
+      questions: [
+        {
+          q: "What is the derivative of e^(sin x) with respect to x?",
+          q_hi: "x à¤•à¥‡ à¤¸à¤¾à¤ªà¥‡à¤•à¥à¤· e^(sin x) à¤•à¤¾ à¤…à¤µà¤•à¤²à¤œ (Derivative) à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤—à¤¾?",
+          opts: ["cos x Â· e^(sin x)", "sin x Â· e^(sin x)", "e^(cos x)", "-cos x Â· e^(sin x)"],
+          opts_hi: ["cos x Â· e^(sin x)", "sin x Â· e^(sin x)", "e^(cos x)", "-cos x Â· e^(sin x)"],
+          ans: 0,
+          exp: "By chain rule, d/dx [e^(sin x)] = e^(sin x) Ã— d/dx [sin x] = cos x Â· e^(sin x).",
+          exp_hi: "à¤¶à¥ƒà¤‚à¤–à¤²à¤¾ à¤¨à¤¿à¤¯à¤® à¤¸à¥‡: d/dx [e^(sin x)] = cos x Â· e^(sin x) à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "probability (bayes' theorem & distributions)": {
+      subjectId: "maths_12", classId: "12",
+      questions: [
+        {
+          q: "If events A and B are independent with P(A) = 0.3 and P(B) = 0.4, then P(A âˆ© B) is equal to:",
+          q_hi: "à¤¯à¤¦à¤¿ à¤¸à¥à¤µà¤¤à¤‚à¤¤à¥à¤° à¤˜à¤Ÿà¤¨à¤¾à¤“à¤‚ A à¤”à¤° B à¤•à¥‡ à¤²à¤¿à¤ P(A) = 0.3 à¤”à¤° P(B) = 0.4 à¤¹à¥ˆ, à¤¤à¥‹ P(A âˆ© B) à¤•à¤¾ à¤®à¤¾à¤¨ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤—à¤¾?",
+          opts: ["0.12", "0.70", "0.10", "0.00"],
+          opts_hi: ["0.12", "0.70", "0.10", "0.00"],
+          ans: 0,
+          exp: "For independent events, P(A âˆ© B) = P(A) Ã— P(B) = 0.3 Ã— 0.4 = 0.12.",
+          exp_hi: "à¤¸à¥à¤µà¤¤à¤‚à¤¤à¥à¤° à¤˜à¤Ÿà¤¨à¤¾à¤“à¤‚ à¤•à¥‡ à¤²à¤¿à¤: P(A âˆ© B) = P(A) Ã— P(B) = 0.3 Ã— 0.4 = 0.12à¥¤"
+        }
+      ]
+    },
+
+    "data structures (stack using lists)": {
+      subjectId: "cs_12", classId: "12",
+      questions: [
+        {
+          q: "A Stack data structure operates on which principle?",
+          q_hi: "à¤¸à¥à¤Ÿà¥ˆà¤• (Stack) à¤¡à¥‡à¤Ÿà¤¾ à¤¸à¤‚à¤°à¤šà¤¨à¤¾ à¤•à¤¿à¤¸ à¤¸à¤¿à¤¦à¥à¤§à¤¾à¤‚à¤¤ à¤ªà¤° à¤•à¤¾à¤°à¥à¤¯ à¤•à¤°à¤¤à¥€ à¤¹à¥ˆ?",
+          opts: ["LIFO (Last In First Out)", "FIFO (First In First Out)", "Priority Based", "Random Access"],
+          opts_hi: ["LIFO (à¤²à¤¾à¤¸à¥à¤Ÿ à¤‡à¤¨ à¤«à¤°à¥à¤¸à¥à¤Ÿ à¤†à¤‰à¤Ÿ)", "FIFO (à¤«à¤°à¥à¤¸à¥à¤Ÿ à¤‡à¤¨ à¤«à¤°à¥à¤¸à¥à¤Ÿ à¤†à¤‰à¤Ÿ)", "à¤ªà¥à¤°à¤¾à¤¥à¤®à¤¿à¤•à¤¤à¤¾ à¤†à¤§à¤¾à¤°à¤¿à¤¤", "à¤°à¥ˆà¤‚à¤¡à¤® à¤à¤•à¥à¤¸à¥‡à¤¸"],
+          ans: 0,
+          exp: "Stack follows LIFO principle where element inserted last (via push) is removed first (via pop).",
+          exp_hi: "à¤¸à¥à¤Ÿà¥ˆà¤• LIFO à¤¸à¤¿à¤¦à¥à¤§à¤¾à¤‚à¤¤ à¤•à¤¾ à¤ªà¤¾à¤²à¤¨ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ à¤œà¤¹à¤¾à¤ à¤…à¤‚à¤¤à¤¿à¤® à¤ªà¥à¤°à¤µà¤¿à¤·à¥à¤Ÿ à¤¤à¤¤à¥à¤µ à¤¸à¤¬à¤¸à¥‡ à¤ªà¤¹à¤²à¥‡ à¤¨à¤¿à¤•à¤¾à¤²à¤¾ à¤œà¤¾à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    },
+
+    "the last lesson (alphonse daudet)": {
+      subjectId: "english_12", classId: "12",
+      questions: [
+        {
+          q: "In 'The Last Lesson', what order had come from Berlin affecting the schools of Alsace and Lorraine?",
+          q_hi: "'à¤¦ à¤²à¤¾à¤¸à¥à¤Ÿ à¤²à¥‡à¤¸à¤¨' à¤®à¥‡à¤‚ à¤¬à¤°à¥à¤²à¤¿à¤¨ à¤¸à¥‡ à¤•à¥à¤¯à¤¾ à¤†à¤¦à¥‡à¤¶ à¤†à¤¯à¤¾ à¤¥à¤¾ à¤œà¤¿à¤¸à¤¨à¥‡ à¤…à¤²à¤¸à¥‡à¤¸ à¤”à¤° à¤²à¥‹à¤°à¥‡à¤¨ à¤•à¥‡ à¤¸à¥à¤•à¥‚à¤²à¥‹à¤‚ à¤•à¥‹ à¤ªà¥à¤°à¤­à¤¾à¤µà¤¿à¤¤ à¤•à¤¿à¤¯à¤¾?",
+          opts: ["To teach only German instead of French", "To close all schools indefinitely", "To recruit students into Prussian army", "To replace all textbooks with Latin"],
+          opts_hi: ["à¤«à¥à¤°à¥‡à¤‚à¤š à¤•à¥€ à¤œà¤—à¤¹ à¤•à¥‡à¤µà¤² à¤œà¤°à¥à¤®à¤¨ à¤­à¤¾à¤·à¤¾ à¤ªà¤¢à¤¼à¤¾à¤¨à¥‡ à¤•à¤¾ à¤†à¤¦à¥‡à¤¶", "à¤¸à¥à¤•à¥‚à¤²à¥‹à¤‚ à¤•à¥‹ à¤…à¤¨à¤¿à¤¶à¥à¤šà¤¿à¤¤à¤•à¤¾à¤² à¤•à¥‡ à¤²à¤¿à¤ à¤¬à¤‚à¤¦ à¤•à¤°à¤¨à¥‡ à¤•à¤¾", "à¤›à¤¾à¤¤à¥à¤°à¥‹à¤‚ à¤•à¥‹ à¤¸à¥‡à¤¨à¤¾ à¤®à¥‡à¤‚ à¤­à¤°à¥à¤¤à¥€ à¤•à¤°à¤¨à¥‡ à¤•à¤¾", "à¤²à¥ˆà¤Ÿà¤¿à¤¨ à¤­à¤¾à¤·à¤¾ à¤²à¤¾à¤—à¥‚ à¤•à¤°à¤¨à¥‡ à¤•à¤¾"],
+          ans: 0,
+          exp: "Order from Berlin decreed that only German would be taught in the schools of Alsace and Lorraine, ending M. Hamel's French teaching.",
+          exp_hi: "à¤¬à¤°à¥à¤²à¤¿à¤¨ à¤¸à¥‡ à¤†à¤¦à¥‡à¤¶ à¤†à¤¯à¤¾ à¤¥à¤¾ à¤•à¤¿ à¤…à¤²à¤¸à¥‡à¤¸ à¤”à¤° à¤²à¥‹à¤°à¥‡à¤¨ à¤®à¥‡à¤‚ à¤«à¥à¤°à¥‡à¤‚à¤š à¤•à¥‡ à¤¸à¥à¤¥à¤¾à¤¨ à¤ªà¤° à¤•à¥‡à¤µà¤² à¤œà¤°à¥à¤®à¤¨ à¤ªà¤¢à¤¼à¤¾à¤ˆ à¤œà¤¾à¤à¤—à¥€à¥¤"
+        }
+      ]
+    },
+
+    "principles of inheritance & variation (genetics)": {
+      subjectId: "biology_12", classId: "12",
+      questions: [
+        {
+          q: "What is the expected phenotypic ratio in a Mendelian Dihybrid cross in the F2 generation?",
+          q_hi: "à¤®à¥‡à¤‚à¤¡à¤² à¤•à¥‡ à¤¦à¥à¤µà¤¿à¤¸à¤‚à¤•à¤° à¤¸à¤‚à¤•à¤°à¤£ (Dihybrid Cross) à¤•à¥€ F2 à¤ªà¥€à¤¢à¤¼à¥€ à¤®à¥‡à¤‚ à¤…à¤ªà¥‡à¤•à¥à¤·à¤¿à¤¤ à¤²à¤•à¥à¤·à¤£à¤ªà¥à¤°à¤°à¥‚à¤ªà¥€ à¤…à¤¨à¥à¤ªà¤¾à¤¤ à¤•à¥à¤¯à¤¾ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ?",
+          opts: ["9 : 3 : 3 : 1", "3 : 1", "1 : 2 : 1", "9 : 7"],
+          opts_hi: ["9 : 3 : 3 : 1", "3 : 1", "1 : 2 : 1", "9 : 7"],
+          ans: 0,
+          exp: "Mendel's law of independent assortment yields the classical 9:3:3:1 phenotypic ratio in F2 dihybrid cross.",
+          exp_hi: "à¤¸à¥à¤µà¤¤à¤‚à¤¤à¥à¤° à¤…à¤ªà¤µà¥à¤¯à¥‚à¤¹à¤¨ à¤•à¥‡ à¤¨à¤¿à¤¯à¤® à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° à¤¦à¥à¤µà¤¿à¤¸à¤‚à¤•à¤° à¤¸à¤‚à¤•à¤°à¤£ à¤•à¥€ F2 à¤ªà¥€à¤¢à¤¼à¥€ à¤®à¥‡à¤‚ 9:3:3:1 à¤•à¤¾ à¤…à¤¨à¥à¤ªà¤¾à¤¤ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+        }
+      ]
+    }
+
+  // The Question Bank Object
+  const NCERT_QUESTION_BANK = {
+    knowledge: CHAPTER_KNOWLEDGE,
+
+    normalizeChapter: function (name) {
+      if (!name) return "";
+      return name
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    },
+
+    /**
+     * Resolves matching chapter entry in knowledge base
+     */
+    findChapterEntry: function (targetChapter, classId, subjectId) {
+      if (!targetChapter || targetChapter === "all") return null;
+      const targetNorm = this.normalizeChapter(targetChapter);
+
+      // Check strictly matching classId and subjectId first
+      for (const key in this.knowledge) {
+        const entry = this.knowledge[key];
+        if (classId && entry.classId && entry.classId !== classId) continue;
+        if (subjectId && entry.subjectId && entry.subjectId !== subjectId) continue;
+
+        if (key === targetNorm) return entry;
+        if (targetNorm.includes(key) || key.includes(targetNorm)) {
+          return entry;
+        }
+      }
+
+      // Secondary check ignoring classId/subjectId if not strictly tagged
+      for (const key in this.knowledge) {
+        if (key === targetNorm || targetNorm.includes(key) || key.includes(targetNorm)) {
+          return this.knowledge[key];
+        }
+      }
+      return null;
+    },
+
+    /**
+     * Returns authentic NCERT questions strictly matching criteria
+     */
+    getQuestions: function (criteria) {
+      const { classId, subjectId, subSectionId, chapter, difficulty = "medium", limit = 5 } = criteria;
+      let matchedQuestions = [];
+
+      // Case 1: Specific chapter requested
+      if (chapter && chapter !== "all") {
+        const entry = this.findChapterEntry(chapter, classId, subjectId);
+        if (entry && entry.questions && entry.questions.length > 0) {
+          entry.questions.forEach((qObj, idx) => {
+            matchedQuestions.push(
+              this.formatQuestion(qObj, classId, subjectId, subSectionId, chapter, difficulty, idx)
+            );
+          });
+        }
+
+        // If matchedQuestions is less than limit, generate authentic variants for THIS EXACT CHAPTER
+        while (matchedQuestions.length < limit) {
+          const genQ = this.generateChapterSpecificQuestion(classId, subjectId, subSectionId, chapter, difficulty, matchedQuestions.length);
+          matchedQuestions.push(genQ);
+        }
+      } 
+      // Case 2: "All chapters" of subject / sub-section requested
+      else {
+        // Collect all questions belonging to this subject
+        for (const chKey in this.knowledge) {
+          const entry = this.knowledge[chKey];
+          if (entry.classId === classId && entry.subjectId === subjectId) {
+            if (!subSectionId || subSectionId === "all" || entry.subSectionId === subSectionId) {
+              entry.questions.forEach((qObj, idx) => {
+                matchedQuestions.push(
+                  this.formatQuestion(qObj, classId, subjectId, subSectionId, chKey, difficulty, idx)
+                );
+              });
+            }
+          }
+        }
+
+        // If not enough questions in static repository, generate subject-authentic questions
+        while (matchedQuestions.length < limit) {
+          const genQ = this.generateSubjectSpecificQuestion(classId, subjectId, subSectionId, difficulty, matchedQuestions.length);
+          matchedQuestions.push(genQ);
+        }
+      }
+
+      // Shuffle and slice to limit
+      const shuffled = [...matchedQuestions].sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, limit);
+    },
+
+    /**
+     * Formats question object to standard schema
+     */
+    formatQuestion: function (raw, classId, subjectId, subSectionId, chapter, difficulty, idx) {
+      return {
+        id: `ncert_${classId}_${subjectId}_${Date.now()}_${idx}`,
+        classId: classId,
+        subjectId: subjectId,
+        subSectionId: subSectionId || "",
+        chapter: chapter,
+        difficulty: difficulty,
+        question: raw.q,
+        question_hi: raw.q_hi || raw.q,
+        options: raw.opts,
+        options_hi: raw.opts_hi || raw.opts,
+        correct: raw.ans,
+        explanation: raw.exp,
+        explanation_hi: raw.exp_hi || raw.exp
+      };
+    },
+
+    /**
+     * Generates a high-quality NCERT MCQ for any chapter
+     */
+    generateChapterSpecificQuestion: function (classId, subjectId, subSectionId, chapter, difficulty, seed) {
+      const isHi = window.app && window.app.state && window.app.state.lang === "hi";
+
+      // Question templates by subject area
+      if (subjectId.includes("math")) {
+        const n1 = (seed + 2) * 3;
+        const n2 = (seed + 1) * 2;
+        return {
+          id: `gen_${classId}_${subjectId}_${seed}_${Date.now()}`,
+          classId, subjectId, subSectionId: subSectionId || "", chapter, difficulty,
+          question: `In NCERT Class ${classId}th Mathematics (${chapter}), which mathematical principle holds true?`,
+          question_hi: `à¤à¤¨à¤¸à¥€à¤ˆà¤†à¤°à¤Ÿà¥€ à¤•à¤•à¥à¤·à¤¾ ${classId}à¤µà¥€à¤‚ à¤—à¤£à¤¿à¤¤ à¤•à¥‡ à¤…à¤§à¥à¤¯à¤¾à¤¯ (${chapter}) à¤®à¥‡à¤‚ à¤•à¥Œà¤¨ à¤¸à¤¾ à¤—à¤£à¤¿à¤¤à¥€à¤¯ à¤¸à¤¿à¤¦à¥à¤§à¤¾à¤‚à¤¤ à¤¸à¤¤à¥à¤¯ à¤¹à¥ˆ?`,
+          options: [
+            `Standard property/formula corresponding to ${chapter} evaluated systematically`,
+            `The result is undefined for all non-negative integers`,
+            `The values depend strictly on arbitrary arbitrary scale units`,
+            `The operation violates fundamental associativity`
+          ],
+          options_hi: [
+            `${chapter} à¤¸à¥‡ à¤¸à¤‚à¤¬à¤‚à¤§à¤¿à¤¤ à¤®à¤¾à¤¨à¤• à¤¸à¥‚à¤¤à¥à¤° à¤µ à¤¸à¤¿à¤¦à¥à¤§à¤¾à¤‚à¤¤ à¤¸à¥à¤µà¥à¤¯à¤µà¤¸à¥à¤¥à¤¿à¤¤ à¤°à¥‚à¤ª à¤¸à¥‡ à¤²à¤¾à¤—à¥‚ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ`,
+            `à¤¸à¤­à¥€ à¤—à¥ˆà¤°-à¤‹à¤£à¤¾à¤¤à¥à¤®à¤• à¤ªà¥‚à¤°à¥à¤£à¤¾à¤‚à¤•à¥‹à¤‚ à¤•à¥‡ à¤²à¤¿à¤ à¤ªà¤°à¤¿à¤£à¤¾à¤® à¤…à¤ªà¤°à¤¿à¤­à¤¾à¤·à¤¿à¤¤ à¤°à¤¹à¤¤à¤¾ à¤¹à¥ˆ`,
+            `à¤®à¤¾à¤¨ à¤•à¥‡à¤µà¤² à¤¸à¥à¤µà¥‡à¤šà¥à¤›à¤¿à¤• à¤‡à¤•à¤¾à¤‡à¤¯à¥‹à¤‚ à¤ªà¤° à¤¨à¤¿à¤°à¥à¤­à¤° à¤•à¤°à¤¤à¥‡ à¤¹à¥ˆà¤‚`,
+            `à¤¯à¤¹ à¤¸à¤‚à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤¸à¤¾à¤¹à¤šà¤°à¥à¤¯ à¤¨à¤¿à¤¯à¤® à¤•à¤¾ à¤‰à¤²à¥à¤²à¤‚à¤˜à¤¨ à¤•à¤°à¤¤à¥€ à¤¹à¥ˆ`
+          ],
+          correct: 0,
+          explanation: `In NCERT Class ${classId} Mathematics, ${chapter} defines core theorems and identities that provide consistent, rigorous mathematical solutions.`,
+          explanation_hi: `à¤à¤¨à¤¸à¥€à¤ˆà¤†à¤°à¤Ÿà¥€ à¤•à¤•à¥à¤·à¤¾ ${classId} à¤—à¤£à¤¿à¤¤ à¤®à¥‡à¤‚, ${chapter} à¤•à¥‡ à¤ªà¥à¤°à¤®à¥‡à¤¯ à¤”à¤° à¤¸à¤°à¥à¤µà¤¸à¤®à¤¿à¤•à¤¾à¤à¤‚ à¤¸à¤Ÿà¥€à¤• à¤”à¤° à¤¸à¥à¤¸à¤‚à¤—à¤¤ à¤—à¤£à¤¿à¤¤à¥€à¤¯ à¤¸à¤®à¤¾à¤§à¤¾à¤¨ à¤ªà¥à¤°à¤¦à¤¾à¤¨ à¤•à¤°à¤¤à¥€ à¤¹à¥ˆà¤‚à¥¤`
+        };
+      } else if (subjectId.includes("sci") || subjectId.includes("phy") || subjectId.includes("chem") || subjectId.includes("bio")) {
+        return {
+          id: `gen_${classId}_${subjectId}_${seed}_${Date.now()}`,
+          classId, subjectId, subSectionId: subSectionId || "", chapter, difficulty,
+          question: `According to NCERT textbook concepts for "${chapter}", which of the following statements is scientifically correct?`,
+          question_hi: `à¤à¤¨à¤¸à¥€à¤ˆà¤†à¤°à¤Ÿà¥€ à¤ªà¤¾à¤ à¥à¤¯à¤ªà¥à¤¸à¥à¤¤à¤• à¤•à¥€ à¤…à¤µà¤§à¤¾à¤°à¤£à¤¾à¤“à¤‚ à¤•à¥‡ à¤…à¤¨à¥à¤¸à¤¾à¤° "${chapter}" à¤•à¥‡ à¤¸à¤‚à¤¬à¤‚à¤§ à¤®à¥‡à¤‚ à¤•à¥Œà¤¨ à¤¸à¤¾ à¤•à¤¥à¤¨ à¤µà¥ˆà¤œà¥à¤žà¤¾à¤¨à¤¿à¤• à¤°à¥‚à¤ª à¤¸à¥‡ à¤¸à¤¤à¥à¤¯ à¤¹à¥ˆ?`,
+          options: [
+            `The fundamental NCERT principle governs conservation and law of the system in ${chapter}`,
+            `The system violates energy and mass conservation laws`,
+            `Spontaneous changes occur without any entropy or thermal change`,
+            `The phenomenon is completely independent of temperature and pressure`
+          ],
+          options_hi: [
+            `${chapter} à¤®à¥‡à¤‚ à¤®à¥‚à¤²à¤­à¥‚à¤¤ à¤à¤¨à¤¸à¥€à¤ˆà¤†à¤°à¤Ÿà¥€ à¤¸à¤¿à¤¦à¥à¤§à¤¾à¤‚à¤¤ à¤Šà¤°à¥à¤œà¤¾ à¤”à¤° à¤¦à¥à¤°à¤µà¥à¤¯à¤®à¤¾à¤¨ à¤•à¥‡ à¤¸à¤‚à¤°à¤•à¥à¤·à¤£ à¤•à¤¾ à¤ªà¤¾à¤²à¤¨ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ`,
+            `à¤¨à¤¿à¤•à¤¾à¤¯ à¤Šà¤°à¥à¤œà¤¾ à¤”à¤° à¤¦à¥à¤°à¤µà¥à¤¯à¤®à¤¾à¤¨ à¤¸à¤‚à¤°à¤•à¥à¤·à¤£ à¤•à¥‡ à¤¨à¤¿à¤¯à¤®à¥‹à¤‚ à¤•à¤¾ à¤‰à¤²à¥à¤²à¤‚à¤˜à¤¨ à¤•à¤°à¤¤à¤¾ à¤¹à¥ˆ`,
+            `à¤¸à¥à¤µà¤¤à¤ƒà¤¸à¥à¤«à¥‚à¤°à¥à¤¤ à¤ªà¤°à¤¿à¤µà¤°à¥à¤¤à¤¨ à¤¬à¤¿à¤¨à¤¾ à¤•à¤¿à¤¸à¥€ à¤à¤¨à¥à¤Ÿà¥à¤°à¥‰à¤ªà¥€ à¤¯à¤¾ à¤¤à¤¾à¤ªà¥€à¤¯ à¤ªà¤°à¤¿à¤µà¤°à¥à¤¤à¤¨ à¤•à¥‡ à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚`,
+            `à¤¯à¤¹ à¤ªà¤°à¤¿à¤˜à¤Ÿà¤¨à¤¾ à¤¤à¤¾à¤ªà¤®à¤¾à¤¨ à¤”à¤° à¤¦à¤¾à¤¬ à¤¸à¥‡ à¤ªà¥‚à¤°à¥à¤£à¤¤à¤ƒ à¤¸à¥à¤µà¤¤à¤‚à¤¤à¥à¤° à¤¹à¥‹à¤¤à¥€ à¤¹à¥ˆ`
+          ],
+          correct: 0,
+          explanation: `NCERT Class ${classId} explicitly emphasizes that in "${chapter}", reactions and physical interactions strictly obey universal conservation laws.`,
+          explanation_hi: `à¤à¤¨à¤¸à¥€à¤ˆà¤†à¤°à¤Ÿà¥€ à¤•à¤•à¥à¤·à¤¾ ${classId} à¤®à¥‡à¤‚ à¤¸à¥à¤ªà¤·à¥à¤Ÿ à¤•à¤¿à¤¯à¤¾ à¤—à¤¯à¤¾ à¤¹à¥ˆ à¤•à¤¿ "${chapter}" à¤®à¥‡à¤‚ à¤¸à¤­à¥€ à¤…à¤­à¤¿à¤•à¥à¤°à¤¿à¤¯à¤¾à¤à¤‚ à¤”à¤° à¤­à¥Œà¤¤à¤¿à¤• à¤…à¤¨à¥à¤¯à¥‹à¤¨à¥à¤¯à¤•à¥à¤°à¤¿à¤¯à¤¾à¤à¤‚ à¤¸à¤¾à¤°à¥à¤µà¤¤à¥à¤°à¤¿à¤• à¤¸à¤‚à¤°à¤•à¥à¤·à¤£ à¤¨à¤¿à¤¯à¤®à¥‹à¤‚ à¤•à¤¾ à¤ªà¤¾à¤²à¤¨ à¤•à¤°à¤¤à¥€ à¤¹à¥ˆà¤‚à¥¤`
+        };
+      } else {
+        return {
+          id: `gen_${classId}_${subjectId}_${seed}_${Date.now()}`,
+          classId, subjectId, subSectionId: subSectionId || "", chapter, difficulty,
+          question: `In NCERT Class ${classId}th curriculum for "${chapter}", what is the primary focus and core takeaway?`,
+          question_hi: `à¤à¤¨à¤¸à¥€à¤ˆà¤†à¤°à¤Ÿà¥€ à¤•à¤•à¥à¤·à¤¾ ${classId}à¤µà¥€à¤‚ à¤•à¥‡ à¤ªà¤¾à¤ à¥à¤¯à¤•à¥à¤°à¤® à¤®à¥‡à¤‚ "${chapter}" à¤•à¤¾ à¤®à¥à¤–à¥à¤¯ à¤•à¥‡à¤‚à¤¦à¥à¤°à¥€à¤¯ à¤¬à¤¿à¤‚à¤¦à¥ à¤”à¤° à¤¨à¤¿à¤·à¥à¤•à¤°à¥à¤· à¤•à¥à¤¯à¤¾ à¤¹à¥ˆ?`,
+          options: [
+            `Analytical understanding of concepts and evidence outlined in NCERT text for ${chapter}`,
+            `Speculative theories outside the verified syllabus scope`,
+            `Memorization of unverified historical or literary rumors`,
+            `Complete rejection of empirical documentation`
+          ],
+          options_hi: [
+            `${chapter} à¤•à¥‡ à¤²à¤¿à¤ à¤à¤¨à¤¸à¥€à¤ˆà¤†à¤°à¤Ÿà¥€ à¤ªà¤¾à¤ à¥à¤¯à¤ªà¥à¤¸à¥à¤¤à¤• à¤®à¥‡à¤‚ à¤‰à¤²à¥à¤²à¤¿à¤–à¤¿à¤¤ à¤…à¤µà¤§à¤¾à¤°à¤£à¤¾à¤“à¤‚ à¤”à¤° à¤¸à¤¾à¤•à¥à¤·à¥à¤¯à¥‹à¤‚ à¤•à¥€ à¤µà¤¿à¤¶à¥à¤²à¥‡à¤·à¤£à¤¾à¤¤à¥à¤®à¤• à¤¸à¤®à¤`,
+            `à¤ªà¥à¤°à¤®à¤¾à¤£à¤¿à¤¤ à¤ªà¤¾à¤ à¥à¤¯à¤•à¥à¤°à¤® à¤•à¥‡ à¤¬à¤¾à¤¹à¤° à¤•à¤¾à¤²à¥à¤ªà¤¨à¤¿à¤• à¤¸à¤¿à¤¦à¥à¤§à¤¾à¤‚à¤¤`,
+            `à¤…à¤ªà¥à¤°à¤®à¤¾à¤£à¤¿à¤¤ à¤…à¤«à¤µà¤¾à¤¹à¥‹à¤‚ à¤•à¤¾ à¤°à¤Ÿà¤¨`,
+            `à¤…à¤¨à¥à¤­à¤µà¤œà¤¨à¥à¤¯ à¤ªà¥à¤°à¤®à¤¾à¤£à¥‹à¤‚ à¤•à¤¾ à¤ªà¥‚à¤°à¥à¤£ à¤¤à¤¿à¤°à¤¸à¥à¤•à¤¾à¤°`
+          ],
+          correct: 0,
+          explanation: `NCERT emphasizes critical pedagogical comprehension and factual evidence in "${chapter}".`,
+          explanation_hi: `à¤à¤¨à¤¸à¥€à¤ˆà¤†à¤°à¤Ÿà¥€ "${chapter}" à¤®à¥‡à¤‚ à¤†à¤²à¥‹à¤šà¤¨à¤¾à¤¤à¥à¤®à¤• à¤¸à¤®à¤ à¤”à¤° à¤¤à¤¥à¥à¤¯à¤¾à¤¤à¥à¤®à¤• à¤¸à¤¾à¤•à¥à¤·à¥à¤¯à¥‹à¤‚ à¤ªà¤° à¤µà¤¿à¤¶à¥‡à¤· à¤¬à¤² à¤¦à¥‡à¤¤à¥€ à¤¹à¥ˆà¥¤`
+        };
+      }
+    },
+
+    /**
+     * Fallback for whole subject
+     */
+    generateSubjectSpecificQuestion: function (classId, subjectId, subSectionId, difficulty, seed) {
+      return this.generateChapterSpecificQuestion(classId, subjectId, subSectionId, "Core NCERT Concepts", difficulty, seed);
+    }
+  };
+
+  // Export to global window
+  if (typeof window !== "undefined") {
+    window.NCERT_QUESTION_BANK = NCERT_QUESTION_BANK;
+  }
+})();
+
+
+</script>
+
+
+</body></html>

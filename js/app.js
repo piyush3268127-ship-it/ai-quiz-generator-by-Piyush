@@ -794,6 +794,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const originalText = this.elements.startBtnText ? this.elements.startBtnText.textContent : this.t("startQuizBtn");
 
       try {
+        if (this.elements.chapterSelect && this.elements.chapterSelect.value) {
+          this.state.selectedChapter = this.elements.chapterSelect.value;
+        }
+
         if (this.state.useAI && window.aiService && window.aiService.isAvailable()) {
           if (this.elements.startBtnText) {
             this.elements.startBtnText.textContent = this.t("generatingAI");
@@ -887,7 +891,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Question chapter badge and statement (Bilingual)
       const qText = isHi && q.question_hi ? q.question_hi : q.question;
       if (this.elements.questionChapterBadge) {
-        this.elements.questionChapterBadge.textContent = `NCERT Chapter: ${q.chapter}`;
+        this.elements.questionChapterBadge.textContent = isHi ? `एनसीईआरटी अध्याय: ${q.chapter}` : `NCERT Chapter: ${q.chapter}`;
       }
       if (this.elements.questionText) {
         this.elements.questionText.innerHTML = this.renderMathText(qText);

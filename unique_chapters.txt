@@ -1,0 +1,167 @@
+﻿Real Numbers
+Polynomials
+Pair of Linear Equations in Two Variables
+Quadratic Equations
+Arithmetic Progressions
+Triangles
+Coordinate Geometry
+Introduction to Trigonometry
+Some Applications of Trigonometry
+Circles
+Areas Related to Circles
+Surface Areas & Volumes
+Statistics
+Probability
+Light - Reflection & Refraction
+Human Eye & Colorful World
+Electricity
+Magnetic Effects of Electric Current
+Chemical Reactions & Equations
+Acids, Bases & Salts
+Metals & Non-metals
+Carbon & its Compounds
+Life Processes
+Control & Coordination
+How do Organisms Reproduce?
+Heredity & Evolution
+Our Environment
+The Rise of Nationalism in Europe
+Nationalism in India
+The Making of a Global World
+The Age of Industrialisation
+Print Culture & Modern World
+Resources & Development
+Forest & Wildlife Resources
+Water Resources
+Agriculture
+Minerals & Energy Resources
+Manufacturing Industries
+Lifelines of National Economy
+Power Sharing
+Federalism
+Gender, Religion & Caste
+Political Parties
+Outcomes of Democracy
+Development
+Sectors of the Indian Economy
+Money & Credit
+Globalisation and the Indian Economy
+Consumer Rights
+Vyakaran: Vakya Bhed (Syntax)
+Vyakaran: Vachya (Voice)
+Vyakaran: Pad Parichay
+Vyakaran: Alankar (Figures of Speech)
+Vyakaran: Samas (Compound Words)
+Kshitij: Surdas ke Pad
+Kshitij: Netaji ka Chashma
+Kshitij: Balgobin Bhagat
+Kshitij: Utsah & Att Nahi Rahi
+A Letter to God (G.L. Fuentes)
+Nelson Mandela: Long Walk to Freedom
+Two Stories about Flying
+From the Diary of Anne Frank
+Glimpses of India (Baker, Coorg, Tea)
+Madam Rides the Bus
+Grammar: Tenses & Subject-Verb Agreement
+Grammar: Reported Speech (Direct & Indirect)
+Grammar: Modals & Determiners
+Units & Measurements
+Motion in a Straight Line
+Motion in a Plane (Vectors & Projectile)
+Laws of Motion (Friction & Dynamics)
+Work, Energy & Power
+System of Particles & Rotational Motion
+Gravitation
+Mechanical Properties of Solids & Fluids
+Thermal Properties & Thermodynamics
+Kinetic Theory of Gases
+Oscillations & Simple Harmonic Motion
+Waves & Sound
+Some Basic Concepts of Chemistry (Mole Concept)
+Structure of Atom (Quantum Mechanics)
+Classification of Elements & Periodicity
+Chemical Bonding & Molecular Structure
+Thermodynamics (Enthalpy & Gibbs Free Energy)
+Equilibrium (Chemical & Ionic)
+Redox Reactions
+Organic Chemistry: Some Basic Principles
+Hydrocarbons (Alkanes, Alkenes, Alkynes, Aromatic)
+Sets & Relations
+Trigonometric Functions
+Complex Numbers & Quadratic Equations
+Linear Inequalities
+Permutations & Combinations
+Binomial Theorem
+Sequences & Series (AP & GP)
+Straight Lines
+Conic Sections (Circle, Parabola, Ellipse, Hyperbola)
+Limits & Derivatives
+Probability & Statistics
+The Portrait of a Lady (Khushwant Singh)
+Discovering Tut: The Saga Continues
+The Summer of the Beautiful White Horse
+The Address (Marga Minco)
+Grammar & Note Making Skills
+Computer System Overview & Boolean Logic
+Python Basics & Flow of Control
+Strings, Lists, Tuples & Dictionaries
+Python Modules & Functions
+Cyber Safety & Ethics
+The Living World & Biological Classification
+Plant & Animal Kingdom
+Cell: The Unit of Life & Cell Cycle
+Photosynthesis & Respiration in Plants
+Human Physiology: Breathing & Circulation
+Electric Charges & Fields
+Electrostatic Potential & Capacitance
+Current Electricity (Kirchhoff's Laws & Potentiometer)
+Moving Charges & Magnetism (Biot-Savart & Ampere)
+Magnetism & Matter
+Electromagnetic Induction (Faraday & Lenz)
+Alternating Current (LCR Circuits & Resonance)
+Electromagnetic Waves
+Ray Optics & Optical Instruments
+Wave Optics (Huygens, Interference & Diffraction)
+Dual Nature of Radiation & Matter (Photoelectric)
+Atoms & Nuclei (Bohr Model & Radioactivity)
+Semiconductor Electronics (p-n Junction & Logic)
+Solutions (Colligative Properties & Raoult's Law)
+Electrochemistry (Nernst Equation & Kohlrausch)
+Chemical Kinetics (Rate Laws & Arrhenius Equation)
+The d- and f-Block Elements
+Coordination Compounds (VBT & CFT Theory)
+Haloalkanes & Haloarenes (SN1 & SN2 Mechanisms)
+Alcohols, Phenols & Ethers
+Aldehydes, Ketones & Carboxylic Acids
+Amines & Diazonium Salts
+Biomolecules (Carbohydrates, Proteins & Nucleic Acids)
+Relations & Functions
+Inverse Trigonometric Functions
+Matrices
+Determinants
+Continuity & Differentiability
+Application of Derivatives (Maxima & Minima)
+Integrals (Definite & Indefinite)
+Application of Integrals (Area under Curves)
+Differential Equations
+Vector Algebra
+Three-Dimensional Geometry (Lines & Planes)
+Linear Programming
+Probability (Bayes' Theorem & Distributions)
+Python Functions & File Handling (Text, Binary, CSV)
+Data Structures (Stack using Lists)
+Computer Networks & Topologies
+Database Concepts & Structured Query Language (SQL)
+Interface Python with SQL Databases
+The Last Lesson (Alphonse Daudet)
+Lost Spring (Stories of Stolen Childhood)
+Deep Water (William Douglas)
+The Rattrap (Selma LagerlÃ¶f)
+Indigo (Louis Fischer - Gandhi in Champaran)
+The Tiger King & The Enemy (Vistas)
+Sexual Reproduction in Flowering Plants
+Human Reproduction & Reproductive Health
+Principles of Inheritance & Variation (Genetics)
+Molecular Basis of Inheritance (DNA & Replication)
+Biotechnology: Principles & Applications
+Organisms, Ecosystem & Biodiversity
